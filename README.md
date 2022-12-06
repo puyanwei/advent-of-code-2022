@@ -24,7 +24,7 @@ I also use github copilot but for these challenges I turned it off.
 
 Setup node with typescript and make a readable output or something. This was way more annoying then the day 1 problem tbh
 
-Day One ###
+### Day One
 
 1. Looking at the data, it looks like splitting it into a useable format is the best bet. Something like grouping the groups into its own array.
 2. With some anticipation for part two, decided to reorganize the data into an array of objects, where each object is an Elf which has 3 properties of Elf number, food array, and the total calories of that Elf's stack
