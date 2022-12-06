@@ -8,8 +8,25 @@ interface ElfInventory {
 
 export function dayOnePartOne() {
   const groupByNewLine: string[] = calories.split('\n').join(' ').split('  ')
+  const elfInventory = resolveElfInventory(groupByNewLine)
+  const highestCalorie = Math.max(...elfInventory.map((elf) => elf.total))
+  return highestCalorie
+}
 
-  const elfInventory: ElfInventory[] = groupByNewLine.map((element, index) => {
+export function dayOnePartTwo() {
+  const groupByNewLine: string[] = calories.split('\n').join(' ').split('  ')
+  const elfInventory = resolveElfInventory(groupByNewLine)
+  const elfInventorySorted = elfInventory.sort((a, b) => b.total - a.total)
+
+  const first = elfInventorySorted[0].total
+  const second = elfInventorySorted[1].total
+  const third = elfInventorySorted[2].total
+
+  return first + second + third
+}
+
+function resolveElfInventory(array: string[]): ElfInventory[] {
+  return array.map((element, index) => {
     const food: number[] = element.split(' ').map((numberAsString) => {
       if (numberAsString === '') return 0
       if (numberAsString === undefined) return 0
@@ -24,7 +41,4 @@ export function dayOnePartOne() {
       total,
     }
   })
-  const highestCalorie = Math.max(...elfInventory.map((elf) => elf.total))
-
-  return highestCalorie
 }
