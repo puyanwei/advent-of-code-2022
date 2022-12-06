@@ -17,3 +17,5 @@ I'm aiming to just improve my code quality and problem solving skills.
 As a caveat I do know that there are two parts to each question and so not thinking about scalability from the first part can make the second part more difficult/need a complete rewrite
 
 I also use github copilot but for these challenges I turned it off.
+
+![r_1934712_e9JRV](https://user-images.githubusercontent.com/14803518/205957807-16ef2491-75ca-43b2-9fa0-47330840ecf2.jpg)
