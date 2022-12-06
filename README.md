@@ -12,7 +12,7 @@ Advent of code releases a new coding problem to solve everyday during December. 
 
 I don't care about that.
 
-I'm aiming to just improve my code quality and problem solving skills.
+I'm aiming to improve my code quality, problem solving skills and readability. For me, I would consider it a failure if the way I solve the problem is not easily understandable to another developer.
 
 As a caveat I do know that there are two parts to each question and so not thinking about scalability from the first part can make the second part more difficult/need a complete rewrite
 
