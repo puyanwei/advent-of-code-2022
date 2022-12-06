@@ -1,3 +1,3 @@
-import { dayOne } from './day01'
+import { dayOnePartOne } from './day01-calorie-counting'
 
-dayOne()
+console.log(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)

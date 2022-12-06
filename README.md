@@ -13,3 +13,7 @@ Advent of code releases a new coding problem to solve everyday during December. 
 I don't care about that.
 
 I'm aiming to just improve my code quality and problem solving skills.
+
+As a caveat I do know that there are two parts to each question and so not thinking about scalability from the first part can make the second part more difficult/need a complete rewrite
+
+I also use github copilot but for these challenges I turned it off.
