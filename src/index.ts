@@ -1,13 +1,3 @@
-console.log(123)
+import { dayOne } from './day01'
 
-interface Test {
-  a: string
-  b: number
-}
-
-const test: Test = {
-  a: '123',
-  b: 123,
-}
-
-console.log({ test, hello: '123' })
+dayOne()
