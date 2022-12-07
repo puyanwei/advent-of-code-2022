@@ -1,10 +1,10 @@
 # Advent of code 2022
 
-My code solutions for Advent of Code 2022. SPOILERS!
+My code solutions for Advent of Code 2022. WATCH OUT, SPOILERS!
 
 https://adventofcode.com/2022
 
-Node setup from - https://github.com/colt/express-ts
+Node with Typescript setup from - https://github.com/colt/express-ts
 
 ## Aim & Focus
 
@@ -20,7 +20,18 @@ I also use github copilot but for these challenges I turned it off.
 
 ![r_1934712_e9JRV](https://user-images.githubusercontent.com/14803518/205957807-16ef2491-75ca-43b2-9fa0-47330840ecf2.jpg)
 
-## Process Dairy
+## Installation
+
+```
+git clone https://github.com/puyanwei/advent-of-code-2022.git
+cd advent-of-code-2022
+npm install
+```
+
+Type `npm start` to run node on the code for the answers
+Type `npm test` to run the jest tests
+
+## Dairy
 
 ### Day One - Calorie Counting
 
