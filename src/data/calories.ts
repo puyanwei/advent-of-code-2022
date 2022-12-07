@@ -1,4 +1,4 @@
-export const calories = `
+export const dayOneData = `
 9057
 8878
 2753

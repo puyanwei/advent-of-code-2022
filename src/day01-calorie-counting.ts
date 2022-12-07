@@ -1,4 +1,4 @@
-import { calories } from './data/calories'
+import { dayOneData } from './data/calories'
 
 interface ElfInventory {
   elfNumber: number
@@ -7,14 +7,14 @@ interface ElfInventory {
 }
 
 export function dayOnePartOne() {
-  const groupByNewLine: string[] = calories.split('\n').join(' ').split('  ')
+  const groupByNewLine: string[] = dayOneData.split('\n').join(' ').split('  ')
   const elfInventory = resolveElfInventory(groupByNewLine)
   const highestCalorie = Math.max(...elfInventory.map((elf) => elf.total))
   return highestCalorie
 }
 
 export function dayOnePartTwo() {
-  const groupByNewLine: string[] = calories.split('\n').join(' ').split('  ')
+  const groupByNewLine: string[] = dayOneData.split('\n').join(' ').split('  ')
   const elfInventory = resolveElfInventory(groupByNewLine)
   const elfInventorySorted = elfInventory.sort((a, b) => b.total - a.total)
 
