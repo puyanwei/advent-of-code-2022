@@ -1,10 +1,5 @@
 import { dayOneData } from './data/calories'
-
-interface ElfInventory {
-  elfNumber: number
-  food: number[]
-  total: number
-}
+import { ElfInventory } from './types'
 
 export function dayOnePartOne() {
   const groupByNewLine: string[] = dayOneData.split('\n').join(' ').split('  ')

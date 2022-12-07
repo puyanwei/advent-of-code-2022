@@ -1,4 +1,4 @@
-export const dayTwoData = `FzQrhQpJtJMFzlpplrTWjTnTTrjVsVvvTnTs
+export const dayThreeData = `FzQrhQpJtJMFzlpplrTWjTnTTrjVsVvvTnTs
 mScqSqqgcfPCqGPZcfGNSvTNsVVNSjNvWSNsNz
 fPcPGqgCcHgFzQpJJtHtJH
 DZDqqlrjplDHrNCmnBcHBMCRcJzb
