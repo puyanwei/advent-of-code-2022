@@ -1,4 +1,4 @@
-import { checkDuplicateLetter } from '../../day03-rucksack-reorganization'
+import { checkDuplicateLetter } from '../day03-rucksack-reorganization'
 
 describe('checkDuplicateLetter()', () => {
   it('returns the letter which is duplicated in both words', () => {

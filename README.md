@@ -61,3 +61,20 @@ Opps I missed day two lol!
 7. Make a new object which groups 3 rucksacks together and use the function in (6) to check the duplicate letter. This function was a bit tough so I wrote some tests for it. In the end I used the same function which compared two words, and added a third which compared that to the result of the two words.
 8. With an array of the letters, convert the numbers and sum them up
 9. ~~Refactored with a different method, combine all words together and just check for duplicates as one combined string~~ This doesn't work due to the fact that some words are going to have duplicate letters in them therefore skewing the results (Kinda went on tangent here but then went back to (7))
+
+### Day Two - Rock, Paper, Scissors
+
+1. Work out points - Rock (A/X) is 1, Paper (B/Y) is 2, Scissors (C/Z) is 3. Win = 6, Draw = 3, Lose = 0
+   All combos - My choice is 2nd
+   A X ROCK/ROCK DRAW 4pts
+   B X PAPER/ROCK LOSE 1pts
+   C X SCISSORS/ROCK WIN 7pts
+   A Y ROCK/PAPER WIN 8pts
+   B Y PAPER/PAPER DRAW 5pts
+   C Y SCISSORS/PAPER LOSE 2pts
+   A Z ROCK/SCISSORS LOSE 3pts
+   B Z PAPER/SCISSORS WIN 9pts
+   C Z SCISSORS/SCISSORS DRAW 6pts
+
+   2. Anticipating part 2, although I can just map the points out, I predict it will be better to create my own array of objects, where each object is a match, and has opponent choice, my choice, score
+   3. Loop through object's scores and sum them up

@@ -1,4 +1,4 @@
-import { pointsMapper } from './consts/pointsMapper'
+import { alphabetrpsMatchPointsMapper } from './consts'
 import { dayThreeData } from './data/rucksack'
 import { RuckSack, RuckSackTeams } from './types'
 
@@ -6,7 +6,7 @@ export function dayThreePartOne() {
   const arrayOfRuckSacks: string[] = dayThreeData.split(`\n`)
   const ruckSacks = resolveRuckSacks(arrayOfRuckSacks)
   const sumOfPointsFromDuplicateLetters = ruckSacks.reduce((acc, curr) => {
-    const points = acc + pointsMapper[curr.duplicateLetter]
+    const points = acc + alphabetrpsMatchPointsMapper[curr.duplicateLetter]
     return points
   }, 0)
   return sumOfPointsFromDuplicateLetters
@@ -18,7 +18,8 @@ export function dayThreePartTwo() {
 
   const sumOfPointsFromAuthenticityStickers = ruckSackTeams.reduce(
     (acc, curr) => {
-      const points = acc + pointsMapper[curr.authenticitySticker]
+      const points =
+        acc + alphabetrpsMatchPointsMapper[curr.authenticitySticker]
       return points
     },
     0

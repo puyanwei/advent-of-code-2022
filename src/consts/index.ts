@@ -1,4 +1,4 @@
-export const pointsMapper: Record<string, number> = {
+export const alphabetrpsMatchPointsMapper: Record<string, number> = {
   a: 1,
   b: 2,
   c: 3,
@@ -51,4 +51,25 @@ export const pointsMapper: Record<string, number> = {
   X: 50,
   Y: 51,
   Z: 52,
+} as const
+
+export const RPSMap: Record<string, string> = {
+  A: 'rock',
+  B: 'paper',
+  C: 'scissors',
+  X: 'rock',
+  Y: 'paper',
+  Z: 'scissors',
+} as const
+
+export const rpsMatchPointsMap: Record<string, number> = {
+  AX: 4,
+  BX: 1,
+  CX: 7,
+  AY: 8,
+  BY: 5,
+  CY: 2,
+  AZ: 3,
+  BZ: 9,
+  CZ: 6,
 } as const
