@@ -47,17 +47,7 @@ Setup project with node and typescript and make a readable output. This was way 
 
 ### Day Two - Rock, Paper, Scissors
 
-1. Work out points - Rock (A/X) is 1, Paper (B/Y) is 2, Scissors (C/Z) is 3. Win = 6, Draw = 3, Lose = 0
-   All combos - My choice is 2nd
-   A X ROCK/ROCK DRAW 4pts
-   B X PAPER/ROCK LOSE 1pts
-   C X SCISSORS/ROCK WIN 7pts
-   A Y ROCK/PAPER WIN 8pts
-   B Y PAPER/PAPER DRAW 5pts
-   C Y SCISSORS/PAPER LOSE 2pts
-   A Z ROCK/SCISSORS LOSE 3pts
-   B Z PAPER/SCISSORS WIN 9pts
-   C Z SCISSORS/SCISSORS DRAW 6pts
+<img width="1015" alt="image" src="https://user-images.githubusercontent.com/14803518/206601949-df8cee8e-b2c4-4732-a37f-2abfafac7b7f.png">
 
 2. In anticipating part 2, although I can just map the points out, I predict it will be better to create my own array of objects, where each object is a match, and has opponent choice, my choice, score
 3. Loop through object's scores and sum them up
