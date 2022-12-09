@@ -16,6 +16,7 @@ export interface RuckSackTeams {
 }
 
 export type RPS = 'rock' | 'paper' | 'scissors'
+export type Outcome = 'win' | 'lose' | 'draw'
 
 export interface RPSMatch {
   hero: RPS

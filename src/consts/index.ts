@@ -73,3 +73,18 @@ export const rpsMatchPointsMap: Record<string, number> = {
   BZ: 9,
   CZ: 6,
 } as const
+
+export const rpsResultMap: Record<string, string> = {
+  X: 'lose',
+  Y: 'draw',
+  Z: 'win',
+} as const
+
+export const rpsStringToPointsMap: Record<string, number> = {
+  rock: 1,
+  paper: 2,
+  scissors: 3,
+  win: 6,
+  draw: 3,
+  lose: 0,
+}

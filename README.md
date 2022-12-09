@@ -41,26 +41,9 @@ Setup project with node and typescript and make a readable output. This was way 
 2. With some anticipation for part two, decided to reorganize the data into an array of objects, where each object is an Elf which has 3 properties of Elf number, food array, and the total calories of that Elf's stack
 3. Make array of all the totals, and output the highest.
 
-#### (Part 2)
+#### Part 2
 
 4.  Very happy with my converted JSON, as this allowed me to get the top 3 results quite easily. Using the new JSON array of objects, sort it by highest totals. Then get the top 3 and return the sum.
-
-### Day Three - Rucksack Reorganization
-
-Opps I missed day two lol!
-
-1. Put into JSON format! Array of objects (rucksacks) with `compartment one` and `compartment two` which are the strings split up equally
-2. Create a points mapper for the duplicate letters (gift item)
-3. Map through the rucksacks and get the duplicate letters in both containers, translate them into points and then sum them up
-4. Decided to add a key/value pair of `duplicateLetter` to the object so I don't have to re-loop through the array again.
-5. Also added tests for the letter duplicate function for confidence. It is helpful for debugging and refactoring. I will add tests when I think its helpful (more complex functions where things could break if other parts of the code are changed)
-
-#### (Part 2)
-
-6. Write a function based off checkDuplicateLetter() which checks 3 words instead of 2 for duplicate letters
-7. Make a new object which groups 3 rucksacks together and use the function in (6) to check the duplicate letter. This function was a bit tough so I wrote some tests for it. In the end I used the same function which compared two words, and added a third which compared that to the result of the two words.
-8. With an array of the letters, convert the numbers and sum them up
-9. ~~Refactored with a different method, combine all words together and just check for duplicates as one combined string~~ This doesn't work due to the fact that some words are going to have duplicate letters in them therefore skewing the results (Kinda went on tangent here but then went back to (7))
 
 ### Day Two - Rock, Paper, Scissors
 
@@ -76,5 +59,28 @@ Opps I missed day two lol!
    B Z PAPER/SCISSORS WIN 9pts
    C Z SCISSORS/SCISSORS DRAW 6pts
 
-   2. Anticipating part 2, although I can just map the points out, I predict it will be better to create my own array of objects, where each object is a match, and has opponent choice, my choice, score
-   3. Loop through object's scores and sum them up
+2. In anticipating part 2, although I can just map the points out, I predict it will be better to create my own array of objects, where each object is a match, and has opponent choice, my choice, score
+3. Loop through object's scores and sum them up
+
+#### Part 2
+
+4. X = lose, Y = draw, Z = win
+5. I think I can refactor existing function to switch round the ordering of the calculations and sum up the scores again
+6. Forgot that the mapping of the scores are different now that your own outcome is different to part 1. So will need to remap this and recalculate the scores.
+
+### Day Three - Rucksack Reorganization
+
+Opps I missed day two lol! I did this before the day 2 challenge...
+
+1. Put into JSON format! Array of objects (rucksacks) with `compartment one` and `compartment two` which are the strings split up equally
+2. Create a points mapper for the duplicate letters (gift item)
+3. Map through the rucksacks and get the duplicate letters in both containers, translate them into points and then sum them up
+4. Decided to add a key/value pair of `duplicateLetter` to the object so I don't have to re-loop through the array again.
+5. Also added tests for the letter duplicate function for confidence. It is helpful for debugging and refactoring. I will add tests when I think its helpful (more complex functions where things could break if other parts of the code are changed)
+
+#### Part 2
+
+6. Write a function based off checkDuplicateLetter() which checks 3 words instead of 2 for duplicate letters
+7. Make a new object which groups 3 rucksacks together and use the function in (6) to check the duplicate letter. This function was a bit tough so I wrote some tests for it. In the end I used the same function which compared two words, and added a third which compared that to the result of the two words.
+8. With an array of the letters, convert the numbers and sum them up
+9. ~~Refactored with a different method, combine all words together and just check for duplicates as one combined string~~ This doesn't work due to the fact that some words are going to have duplicate letters in them therefore skewing the results (Kinda went on tangent here but then went back to (7))
