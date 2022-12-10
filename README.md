@@ -31,7 +31,7 @@ npm install
 Type `npm start` to run node on the code for the answers
 Type `npm test` to run the jest tests
 
-## Dairy
+## Dairy (Probs wont make sense to anyone else this is just me recording my thoughts and process)
 
 ### Day One - Calorie Counting
 
@@ -74,3 +74,21 @@ Opps I missed day two lol! I did this before the day 2 challenge...
 7. Make a new object which groups 3 rucksacks together and use the function in (6) to check the duplicate letter. This function was a bit tough so I wrote some tests for it. In the end I used the same function which compared two words, and added a third which compared that to the result of the two words.
 8. With an array of the letters, convert the numbers and sum them up
 9. ~~Refactored with a different method, combine all words together and just check for duplicates as one combined string~~ This doesn't work due to the fact that some words are going to have duplicate letters in them therefore skewing the results (Kinda went on tangent here but then went back to (7))
+
+### Day Four - Camp Cleanup
+
+1. Write out a test using the example.
+2. As per usual, gonna reformat the data into JSON object as it has served me well for part 2s.
+3. Each object is an assigned cleanup team, inside that there will be `firstSection`, `secondSection`, and a boolean `isOverlapping`
+4. The sections will be mapped into another object based on a text split. The overlap calculation will be checking if the starting number is larger than the starting number of the second section, as well as the ending number being larger than the second section, if both are true, it should be overlapping
+
+This went pretty straightforward but I had overlooked 3 things:
+
+1. Numbers being the same counting as one section, eg 1-1 is section 1. Resolved by checking if they're the same and the checking it against the highest number
+2. Not realising that same numbers count as being within another section. Solved by using >= or <= instead
+3. That it didn't matter which section contained the other, it can go either way!
+
+#### Part 2
+
+4. Should be easy enough to modify the existing function to say if any number's range includes another then its an overlap
+5. Oh how wrong I was!! Was very confusing due to the extra possiblities that can occur. Was very confusing, really needed tests to help me do this step by step.

@@ -23,3 +23,14 @@ export interface RPSMatch {
   opponent: RPS
   score: number
 }
+
+export interface Sections {
+  firstSection: string
+  secondSection: string
+  isOverlapping: boolean
+}
+
+export interface ResolveSection {
+  sections: string[]
+  anyOverlap?: boolean
+}
