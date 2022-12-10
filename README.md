@@ -92,3 +92,10 @@ This went pretty straightforward but I had overlooked 3 things:
 
 4. Should be easy enough to modify the existing function to say if any number's range includes another then its an overlap
 5. Oh how wrong I was!! Was very confusing due to the extra possiblities that can occur. Was very confusing, really needed tests to help me do this step by step.
+
+### Day Five - Supply Stacks
+
+1. This task comprises of a lot of stacks (arrays) where elements are moving in and out of each other.
+2. Modify the current object into JSON format so that its workable with. What I'm thinking of is to have an object with 9 key value pairs, where all of those represent a stack and has a value of an array. So it will be an object with 9 arrays.
+3. With tests, code out a function which takes in a command, the starting stack and the target stack. Might need to abstract out another function which translates the text commands. Note the order of the stacks, it might need reversing of the number of elements that get moved.
+4. Collect up the crate letters on top of the stacks for the answer.

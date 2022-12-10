@@ -6,6 +6,7 @@ import {
 } from './day03-rucksack-reorganization'
 import { dayFourPartOne, dayFourPartTwo } from './day04-camp-cleanup'
 
+/*
 console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
 console.warn(`Day 1 part 2 - Total calories of top 3 is ${dayOnePartTwo()}`)
 console.warn(`Day 2 part 1 - The sum of all the points are ${dayTwoPartOne()}`)
@@ -23,4 +24,8 @@ console.warn(
 )
 console.warn(
   `Day 4 part 2 - The number of overlapped cleaning sections are ${dayFourPartTwo()}`
+)
+*/
+console.warn(
+  `Day 5 part 1 - The top crates from all the stacks are ${dayOnePartOne()}`
 )

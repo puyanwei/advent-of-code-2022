@@ -88,3 +88,55 @@ export const rpsStringToPointsMap: Record<string, number> = {
   draw: 3,
   lose: 0,
 }
+
+export const initialSupplyStacks = [
+  {
+    stackNumber: 1,
+    crates: ['G', 'T', 'R', 'W', 'M', 'S', 'V', 'W'],
+  },
+  {
+    stackNumber: 2,
+    crates: ['G', 'C', 'H', 'P', 'G', 'M'],
+  },
+  {
+    stackNumber: 3,
+    crates: ['C', 'L', 'T', 'S', 'W', 'R', 'F'],
+  },
+  {
+    stackNumber: 4,
+    crates: ['J', 'H', 'D', 'M', 'S', 'W', 'F', 'J'],
+  },
+  {
+    stackNumber: 5,
+    crates: ['P', 'Q', 'L', 'H', 'F', 'M', 'S'],
+  },
+  {
+    stackNumber: 6,
+    crates: ['P', 'J', 'D', 'N', 'G', 'C', 'S', 'J'],
+  },
+  {
+    stackNumber: 7,
+    crates: ['Z', 'B', 'D', 'F'],
+  },
+  {
+    stackNumber: 8,
+    crates: ['R', 'T', 'B'],
+  },
+  {
+    stackNumber: 9,
+    crates: ['H', 'N', 'W', 'L'],
+  },
+]
+
+/* 
+Starting crates positions
+[W]         [J]     [J]        
+[V]     [F] [F] [S] [S]        
+[S] [M] [R] [W] [M] [C]        
+[M] [G] [W] [S] [F] [G]     [C]
+[W] [P] [S] [M] [H] [N] [F]     [L]
+[R] [H] [T] [D] [L] [D] [D] [B] [W]
+[T] [C] [L] [H] [Q] [J] [B] [T] [N]
+[G] [G] [C] [J] [P] [P] [Z] [R] [H]
+1   2   3   4   5   6   7   8   9 
+*/
