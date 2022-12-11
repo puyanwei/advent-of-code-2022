@@ -1,3 +1,5 @@
+import { SupplyStack } from '../day05-supply-stacks'
+
 export const alphabetrpsMatchPointsMapper: Record<string, number> = {
   a: 1,
   b: 2,
@@ -89,7 +91,7 @@ export const rpsStringToPointsMap: Record<string, number> = {
   lose: 0,
 }
 
-export const initialSupplyStacks = [
+export const initialSupplyStacks: SupplyStack[] = [
   {
     stackNumber: 1,
     crates: ['G', 'T', 'R', 'W', 'M', 'S', 'V', 'W'],

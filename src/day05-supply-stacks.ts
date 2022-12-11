@@ -1,3 +1,4 @@
+import { initialSupplyStacks } from './consts'
 import { data } from './data/stacks'
 
 /* 
@@ -13,14 +14,19 @@ Starting crates positions
 1   2   3   4   5   6   7   8   9 
 */
 
-interface SupplyStack {
+export interface SupplyStack {
   stackNumber: number
   crates: string[]
 }
 
 export function dayFivePartOne() {
-  const arrayOfStacks = data.split(`\n`)
-  console.log(arrayOfStacks)
+  let supplyStack = initialSupplyStacks
+  const arrayOfInstructions = data.split(`\n`)
+  arrayOfInstructions.forEach((instruction) => {
+    const translatedInstructions = translateInstructions(instruction)
+    supplyStack = moveStacks({ supplyStack, ...translatedInstructions })
+  })
+  console.log(supplyStack)
 }
 
 interface Instructions {
@@ -29,8 +35,8 @@ interface Instructions {
   target: number
 }
 
-export function translateInstructions(instructions: string): Instructions {
-  const array = instructions.split(` `)
+export function translateInstructions(instruction: string): Instructions {
+  const array = instruction.split(` `)
   const cratesToMove = parseInt(array[1])
   const from = parseInt(array[3])
   const target = parseInt(array[5])
@@ -41,11 +47,16 @@ export function translateInstructions(instructions: string): Instructions {
   }
 }
 
-interface MoveStacks extends Instructions {
+interface moveStacks extends Instructions {
   supplyStack: SupplyStack[]
 }
 
-function moveStacks({ supplyStack, cratesToMove, from, target }: MoveStacks) {
-  console.log(hello)
-  return ''
+export function moveStacks({
+  supplyStack,
+  cratesToMove,
+  from,
+  target,
+}: moveStacks) {
+  console.log({ supplyStack, cratesToMove, from, target })
+  return supplyStack
 }

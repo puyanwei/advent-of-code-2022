@@ -1,4 +1,8 @@
-import { translateInstructions } from '../day05-supply-stacks'
+import {
+  moveStacks,
+  SupplyStack,
+  translateInstructions,
+} from '../day05-supply-stacks'
 
 describe(`translateInstructions()`, () => {
   it(`extracts 3 numbers from the instructions string`, () => {
@@ -22,3 +26,51 @@ describe(`translateInstructions()`, () => {
     })
   })
 })
+
+describe(`moveStacks()`, () => {
+  it(`moves a stack according to the instructions`, () => {
+    const initialSupplyStack: SupplyStack[] = [
+      {
+        stackNumber: 1,
+        crates: ['Z', 'N'],
+      },
+      {
+        stackNumber: 2,
+        crates: ['M', 'C', 'D'],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P'],
+      },
+    ]
+    const result = moveStacks({
+      supplyStack: initialSupplyStack,
+      cratesToMove: 1,
+      from: 2,
+      target: 1,
+    })
+    expect(result).toEqual({
+      supplyStack: [
+        {
+          stackNumber: 1,
+          crates: ['Z', 'N', 'D'],
+        },
+        {
+          stackNumber: 2,
+          crates: ['M', 'C'],
+        },
+        {
+          stackNumber: 3,
+          crates: ['P'],
+        },
+      ],
+    })
+  })
+})
+
+/*
+[D]    
+[N] [C]    
+[Z] [M] [P]
+ 1   2   3 
+ */
