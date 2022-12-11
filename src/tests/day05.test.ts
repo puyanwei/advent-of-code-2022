@@ -28,7 +28,7 @@ describe(`translateInstructions()`, () => {
 })
 
 describe(`moveStacks()`, () => {
-  it(`moves a stack according to the instructions`, () => {
+  it.only(`moves a stack according to the instructions`, () => {
     const initialSupplyStack: SupplyStack[] = [
       {
         stackNumber: 1,
@@ -49,22 +49,20 @@ describe(`moveStacks()`, () => {
       from: 2,
       target: 1,
     })
-    expect(result).toEqual({
-      supplyStack: [
-        {
-          stackNumber: 1,
-          crates: ['Z', 'N', 'D'],
-        },
-        {
-          stackNumber: 2,
-          crates: ['M', 'C'],
-        },
-        {
-          stackNumber: 3,
-          crates: ['P'],
-        },
-      ],
-    })
+    expect(result).toEqual([
+      {
+        stackNumber: 1,
+        crates: ['Z', 'N', 'D'],
+      },
+      {
+        stackNumber: 2,
+        crates: ['M', 'C'],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P'],
+      },
+    ])
   })
 })
 
@@ -73,4 +71,9 @@ describe(`moveStacks()`, () => {
 [N] [C]    
 [Z] [M] [P]
  1   2   3 
+
+ move 1 from 2 to 1
+ move 3 from 1 to 3
+move 2 from 2 to 1
+move 1 from 1 to 2
  */

@@ -47,7 +47,7 @@ export function translateInstructions(instruction: string): Instructions {
   }
 }
 
-interface moveStacks extends Instructions {
+interface MoveStacks extends Instructions {
   supplyStack: SupplyStack[]
 }
 
@@ -56,7 +56,15 @@ export function moveStacks({
   cratesToMove,
   from,
   target,
-}: moveStacks) {
-  console.log({ supplyStack, cratesToMove, from, target })
+}: MoveStacks) {
+  // console.log({ supplyStack, cratesToMove, from, target })
+  const splicedCrates = supplyStack[from - 1].crates.splice(
+    supplyStack[from - 1].crates.length - cratesToMove,
+    cratesToMove
+  )
+  supplyStack[target - 1].crates.push(...splicedCrates)
+
+  console.log(supplyStack, { maxArrayLength: null })
+  // supplyStack[target -1].crates.push(cratesToMove)
   return supplyStack
 }
