@@ -18,6 +18,34 @@ interface SupplyStack {
   crates: string[]
 }
 
-export function dayFourPartOne() {
+export function dayFivePartOne() {
   const arrayOfStacks = data.split(`\n`)
+  console.log(arrayOfStacks)
+}
+
+interface Instructions {
+  cratesToMove: number
+  from: number
+  target: number
+}
+
+export function translateInstructions(instructions: string): Instructions {
+  const array = instructions.split(` `)
+  const cratesToMove = parseInt(array[1])
+  const from = parseInt(array[3])
+  const target = parseInt(array[5])
+  return {
+    cratesToMove,
+    from,
+    target,
+  }
+}
+
+interface MoveStacks extends Instructions {
+  supplyStack: SupplyStack[]
+}
+
+function moveStacks({ supplyStack, cratesToMove, from, target }: MoveStacks) {
+  console.log(hello)
+  return ''
 }

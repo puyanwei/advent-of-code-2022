@@ -5,6 +5,7 @@ import {
   dayThreePartTwo,
 } from './day03-rucksack-reorganization'
 import { dayFourPartOne, dayFourPartTwo } from './day04-camp-cleanup'
+import { dayFivePartOne } from './day05-supply-stacks'
 
 /*
 console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
@@ -27,5 +28,5 @@ console.warn(
 )
 */
 console.warn(
-  `Day 5 part 1 - The top crates from all the stacks are ${dayOnePartOne()}`
+  `Day 5 part 1 - The top crates from all the stacks are ${dayFivePartOne()}`
 )
