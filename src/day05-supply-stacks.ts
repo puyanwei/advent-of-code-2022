@@ -1,10 +1,9 @@
-import { initialSupplyStacks, initialSupplyStacks2 } from './consts'
+import {
+  initialSupplyStacks,
+  initialSupplyStacksForUpgradedCrane,
+} from './consts'
 import { data } from './data/stacks'
-
-export interface SupplyStack {
-  stackNumber: number
-  crates: string[]
-}
+import { Instructions, MoveStacks } from './types'
 
 export function dayFivePartOne() {
   let supplyStack = initialSupplyStacks
@@ -20,12 +19,11 @@ export function dayFivePartOne() {
 }
 
 export function dayFivePartTwo() {
-  let supplyStack = initialSupplyStacks2
+  let supplyStack = initialSupplyStacksForUpgradedCrane
   let count = 0
   const arrayOfInstructions = data.split(`\n`)
   arrayOfInstructions.forEach((instruction) => {
     const translatedInstructions = translateInstructions(instruction)
-    count++
     supplyStack = moveStacks({
       supplyStack,
       hasReversedStacking: false,
@@ -33,19 +31,10 @@ export function dayFivePartTwo() {
     })
   })
 
-  console.log({ count })
-  console.log({ instruction: arrayOfInstructions[count - 1] })
-  console.log(supplyStack, { maxArrayLength: null })
   const cratesOnTopOfStacks = supplyStack
     .map((stack) => stack.crates.at(-1))
     .join(``)
   return cratesOnTopOfStacks
-}
-
-interface Instructions {
-  cratesToMove: number
-  from: number
-  target: number
 }
 
 export function translateInstructions(instruction: string): Instructions {
@@ -58,11 +47,6 @@ export function translateInstructions(instruction: string): Instructions {
     from,
     target,
   }
-}
-
-interface MoveStacks extends Instructions {
-  supplyStack: SupplyStack[]
-  hasReversedStacking?: boolean
 }
 
 export function moveStacks({

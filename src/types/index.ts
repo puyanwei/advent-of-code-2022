@@ -34,3 +34,19 @@ export interface ResolveSection {
   sections: string[]
   anyOverlap?: boolean
 }
+
+export interface SupplyStack {
+  stackNumber: number
+  crates: string[]
+}
+
+export interface Instructions {
+  cratesToMove: number
+  from: number
+  target: number
+}
+
+export interface MoveStacks extends Instructions {
+  supplyStack: SupplyStack[]
+  hasReversedStacking?: boolean
+}

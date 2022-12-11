@@ -1,4 +1,4 @@
-import { SupplyStack } from '../day05-supply-stacks'
+import { SupplyStack } from '../types'
 
 export const alphabetrpsMatchPointsMapper: Record<string, number> = {
   a: 1,
@@ -141,7 +141,7 @@ export const initialSupplyStacks: SupplyStack[] = [
     crates: ['H', 'N', 'W', 'L', 'C'],
   },
 ]
-export const initialSupplyStacks2: SupplyStack[] = [
+export const initialSupplyStacksForUpgradedCrane: SupplyStack[] = [
   {
     stackNumber: 1,
     crates: ['G', 'T', 'R', 'W'],

@@ -11,6 +11,10 @@
     "serve": "concurrently \"npx tsc -w\"  \"nodemon dist/index.js\"",
     "test": "jest"
   },
+  "engines": {
+    "node": ">=17.0.0"
+  },
+  "engineStrict": true,
   "keywords": [],
   "author": "",
   "license": "ISC",

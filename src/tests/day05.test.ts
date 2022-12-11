@@ -1,8 +1,5 @@
-import {
-  moveStacks,
-  SupplyStack,
-  translateInstructions,
-} from '../day05-supply-stacks'
+import { moveStacks, translateInstructions } from '../day05-supply-stacks'
+import { SupplyStack } from '../types'
 
 describe(`translateInstructions()`, () => {
   it(`extracts 3 numbers from the instructions string`, () => {
