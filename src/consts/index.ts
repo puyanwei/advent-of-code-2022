@@ -141,3 +141,41 @@ export const initialSupplyStacks: SupplyStack[] = [
     crates: ['H', 'N', 'W', 'L', 'C'],
   },
 ]
+export const initialSupplyStacks2: SupplyStack[] = [
+  {
+    stackNumber: 1,
+    crates: ['G', 'T', 'R', 'W'],
+  },
+  {
+    stackNumber: 2,
+    crates: ['G', 'C', 'H', 'P', 'M', 'S', 'V', 'W'],
+  },
+  {
+    stackNumber: 3,
+    crates: ['C', 'L', 'T', 'S', 'G', 'M'],
+  },
+  {
+    stackNumber: 4,
+    crates: ['J', 'H', 'D', 'M', 'W', 'R', 'F'],
+  },
+  {
+    stackNumber: 5,
+    crates: ['P', 'Q', 'L', 'H', 'S', 'W', 'F', 'J'],
+  },
+  {
+    stackNumber: 6,
+    crates: ['P', 'J', 'D', 'N', 'F', 'M', 'S'],
+  },
+  {
+    stackNumber: 7,
+    crates: ['Z', 'B', 'D', 'F', 'G', 'C', 'S', 'J'],
+  },
+  {
+    stackNumber: 8,
+    crates: ['R', 'T', 'B'],
+  },
+  {
+    stackNumber: 9,
+    crates: ['H', 'N', 'W', 'L', 'C'],
+  },
+]

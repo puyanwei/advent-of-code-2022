@@ -133,15 +133,113 @@ describe(`moveStacks()`, () => {
     ])
   })
 })
+describe(`moveStacks() when hasReversedStacking option toggled on`, () => {
+  it(`moves a stack according to the instructions`, () => {
+    const initialSupplyStack: SupplyStack[] = [
+      {
+        stackNumber: 1,
+        crates: ['Z', 'N'],
+      },
+      {
+        stackNumber: 2,
+        crates: ['M', 'C', 'D'],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P'],
+      },
+    ]
 
-/*
-[D]    
-[N] [C]    
-[Z] [M] [P]
- 1   2   3 
+    const result1 = moveStacks({
+      supplyStack: initialSupplyStack,
+      cratesToMove: 1,
+      from: 2,
+      target: 1,
+      hasReversedStacking: false,
+    })
 
- move 1 from 2 to 1
- move 3 from 1 to 3
-move 2 from 2 to 1
-move 1 from 1 to 2
- */
+    expect(result1).toEqual([
+      {
+        stackNumber: 1,
+        crates: ['Z', 'N', 'D'],
+      },
+      {
+        stackNumber: 2,
+        crates: ['M', 'C'],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P'],
+      },
+    ])
+
+    const result2 = moveStacks({
+      supplyStack: result1,
+      cratesToMove: 3,
+      from: 1,
+      target: 3,
+      hasReversedStacking: false,
+    })
+
+    expect(result2).toEqual([
+      {
+        stackNumber: 1,
+        crates: [],
+      },
+      {
+        stackNumber: 2,
+        crates: ['M', 'C'],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P', 'Z', 'N', 'D'],
+      },
+    ])
+
+    const result3 = moveStacks({
+      supplyStack: result2,
+      cratesToMove: 2,
+      from: 2,
+      target: 1,
+      hasReversedStacking: false,
+    })
+
+    expect(result3).toEqual([
+      {
+        stackNumber: 1,
+        crates: ['M', 'C'],
+      },
+      {
+        stackNumber: 2,
+        crates: [],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P', 'Z', 'N', 'D'],
+      },
+    ])
+
+    const result4 = moveStacks({
+      supplyStack: result3,
+      cratesToMove: 1,
+      from: 1,
+      target: 2,
+      hasReversedStacking: false,
+    })
+
+    expect(result4).toEqual([
+      {
+        stackNumber: 1,
+        crates: ['M'],
+      },
+      {
+        stackNumber: 2,
+        crates: ['C'],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P', 'Z', 'N', 'D'],
+      },
+    ])
+  })
+})

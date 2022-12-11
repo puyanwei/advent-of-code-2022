@@ -101,3 +101,7 @@ This went pretty straightforward but I had overlooked 3 things:
 4. Collect up the crate letters on top of the stacks for the answer.
 
 Was pretty straightforward until getting the final answer. I had the wrong starting example and also forgot use the whole dataset! I had shorted the original data set for testing and have it so it didn't show a crazy amount of logs in the console.
+
+#### Part 2
+
+5. The payoff to my elaberate JSON formatting code? Should just need to take out the reverse() in my moveCrate function!
