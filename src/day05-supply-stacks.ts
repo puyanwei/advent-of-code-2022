@@ -1,19 +1,6 @@
 import { initialSupplyStacks } from './consts'
 import { data } from './data/stacks'
 
-/* 
-Starting crates positions
-[W]         [J]     [J]        
-[V]     [F] [F] [S] [S]        
-[S] [M] [R] [W] [M] [C]        
-[M] [G] [W] [S] [F] [G]     [C]
-[W] [P] [S] [M] [H] [N] [F]     [L]
-[R] [H] [T] [D] [L] [D] [D] [B] [W]
-[T] [C] [L] [H] [Q] [J] [B] [T] [N]
-[G] [G] [C] [J] [P] [P] [Z] [R] [H]
-1   2   3   4   5   6   7   8   9 
-*/
-
 export interface SupplyStack {
   stackNumber: number
   crates: string[]
@@ -21,12 +8,19 @@ export interface SupplyStack {
 
 export function dayFivePartOne() {
   let supplyStack = initialSupplyStacks
+  let count = 0
   const arrayOfInstructions = data.split(`\n`)
   arrayOfInstructions.forEach((instruction) => {
+    count++
     const translatedInstructions = translateInstructions(instruction)
     supplyStack = moveStacks({ supplyStack, ...translatedInstructions })
+    console.log({ count })
+    console.log(supplyStack, { maxArrayLength: null })
   })
-  console.log(supplyStack)
+  const cratesOnTopOfStacks = supplyStack
+    .map((stack) => stack.crates.at(-1))
+    .join(``)
+  return cratesOnTopOfStacks
 }
 
 interface Instructions {
@@ -57,14 +51,14 @@ export function moveStacks({
   from,
   target,
 }: MoveStacks) {
-  // console.log({ supplyStack, cratesToMove, from, target })
-  const splicedCrates = supplyStack[from - 1].crates.splice(
-    supplyStack[from - 1].crates.length - cratesToMove,
+  const startingStack = supplyStack[from - 1]
+  // if (startingStack.crates.length === 0)
+  //   throw Error(`Attempting to splice empty array`)
+  const splicedCrates = startingStack.crates.splice(
+    startingStack.crates.length - cratesToMove,
     cratesToMove
   )
-  supplyStack[target - 1].crates.push(...splicedCrates)
+  supplyStack[target - 1].crates.push(...splicedCrates.reverse())
 
-  console.log(supplyStack, { maxArrayLength: null })
-  // supplyStack[target -1].crates.push(cratesToMove)
   return supplyStack
 }

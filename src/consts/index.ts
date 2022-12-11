@@ -91,34 +91,46 @@ export const rpsStringToPointsMap: Record<string, number> = {
   lose: 0,
 }
 
+/* Starting crate stack positions
+    [W]         [J]     [J]        
+    [V]     [F] [F] [S] [S]        
+    [S] [M] [R] [W] [M] [C]        
+    [M] [G] [W] [S] [F] [G]     [C]
+[W] [P] [S] [M] [H] [N] [F]     [L]
+[R] [H] [T] [D] [L] [D] [D] [B] [W]
+[T] [C] [L] [H] [Q] [J] [B] [T] [N]
+[G] [G] [C] [J] [P] [P] [Z] [R] [H]
+ 1   2   3   4   5   6   7   8   9 
+*/
+
 export const initialSupplyStacks: SupplyStack[] = [
   {
     stackNumber: 1,
-    crates: ['G', 'T', 'R', 'W', 'M', 'S', 'V', 'W'],
+    crates: ['G', 'T', 'R', 'W'],
   },
   {
     stackNumber: 2,
-    crates: ['G', 'C', 'H', 'P', 'G', 'M'],
+    crates: ['G', 'C', 'H', 'P', 'M', 'S', 'V', 'W'],
   },
   {
     stackNumber: 3,
-    crates: ['C', 'L', 'T', 'S', 'W', 'R', 'F'],
+    crates: ['C', 'L', 'T', 'S', 'G', 'M'],
   },
   {
     stackNumber: 4,
-    crates: ['J', 'H', 'D', 'M', 'S', 'W', 'F', 'J'],
+    crates: ['J', 'H', 'D', 'M', 'W', 'R', 'F'],
   },
   {
     stackNumber: 5,
-    crates: ['P', 'Q', 'L', 'H', 'F', 'M', 'S'],
+    crates: ['P', 'Q', 'L', 'H', 'S', 'W', 'F', 'J'],
   },
   {
     stackNumber: 6,
-    crates: ['P', 'J', 'D', 'N', 'G', 'C', 'S', 'J'],
+    crates: ['P', 'J', 'D', 'N', 'F', 'M', 'S'],
   },
   {
     stackNumber: 7,
-    crates: ['Z', 'B', 'D', 'F'],
+    crates: ['Z', 'B', 'D', 'F', 'G', 'C', 'S', 'J'],
   },
   {
     stackNumber: 8,
@@ -126,19 +138,6 @@ export const initialSupplyStacks: SupplyStack[] = [
   },
   {
     stackNumber: 9,
-    crates: ['H', 'N', 'W', 'L'],
+    crates: ['H', 'N', 'W', 'L', 'C'],
   },
 ]
-
-/* 
-Starting crates positions
-[W]         [J]     [J]        
-[V]     [F] [F] [S] [S]        
-[S] [M] [R] [W] [M] [C]        
-[M] [G] [W] [S] [F] [G]     [C]
-[W] [P] [S] [M] [H] [N] [F]     [L]
-[R] [H] [T] [D] [L] [D] [D] [B] [W]
-[T] [C] [L] [H] [Q] [J] [B] [T] [N]
-[G] [G] [C] [J] [P] [P] [Z] [R] [H]
-1   2   3   4   5   6   7   8   9 
-*/

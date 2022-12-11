@@ -99,3 +99,5 @@ This went pretty straightforward but I had overlooked 3 things:
 2. Modify the current object into JSON format so that its workable with. What I'm thinking of is to have an object with 9 key value pairs, where all of those represent a stack and has a value of an array. So it will be an object with 9 arrays.
 3. With tests, code out a function which takes in a command, the starting stack and the target stack. Might need to abstract out another function which translates the text commands. Note the order of the stacks, it might need reversing of the number of elements that get moved.
 4. Collect up the crate letters on top of the stacks for the answer.
+
+Was pretty straightforward until getting the final answer. I had the wrong starting example and also forgot use the whole dataset! I had shorted the original data set for testing and have it so it didn't show a crazy amount of logs in the console.

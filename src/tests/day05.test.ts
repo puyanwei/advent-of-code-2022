@@ -28,7 +28,7 @@ describe(`translateInstructions()`, () => {
 })
 
 describe(`moveStacks()`, () => {
-  it.only(`moves a stack according to the instructions`, () => {
+  it(`moves a stack according to the instructions`, () => {
     const initialSupplyStack: SupplyStack[] = [
       {
         stackNumber: 1,
@@ -43,13 +43,15 @@ describe(`moveStacks()`, () => {
         crates: ['P'],
       },
     ]
-    const result = moveStacks({
+
+    const result1 = moveStacks({
       supplyStack: initialSupplyStack,
       cratesToMove: 1,
       from: 2,
       target: 1,
     })
-    expect(result).toEqual([
+
+    expect(result1).toEqual([
       {
         stackNumber: 1,
         crates: ['Z', 'N', 'D'],
@@ -61,6 +63,72 @@ describe(`moveStacks()`, () => {
       {
         stackNumber: 3,
         crates: ['P'],
+      },
+    ])
+
+    const result2 = moveStacks({
+      supplyStack: result1,
+      cratesToMove: 3,
+      from: 1,
+      target: 3,
+    })
+
+    expect(result2).toEqual([
+      {
+        stackNumber: 1,
+        crates: [],
+      },
+      {
+        stackNumber: 2,
+        crates: ['M', 'C'],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P', 'D', 'N', 'Z'],
+      },
+    ])
+
+    const result3 = moveStacks({
+      supplyStack: result2,
+      cratesToMove: 2,
+      from: 2,
+      target: 1,
+    })
+
+    expect(result3).toEqual([
+      {
+        stackNumber: 1,
+        crates: ['C', 'M'],
+      },
+      {
+        stackNumber: 2,
+        crates: [],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P', 'D', 'N', 'Z'],
+      },
+    ])
+
+    const result4 = moveStacks({
+      supplyStack: result3,
+      cratesToMove: 1,
+      from: 1,
+      target: 2,
+    })
+
+    expect(result4).toEqual([
+      {
+        stackNumber: 1,
+        crates: ['C'],
+      },
+      {
+        stackNumber: 2,
+        crates: ['M'],
+      },
+      {
+        stackNumber: 3,
+        crates: ['P', 'D', 'N', 'Z'],
       },
     ])
   })
