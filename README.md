@@ -105,3 +105,7 @@ Was pretty straightforward until getting the final answer. I had the wrong start
 #### Part 2
 
 5. The payoff to my elaberate JSON formatting code? Should just need to take out the reverse() in my moveCrate function!
+
+Added an optional boolean to the `moveStacks()` function, as well as some tests as this didn't work correctly. In the end this was due to my initial stacks array's reference getting mixed up with part 1's calculations.
+
+I attempted to use the newly added `structuredClone` to clone the object, but this is only available in node v17, and I am not sure how I can enforce this version with this project. So in the end I just made an actual copy for the 2nd part to reference.
