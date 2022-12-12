@@ -6,7 +6,8 @@ import {
 } from './day03-rucksack-reorganization'
 import { dayFourPartOne, dayFourPartTwo } from './day04-camp-cleanup'
 import { dayFivePartOne, dayFivePartTwo } from './day05-supply-stacks'
-
+import { daySixPartOne } from './day06-tuning-trouble'
+/*
 console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
 console.warn(`Day 1 part 2 - Total calories of top 3 is ${dayOnePartTwo()}`)
 console.warn(`Day 2 part 1 - The sum of all the points are ${dayTwoPartOne()}`)
@@ -30,4 +31,8 @@ console.warn(
 )
 console.warn(
   `Day 5 part 2 - The top crates from all the stacks using the CraneMover 9001 are ${dayFivePartTwo()}`
+)
+*/
+console.warn(
+  `Day 5 part 2 - The first marker appears after character ${daySixPartOne()}`
 )

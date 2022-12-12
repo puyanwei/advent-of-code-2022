@@ -109,3 +109,9 @@ Was pretty straightforward until getting the final answer. I had the wrong start
 Added an optional boolean to the `moveStacks()` function, as well as some tests as this didn't work correctly. In the end this was due to my initial stacks array's reference getting mixed up with part 1's calculations.
 
 I attempted to use the newly added `structuredClone` to clone the object, but this is only available in node v17, and I am not sure how I can enforce this version with this project. So in the end I just made an actual copy for the 2nd part to reference.
+
+### Day Six - Tuning Trouble
+
+1. Explore with Sets and strings, wondering if they work without being in an array like normal arrays? Sets are good to use as a comparison as they don't repeat elements. Also explore `includes` for strings, might be better then using a ===
+2. Need a way of looping through the long input string which only takes a string of four letters. Each move should push out the last letter and add in the first letter. Possible recursion?
+3. Write tests to help with visibility in writing this function. Doesn't look like I'm going to reformat the data into a JSON object this time!
