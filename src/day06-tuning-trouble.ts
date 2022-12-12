@@ -1,49 +1,31 @@
 import { data } from './data/tuning'
+import { ResolveMarker } from './types'
 
 export function daySixPartOne() {
-  return resolveMarker({ string: data })
+  return resolveMarker({ string: data, wordLength: 4 })
 }
 export function daySixPartTwo() {
-  return resolveMarkerMessages({ string: data })
-}
-interface ResolveMarker {
-  string: string
-  count?: number
+  return resolveMarker({ string: data, wordLength: 14 })
 }
 
-export function resolveMarker({ string }: ResolveMarker): number {
-  let count = 0
-  const currentPacket = getCharacters(string, count, 4)
-  const hasUniqueCharacters = new Set(currentPacket).size === 4
-
-  // No duplicates found by end of string
-  if (string.length === count - 4) return 0
-
-  if (!hasUniqueCharacters) {
-    count++
-    const start = count
-    return resolveMarker({ string })
-  }
-  return count + 4
-}
-
-export function resolveMarkerMessages({
+export function resolveMarker({
   string,
   count: resolvedCount = 0,
+  wordLength,
 }: ResolveMarker): number {
   let count = resolvedCount
-  const currentPacket = getCharacters(string, count, 14)
-  const hasUniqueCharacters = new Set(currentPacket).size === 14
+  const currentPacket = getCharacters(string, count, wordLength)
+  const hasUniqueCharacters = new Set(currentPacket).size === wordLength
 
   // No duplicates found by end of string
-  if (string.length === count - 14) return 0
+  if (string.length === count - wordLength) return 0
 
   if (!hasUniqueCharacters) {
     count++
     const start = count
-    return resolveMarkerMessages({ string, count })
+    return resolveMarker({ string, count, wordLength })
   }
-  return count + 14
+  return count + wordLength
 }
 
 export function getCharacters(

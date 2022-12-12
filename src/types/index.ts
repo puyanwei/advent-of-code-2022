@@ -50,3 +50,8 @@ export interface MoveStacks extends Instructions {
   supplyStack: SupplyStack[]
   hasReversedStacking?: boolean
 }
+export interface ResolveMarker {
+  string: string
+  wordLength: number
+  count?: number
+}

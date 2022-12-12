@@ -1,8 +1,4 @@
-import {
-  getCharacters,
-  resolveMarker,
-  resolveMarkerMessages,
-} from '../day06-tuning-trouble'
+import { getCharacters, resolveMarker } from '../day06-tuning-trouble'
 
 describe(`getFourCharacters()`, () => {
   it(`returns four characters from a string`, () => {
@@ -17,46 +13,66 @@ describe(`getFourCharacters()`, () => {
   })
 })
 
-describe(`resolveMarker()`, () => {
+describe(`resolveMarker() with 4 characters`, () => {
   it(`returns the character number once it finds the first marker`, () => {
-    expect(resolveMarker({ string: `bvwbjplbgvbhsrlpgdmjqwftvncz` })).toEqual(5)
-    expect(resolveMarker({ string: `nppdvjthqldpwncqszvftbrmjlhg` })).toEqual(6)
     expect(
-      resolveMarker({ string: `nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg` })
+      resolveMarker({ string: `bvwbjplbgvbhsrlpgdmjqwftvncz`, wordLength: 4 })
+    ).toEqual(5)
+    expect(
+      resolveMarker({ string: `nppdvjthqldpwncqszvftbrmjlhg`, wordLength: 4 })
+    ).toEqual(6)
+    expect(
+      resolveMarker({
+        string: `nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg`,
+        wordLength: 4,
+      })
     ).toEqual(10)
     expect(
-      resolveMarker({ string: `zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw` })
+      resolveMarker({
+        string: `zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw`,
+        wordLength: 4,
+      })
     ).toEqual(11)
   })
   it(`returns zero if no found marker`, () => {
-    expect(resolveMarker({ string: `aaaaaaaaaaaaaaaaaaaaaa` })).toEqual(0)
+    expect(
+      resolveMarker({ string: `aaaaaaaaaaaaaaaaaaaaaa`, wordLength: 4 })
+    ).toEqual(0)
   })
 })
 
-describe(`resolveMarkerMessages()`, () => {
+describe(`resolveMarker() part 2 with 14 characters`, () => {
   it.only(`returns the character number once it finds the first marker`, () => {
     expect(
-      resolveMarkerMessages({
+      resolveMarker({
         string: `mjqjpqmgbljsphdztnvjfqwrcgsmlb`,
+        wordLength: 14,
       })
     ).toEqual(19)
     expect(
-      resolveMarkerMessages({ string: `bvwbjplbgvbhsrlpgdmjqwftvncz` })
+      resolveMarker({ string: `bvwbjplbgvbhsrlpgdmjqwftvncz`, wordLength: 14 })
     ).toEqual(23)
     expect(
-      resolveMarkerMessages({ string: `nppdvjthqldpwncqszvftbrmjlhg` })
+      resolveMarker({ string: `nppdvjthqldpwncqszvftbrmjlhg`, wordLength: 14 })
     ).toEqual(23)
     expect(
-      resolveMarkerMessages({ string: `nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg` })
+      resolveMarker({
+        string: `nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg`,
+        wordLength: 14,
+      })
     ).toEqual(29)
     expect(
-      resolveMarkerMessages({ string: `zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw` })
+      resolveMarker({
+        string: `zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw`,
+        wordLength: 14,
+      })
     ).toEqual(26)
   })
   it(`returns zero if no found marker`, () => {
     expect(
-      resolveMarkerMessages({
+      resolveMarker({
         string: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`,
+        wordLength: 14,
       })
     ).toEqual(0)
   })
