@@ -42,7 +42,7 @@ describe(`resolveMarker() with 4 characters`, () => {
 })
 
 describe(`resolveMarker() part 2 with 14 characters`, () => {
-  it.only(`returns the character number once it finds the first marker`, () => {
+  it(`returns the character number once it finds the first marker`, () => {
     expect(
       resolveMarker({
         string: `mjqjpqmgbljsphdztnvjfqwrcgsmlb`,

@@ -115,3 +115,7 @@ I attempted to use the newly added `structuredClone` to clone the object, but th
 1. Explore with Sets and strings, wondering if they work without being in an array like normal arrays? Sets are good to use as a comparison as they don't repeat elements. Also explore `includes` for strings, might be better then using a ===
 2. Need a way of looping through the long input string which only takes a string of four letters. Each move should push out the last letter and add in the first letter. Possible recursion?
 3. Write tests to help with visibility in writing this function. Doesn't look like I'm going to reformat the data into a JSON object this time!
+
+#### Part 2
+
+4. Due to the code being split out into smaller functions, I generalised the function to take in a length word to adjust for part 2, wrote some extra tests and made sure they passed. Did make a bit of a tangent today so brought it back to the part 1 commit. Got it working then refactored.
