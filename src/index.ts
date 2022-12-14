@@ -7,6 +7,7 @@ import {
 import { dayFourPartOne, dayFourPartTwo } from './day04-camp-cleanup'
 import { dayFivePartOne, dayFivePartTwo } from './day05-supply-stacks'
 import { daySixPartOne, daySixPartTwo } from './day06-tuning-trouble'
+import { daySevenPartOne } from './day07-no-space-left'
 
 // console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
 // console.warn(`Day 1 part 2 - Total calories of top 3 is ${dayOnePartTwo()}`)
@@ -38,4 +39,6 @@ import { daySixPartOne, daySixPartTwo } from './day06-tuning-trouble'
 // console.warn(
 //   `Day 6 part 2 - The first message marker appears after character ${daySixPartTwo()}`
 // )
-console.warn(`Day 6 part 2 - The first message marker appears after character`)
+console.warn(
+  `Day 6 part 1 - The sum of the total sizes of directories under 100k is ${daySevenPartOne()}`
+)
