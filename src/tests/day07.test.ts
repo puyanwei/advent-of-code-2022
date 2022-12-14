@@ -1,32 +1,24 @@
-import { resolveFileTree } from '../day07-no-space-left'
+import { commands } from '../consts'
+import { resolveDirectoryName, resolveFileTree } from '../day07-no-space-left'
 
 describe(`resolveFileTree()`, () => {
   it(`uses the input data and returns a directory object`, () => {
-    const commands = [
-      '$ cd /',
-      '$ ls',
-      'dir a',
-      '14848514 b.txt',
-      '8504156 c.dat',
-      'dir d',
-      '$ cd a',
-      '$ ls',
-      'dir e',
-      '29116 f',
-      '2557 g',
-      '62596 h.lst',
-      '$ cd e',
-      '$ ls',
-      '584 i',
-      '$ cd ..',
-      '$ cd ..',
-      '$ cd d',
-      '$ ls',
-      '4060174 j',
-      '8033020 d.log',
-      '5626152 d.ext',
-      '7214296 k',
-    ]
+    /* Exmample dataset
+- / (dir)
+  - a (dir)
+    - e (dir)
+      - i (file, size=584)
+    - f (file, size=29116)
+    - g (file, size=2557)
+    - h.lst (file, size=62596)
+  - b.txt (file, size=14848514)
+  - c.dat (file, size=8504156)
+  - d (dir)
+    - j (file, size=4060174)
+    - d.log (file, size=8033020)
+    - d.ext (file, size=5626152)
+    - k (file, size=7214296)
+*/
     const output = [
       {
         name: '/',
@@ -70,19 +62,29 @@ describe(`resolveFileTree()`, () => {
   })
 })
 
-/*
-- / (dir)
-  - a (dir)
-    - e (dir)
-      - i (file, size=584)
-    - f (file, size=29116)
-    - g (file, size=2557)
-    - h.lst (file, size=62596)
-  - b.txt (file, size=14848514)
-  - c.dat (file, size=8504156)
-  - d (dir)
-    - j (file, size=4060174)
-    - d.log (file, size=8033020)
-    - d.ext (file, size=5626152)
-    - k (file, size=7214296)
-*/
+describe(`resolveDirectoryName()`, () => {
+  it(`it returns the directory name from the command`, () => {
+    const result = resolveDirectoryName(`$ cd documents`, [`documents`])
+    expect(result).toEqual(`documents`)
+  })
+  it(`it returns the directory name if it has a space from the command`, () => {
+    const result = resolveDirectoryName(`$ cd My Documents`, [`My Documents`])
+    expect(result).toEqual(`My Documents`)
+  })
+  it.only(`it returns the directory from a level above if command is '$ cd ..'`, () => {
+    const result = resolveDirectoryName(`$ cd ..`, [
+      'D:/',
+      'My Pictures',
+      'Holiday in Greece',
+    ])
+    expect(result).toEqual(`My Pictures`)
+  })
+  it(`it returns undefined and console.warns an error if command is '$ cd ..' when it is at the top level`, () => {
+    const result = resolveDirectoryName(`$ cd ..`, [
+      'D:/',
+      'My Pictures',
+      'D:/',
+    ])
+    expect(result).toEqual(undefined)
+  })
+})
