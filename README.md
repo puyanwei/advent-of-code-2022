@@ -119,3 +119,11 @@ I attempted to use the newly added `structuredClone` to clone the object, but th
 #### Part 2
 
 4. Due to the code being split out into smaller functions, I generalised the function to take in a length word to adjust for part 2, wrote some extra tests and made sure they passed. Did make a bit of a tangent today so brought it back to the part 1 commit. Got it working then refactored.
+
+### Day 7 - No Space Left On Devie
+
+1. In solving the problem as fast as possible, I would assume that we would want to keep track of the `cd` commands to see how deep into the file system we are, and sum up the numbers there. However with the anticipation of part 2, I would like to put the data into JSON format so that its flexible to use for it.
+2. Write up the interface for the object. This should be a tree style recursive object, with nodes and children (which contains more nodes). There should be a `file` interface which contains information about the files that are not nodes.
+3. Using the example, write a test for the expected object.
+4. Once the object is completed, use a loop/recursion to sum up the sizes of all directories
+5. Sum up the sizes of all the directories that are under 100k for the answer
