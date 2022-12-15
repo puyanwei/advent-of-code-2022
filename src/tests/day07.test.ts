@@ -62,7 +62,7 @@ describe(`resolveFileTree()`, () => {
   })
 })
 
-describe(`resolveDirectoryName()`, () => {
+describe.only(`resolveDirectoryName()`, () => {
   it(`it returns the directory name from the command`, () => {
     const result = resolveDirectoryName({ command: `cd documents` }, [
       `documents`,
@@ -75,7 +75,7 @@ describe(`resolveDirectoryName()`, () => {
     ])
     expect(result).toEqual(`My Documents`)
   })
-  it.only(`it returns the directory from a level above if command is 'cd ..'`, () => {
+  it(`it returns the directory from a level above if command is 'cd ..'`, () => {
     const result = resolveDirectoryName({ command: `cd ..` }, [
       'D:/',
       'My Pictures',

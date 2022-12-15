@@ -59,7 +59,6 @@ export function resolveDirectoryName({ command }: Command, history: string[]) {
     return
   }
   if (secondWord === `..` && !isTopLevel) {
-    console.log({ history })
     return history.at(-2) as string
   }
   return getAllButLastWord(command, ' ')
@@ -71,6 +70,6 @@ function getFirstWord(string: string, splitCondition: string) {
 
 function getAllButLastWord(string: string, splitCondition: string) {
   const arrayOfStrings = string.split(splitCondition)
-  const rest = arrayOfStrings.slice(1, arrayOfStrings.length)
+  const rest = arrayOfStrings.slice(1, arrayOfStrings.length).join(' ')
   return rest
 }
