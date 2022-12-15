@@ -55,3 +55,21 @@ export interface ResolveMarker {
   wordLength: number
   count?: number
 }
+
+export interface File {
+  name: string
+  type?: string // can create file type later, some are empty
+  size: number
+}
+
+export interface Directory {
+  name: string
+  files: File[]
+  directories: Directory[]
+  level: number
+}
+
+export interface Command {
+  command: string
+  dir?: string[]
+}

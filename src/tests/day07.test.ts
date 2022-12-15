@@ -64,23 +64,27 @@ describe(`resolveFileTree()`, () => {
 
 describe(`resolveDirectoryName()`, () => {
   it(`it returns the directory name from the command`, () => {
-    const result = resolveDirectoryName(`$ cd documents`, [`documents`])
+    const result = resolveDirectoryName({ command: `cd documents` }, [
+      `documents`,
+    ])
     expect(result).toEqual(`documents`)
   })
   it(`it returns the directory name if it has a space from the command`, () => {
-    const result = resolveDirectoryName(`$ cd My Documents`, [`My Documents`])
+    const result = resolveDirectoryName({ command: `cd My Documents` }, [
+      `My Documents`,
+    ])
     expect(result).toEqual(`My Documents`)
   })
-  it.only(`it returns the directory from a level above if command is '$ cd ..'`, () => {
-    const result = resolveDirectoryName(`$ cd ..`, [
+  it.only(`it returns the directory from a level above if command is 'cd ..'`, () => {
+    const result = resolveDirectoryName({ command: `cd ..` }, [
       'D:/',
       'My Pictures',
       'Holiday in Greece',
     ])
     expect(result).toEqual(`My Pictures`)
   })
-  it(`it returns undefined and console.warns an error if command is '$ cd ..' when it is at the top level`, () => {
-    const result = resolveDirectoryName(`$ cd ..`, [
+  it(`it returns undefined and console.warns an error if command is 'cd ..' when it is at the top level`, () => {
+    const result = resolveDirectoryName({ command: `cd ..` }, [
       'D:/',
       'My Pictures',
       'D:/',

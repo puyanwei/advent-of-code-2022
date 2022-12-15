@@ -1,5 +1,4 @@
-import { Directory, File } from '../day07-no-space-left'
-import { SupplyStack } from '../types'
+import { Directory, File, SupplyStack } from '../types'
 
 export const alphabetrpsMatchPointsMapper: Record<string, number> = {
   a: 1,
