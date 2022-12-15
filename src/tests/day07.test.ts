@@ -1,7 +1,11 @@
 import { commands } from '../consts'
-import { resolveDirectoryName, resolveFileTree } from '../day07-no-space-left'
+import {
+  createFilesArray,
+  resolveDirectoryName,
+  resolveFileTree,
+} from '../day07-no-space-left'
 
-describe(`resolveFileTree()`, () => {
+describe.skip(`resolveFileTree()`, () => {
   it(`uses the input data and returns a directory object`, () => {
     /* Exmample dataset
 - / (dir)
@@ -62,7 +66,7 @@ describe(`resolveFileTree()`, () => {
   })
 })
 
-describe.only(`resolveDirectoryName()`, () => {
+describe(`resolveDirectoryName()`, () => {
   it(`it returns the directory name from the command`, () => {
     const result = resolveDirectoryName({ command: `cd documents` }, [
       `documents`,
@@ -90,5 +94,18 @@ describe.only(`resolveDirectoryName()`, () => {
       'D:/',
     ])
     expect(result).toEqual(undefined)
+  })
+})
+
+describe(`createFilesArray()`, () => {
+  it(`returns a file object when a string of information is passed in`, () => {
+    const lines = 'ls\ndir e\n29116 f\n2557 g\n62596 h.lst\n'
+    const result = [
+      { name: 'dir e', type: 'dir', size: 0 },
+      { name: 'f', type: '', size: 29116 },
+      { name: 'g', type: '', size: 2557 },
+      { name: 'h', type: 'lst', size: 62596 },
+    ]
+    expect(createFilesArray(lines)).toMatchObject(result)
   })
 })
