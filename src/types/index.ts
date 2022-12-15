@@ -57,14 +57,14 @@ export interface ResolveMarker {
 }
 
 export interface File {
-  name: string
-  type?: string // can create file type later, some are empty
+  fileName: string
   size: number
 }
 
 export interface Directory {
-  name: string
-  level: number
+  directoryName: string
+  files: File[]
+  totalSize: number
 }
 
 export interface Command {
