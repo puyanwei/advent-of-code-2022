@@ -1,35 +1,69 @@
 import { commands } from './consts'
-import { Command, File } from './types'
+import { Command, Directory, File } from './types'
 
 export function daySevenPartOne() {
-  const listings = resolveCommands(commands)
-  listings.forEach((listing) => console.log(listing))
-
-  // return resolveFileTree(listings)
+  const resolvedCommands = resolveCommands(commands)
+  const resolvedCurrentDirectoryReference =
+    resolveCurrentDirectoryReference(resolvedCommands)
+  return resolveFileTree(resolvedCommands, resolvedCurrentDirectoryReference)
 }
 
-export function resolveFileTree(commands: Command[]) {
+export function resolveFileTree(
+  commands: Command[],
+  dirReference: Directory[]
+) {
+  const arrayOfLS = commands
+    .map((element) => {
+      if (element.command === 'ls') return element
+    })
+    .filter((e) => e !== undefined)
+  console.log({ arrayOfLS })
+
+  const updatedDirectories = arrayOfLS.map((element) => {
+    return element?.dir?.map((element) => {
+      if (element.type !== 'dir') return element
+      const resolvedName = getAllButLastWord(element.name, ' ')
+      return dirReference
+        .map((ref) => {
+          if (resolvedName === ref.name) {
+            return { ...element, level: ref.level }
+          }
+        })
+        .filter((e) => e !== undefined)
+    })
+  })
+
+  console.log(updatedDirectories.map((e) => console.log(e)))
+  return {}
+}
+
+export function resolveCurrentDirectoryReference(commands: Command[]) {
   let history: string[] = []
   let currentLevel = 0
-  const fileTree = commands.map((command) => {
-    const directoryName = resolveDirectoryName(command, history)
-    // if (!directoryName) return null
-    // history.push(directoryName)
+
+  const resolvedCurrentDirectoryReference = commands.map((element) => {
+    const directoryName = resolveDirectoryName(element.command, history)
+    if (!directoryName) return null
+    history.push(directoryName)
 
     // Resolve directory nesting level
-    // if (command === `$ cd ..`) currentLevel--
-    // if (command.includes(`$ cd`) && command !== `$ cd ..`) currentLevel++
+    if (element.command === `cd ..`) currentLevel--
+    if (element.command.includes(`cd`) && element.command !== `$ cd ..`)
+      currentLevel++
+
     return {
       name: directoryName,
-      //   files,
-      //   directories,
       level: currentLevel,
     }
   })
-  return fileTree
+
+  const currentDirectoryReference = resolvedCurrentDirectoryReference.filter(
+    (element) => element !== null
+  ) as Directory[]
+  return currentDirectoryReference
 }
 
-export function resolveDirectoryName({ command }: Command, history: string[]) {
+export function resolveDirectoryName(command: string, history: string[]) {
   const isTopLevel = history.at(0) === history.at(-1)
   const [firstWord, secondWord] = command.split(` `)
   if (command === `ls`) return

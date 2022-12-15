@@ -127,3 +127,7 @@ I attempted to use the newly added `structuredClone` to clone the object, but th
 3. Using the example, write a test for the expected object.
 4. Once the object is completed, use a loop/recursion to sum up the sizes of all directories
 5. Sum up the sizes of all the directories that are under 100k for the answer
+
+Ended up creating an extra object before resolving the main file tree object. This first object splits the commands into an array of command objects, which puts the listing files into one object so that it can be used later.
+
+I am for sure taking longer on this due to my curiosity on how a file tree could be organised and coded. In hignsight I should have added tests for this first commands object like I have for the main file tree one.

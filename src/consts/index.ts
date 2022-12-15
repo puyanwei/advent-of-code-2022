@@ -1,4 +1,4 @@
-import { Directory, File, SupplyStack } from '../types'
+import { Command, Directory, File, SupplyStack } from '../types'
 
 export const alphabetrpsMatchPointsMapper: Record<string, number> = {
   a: 1,
@@ -204,15 +204,47 @@ $ ls
 5626152 d.ext
 7214296 k`
 
-export const initialDirectory: Directory = {
-  name: '',
-  files: [],
-  directories: [],
-  level: 0,
-}
+export const listings: Command[] = [
+  { command: 'cd /' },
+  {
+    command: 'ls',
+    dir: [
+      { name: 'dir a', type: 'dir', size: 0 },
+      { name: 'b', type: 'txt', size: 14848514 },
+      { name: 'c', type: 'dat', size: 8504156 },
+      { name: 'dir d', type: 'dir', size: 0 },
+    ],
+  },
+  { command: 'cd a' },
+  {
+    command: 'ls',
+    dir: [
+      { name: 'dir e', type: 'dir', size: 0 },
+      { name: 'f', type: '', size: 29116 },
+      { name: 'g', type: '', size: 2557 },
+      { name: 'h', type: 'lst', size: 62596 },
+    ],
+  },
+  { command: 'cd e' },
+  { command: 'ls', dir: [{ name: 'i', type: '', size: 584 }] },
+  { command: 'cd ..' },
+  { command: 'cd ..' },
+  { command: 'cd d' },
+  {
+    command: 'ls',
+    dir: [
+      { name: 'j', type: '', size: 4060174 },
+      { name: 'd', type: 'log', size: 8033020 },
+      { name: 'd', type: 'ext', size: 5626152 },
+    ],
+  },
+]
 
-export const initialFile: File = {
-  name: '',
-  type: '',
-  size: 0,
-}
+export const dirReferences = [
+  { name: '/', level: 1 },
+  { name: 'a', level: 2 },
+  { name: 'e', level: 3 },
+  { name: 'a', level: 3 },
+  { name: 'e', level: 3 },
+  { name: 'd', level: 4 },
+]

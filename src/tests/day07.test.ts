@@ -1,4 +1,4 @@
-import { commands } from '../consts'
+import { dirReferences, listings } from '../consts'
 import {
   createFilesArray,
   resolveDirectoryName,
@@ -42,7 +42,6 @@ describe.skip(`resolveFileTree()`, () => {
               {
                 name: 'e',
                 files: [{ name: 'i', type: '', size: 584 }],
-                directories: [],
                 level: 3,
               },
             ],
@@ -62,25 +61,21 @@ describe.skip(`resolveFileTree()`, () => {
       },
     ]
 
-    expect(resolveFileTree(commands)).toEqual(output)
+    expect(resolveFileTree(listings, dirReferences)).toEqual(output)
   })
 })
 
 describe(`resolveDirectoryName()`, () => {
   it(`it returns the directory name from the command`, () => {
-    const result = resolveDirectoryName({ command: `cd documents` }, [
-      `documents`,
-    ])
+    const result = resolveDirectoryName(`cd documents`, [`documents`])
     expect(result).toEqual(`documents`)
   })
   it(`it returns the directory name if it has a space from the command`, () => {
-    const result = resolveDirectoryName({ command: `cd My Documents` }, [
-      `My Documents`,
-    ])
+    const result = resolveDirectoryName(`cd My Documents`, [`My Documents`])
     expect(result).toEqual(`My Documents`)
   })
   it(`it returns the directory from a level above if command is 'cd ..'`, () => {
-    const result = resolveDirectoryName({ command: `cd ..` }, [
+    const result = resolveDirectoryName(`cd ..`, [
       'D:/',
       'My Pictures',
       'Holiday in Greece',
@@ -88,11 +83,7 @@ describe(`resolveDirectoryName()`, () => {
     expect(result).toEqual(`My Pictures`)
   })
   it(`it returns undefined and console.warns an error if command is 'cd ..' when it is at the top level`, () => {
-    const result = resolveDirectoryName({ command: `cd ..` }, [
-      'D:/',
-      'My Pictures',
-      'D:/',
-    ])
+    const result = resolveDirectoryName(`cd ..`, ['D:/', 'My Pictures', 'D:/'])
     expect(result).toEqual(undefined)
   })
 })

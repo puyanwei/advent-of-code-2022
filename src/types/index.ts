@@ -64,12 +64,10 @@ export interface File {
 
 export interface Directory {
   name: string
-  files: File[]
-  directories: Directory[]
   level: number
 }
 
 export interface Command {
   command: string
-  dir?: string[]
+  dir?: File[]
 }
