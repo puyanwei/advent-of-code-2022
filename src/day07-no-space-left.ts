@@ -4,8 +4,12 @@ import { Directory, File } from './types'
 export function daySevenPartOne() {
   const directories = resolveDirectories(commands)
   const updatedDirectories = updateDirectoryTotals(directories)
-  const total = directories.reduce((acc, curr) => acc + curr.totalSize, 0)
-  directories.forEach((e) => console.log(e))
+  // const updateddDirectoryTotalsUnder100k =
+  //   updatedDirectoryTotalsUnder100k(updatedDirectories)
+  const total = updatedDirectories.reduce(
+    (acc, curr) => acc + curr.totalSize,
+    0
+  )
   return total
 }
 
@@ -21,8 +25,34 @@ function updateDirectoryTotals(directories: Directory[]) {
 
   const directoryIndexMap = resolveDirectoryIndexMap(directories)
   const rootDirectoryIndex = directoryIndexMap['/']
-  console.log(666666666, findDirectorySize(directories, rootDirectoryIndex))
-  return {}
+  const directoryToUpdate = findDirectorySize(directories, rootDirectoryIndex)
+  const numberOfDirectoriesToUpdate = Object.keys(directoryIndexMap).length
+
+  let newDirectory = directories
+  for (let index = 0; index < numberOfDirectoriesToUpdate; index++) {
+    const directoryToUpdate = findDirectorySize(
+      newDirectory,
+      rootDirectoryIndex
+    )
+    newDirectory = updatedDirectories(newDirectory, directoryToUpdate)
+  }
+
+  return newDirectory
+}
+
+function updatedDirectories(
+  directories: Directory[],
+  directoryToUpdate: DirectorySize
+) {
+  const updatedDirectories: Directory[] = directories.map((directory) => {
+    const updatedFiles = directory.files.map((file) => {
+      return file.fileName === `dir ${directoryToUpdate.directoryName}`
+        ? { ...file, size: directoryToUpdate.totalSize }
+        : file
+    })
+    return { ...directory, files: updatedFiles }
+  })
+  return updatedDirectories
 }
 
 function resolveDirectoryIndexMap(directories: Directory[]) {
@@ -41,28 +71,24 @@ interface DirectorySize {
 function findDirectorySize(
   directories: Directory[],
   directoryIndex: number
-): DirectorySize | void {
+): DirectorySize {
   const directoryWithNoSize = directories[directoryIndex].files.find(
     (file) => file.size === 0
   )
+  if (!!directoryWithNoSize?.fileName) {
+    const newTargetDirectory = getAllButLastWord(
+      directoryWithNoSize.fileName,
+      ' '
+    )
+    const targetDirectoryIndex =
+      resolveDirectoryIndexMap(directories)[newTargetDirectory]
 
-  if (!directoryWithNoSize) {
-    console.log('HERE??')
-    return {
-      directoryName: directories[directoryIndex].directoryName,
-      totalSize: directories[directoryIndex].totalSize,
-    }
+    return findDirectorySize(directories, targetDirectoryIndex)
   }
-
-  const newTargetDirectory = getAllButLastWord(
-    directoryWithNoSize.fileName,
-    ' '
-  )
-  const targetDirectoryIndex =
-    resolveDirectoryIndexMap(directories)[newTargetDirectory]
-
-  console.log(99999999999, directories[targetDirectoryIndex].directoryName)
-  findDirectorySize(directories, targetDirectoryIndex)
+  return {
+    directoryName: directories[directoryIndex].directoryName,
+    totalSize: directories[directoryIndex].totalSize,
+  }
 }
 
 export function resolveDirectories(string: string): Directory[] {
