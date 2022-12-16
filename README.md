@@ -131,3 +131,12 @@ I attempted to use the newly added `structuredClone` to clone the object, but th
 Ended up creating an extra object before resolving the main file tree object. This first object splits the commands into an array of command objects, which puts the listing files into one object so that it can be used later.
 
 I am for sure taking longer on this due to my curiosity on how a file tree could be organised and coded. In hignsight I should have added tests for this first commands object like I have for the main file tree one.
+
+STARTED AGAIN!! Really went down a deep dark rabbit hole there...
+
+TIL - There's no in built method which combines `.filter` (returns elements forfilling condition) and `.map` (returns what you want per element). So for now, use them chained up! Filter first then mapping is cleaner!
+
+Q1. How can we calculate the total size of a directory if it contains other directories when their totals haven't been calculated yet, as that is included in the final sum calculation?
+
+A1. Could add levels, and sort by that, but need a parent reference too. Then should be able to update bottom up. However, would the state be affected by this live updating during the loop? Might cause some state issues?
+A2. Could start at the top and keep drilling down each level until it forfills a directory total, then once done move back upwards. Same state problem might happen tho, could just stop the loop once it forfills a total and rerun it...

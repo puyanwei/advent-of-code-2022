@@ -1,3 +1,5 @@
+/*
+
 import { commands } from './consts'
 import { Command, Directory, File } from './types'
 
@@ -142,3 +144,5 @@ function getAllButLastWord(string: string, splitCondition: string) {
   const rest = arrayOfStrings.slice(1, arrayOfStrings.length).join(' ')
   return rest
 }
+
+*/
