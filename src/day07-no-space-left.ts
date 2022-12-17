@@ -1,42 +1,31 @@
-import { commands } from './consts'
 import { Directory, File } from './types'
 
-export function daySevenPartOne() {
-  const directories = resolveDirectories(commands)
+export function daySevenPartOne(input: string) {
+  const directories = resolveDirectoryObject(input)
   const updatedDirectories = updateDirectoryTotals(directories)
-  // const updateddDirectoryTotalsUnder100k =
-  //   updatedDirectoryTotalsUnder100k(updatedDirectories)
+  // updatedDirectories.map((e) => console.log(e))
   const total = updatedDirectories.reduce(
-    (acc, curr) => acc + curr.totalSize,
+    (acc, curr) => (curr.totalSize < 100000 ? acc + curr.totalSize : acc + 0),
     0
   )
   return total
 }
 
 function updateDirectoryTotals(directories: Directory[]) {
-  /* 
-0. Create map to index the diff directories
-1. start at top ('/')
-2. total up files => if all files are total aka no size == 0 then stop loop
-3. if first word dir and size === 0, use name to refernce that directory
-4. attempt to sum up that directory. If successful recurse
-5. Recursion should end at '/' no matter what, with a success or fail
-*/
-
   const directoryIndexMap = resolveDirectoryIndexMap(directories)
   const rootDirectoryIndex = directoryIndexMap['/']
-  const directoryToUpdate = findDirectorySize(directories, rootDirectoryIndex)
   const numberOfDirectoriesToUpdate = Object.keys(directoryIndexMap).length
-
   let newDirectory = directories
+
   for (let index = 0; index < numberOfDirectoriesToUpdate; index++) {
     const directoryToUpdate = findDirectorySize(
       newDirectory,
       rootDirectoryIndex
     )
+    console.log(222222222, directoryIndexMap)
+    console.log(7777777, directoryToUpdate.directoryName)
     newDirectory = updatedDirectories(newDirectory, directoryToUpdate)
   }
-
   return newDirectory
 }
 
@@ -50,16 +39,16 @@ function updatedDirectories(
         ? { ...file, size: directoryToUpdate.totalSize }
         : file
     })
-    return { ...directory, files: updatedFiles }
+    return { ...directory, files: [...updatedFiles] }
   })
   return updatedDirectories
 }
 
 function resolveDirectoryIndexMap(directories: Directory[]) {
   const obj: Record<string, number> = {}
-  directories.forEach(
-    ({ directoryName }, index) => (obj[directoryName] = index)
-  )
+  directories.forEach((directory, index) => {
+    return (obj[directory.directoryName] = index)
+  })
   return obj
 }
 
@@ -91,7 +80,7 @@ function findDirectorySize(
   }
 }
 
-export function resolveDirectories(string: string): Directory[] {
+export function resolveDirectoryObject(string: string): Directory[] {
   const directories = string.split('$ cd')
   const resolvedDirectories = directories
     .map((lines) => {
@@ -108,7 +97,6 @@ export function resolveDirectories(string: string): Directory[] {
       }
     })
     .filter((e) => e.directoryName !== undefined)
-
   return resolvedDirectories
 }
 

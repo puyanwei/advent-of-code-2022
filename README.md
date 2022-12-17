@@ -140,3 +140,11 @@ Q1. How can we calculate the total size of a directory if it contains other dire
 
 A1. Could add levels, and sort by that, but need a parent reference too. Then should be able to update bottom up. However, would the state be affected by this live updating during the loop? Might cause some state issues?
 A2. Could start at the top and keep drilling down each level until it forfills a directory total, then once done move back upwards. Same state problem might happen tho, could just stop the loop once it forfills a total and rerun it...
+
+Recursion strategy - 0. Create map to index the diff directories
+
+1. start at top ('/')
+2. total up files => if all files are total aka no size == 0 then stop loop
+3. if first word dir and size === 0, use name to refernce that directory
+4. attempt to sum up that directory. If successful recurse
+5. Recursion should end at '/' no matter what, with a success or fail

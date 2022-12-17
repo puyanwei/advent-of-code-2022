@@ -1,3 +1,4 @@
+import { data } from './data/commands'
 import { dayOnePartOne, dayOnePartTwo } from './day01-calorie-counting'
 import { dayTwoPartOne, dayTwoPartTwo } from './day02-rps'
 import {
@@ -40,5 +41,7 @@ import { daySevenPartOne } from './day07-no-space-left'
 //   `Day 6 part 2 - The first message marker appears after character ${daySixPartTwo()}`
 // )
 console.warn(
-  `Day 6 part 1 - The sum of the total sizes of directories under 100k is ${daySevenPartOne()}`
+  `Day 6 part 1 - The sum of the total sizes of directories under 100k is ${daySevenPartOne(
+    data
+  )}`
 )
