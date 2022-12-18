@@ -3,9 +3,11 @@ import { Directory, File } from './types'
 export function daySevenPartOne(input: string) {
   const directories = resolveDirectoryObject(input)
   const updatedDirectories = updateDirectoryTotals(directories)
-  // updatedDirectories.map((e) => console.log(e))
-  const total = updatedDirectories.reduce(
-    (acc, curr) => (curr.totalSize < 100000 ? acc + curr.totalSize : acc + 0),
+  const directoriesLessThan100k = updatedDirectories.filter(
+    (directory) => directory.totalSize < 100000
+  )
+  const total = directoriesLessThan100k.reduce(
+    (acc, curr) => acc + curr.totalSize,
     0
   )
   return total
@@ -18,28 +20,31 @@ function updateDirectoryTotals(directories: Directory[]) {
   let newDirectory = directories
 
   for (let index = 0; index < numberOfDirectoriesToUpdate; index++) {
-    const directoryToUpdate = findDirectorySize(
-      newDirectory,
-      rootDirectoryIndex
-    )
-    console.log(222222222, directoryIndexMap)
-    console.log(7777777, directoryToUpdate.directoryName)
-    newDirectory = updatedDirectories(newDirectory, directoryToUpdate)
+    console.log({ iterationNumber: index })
+    const directoryToUpdate =
+      findLowestDirectoryWithNoChildDirectoriesTotalSize(
+        newDirectory,
+        rootDirectoryIndex
+      )
+    newDirectory = updateDirectories(newDirectory, directoryToUpdate)
   }
   return newDirectory
 }
 
-function updatedDirectories(
+function updateDirectories(
   directories: Directory[],
   directoryToUpdate: DirectorySize
 ) {
   const updatedDirectories: Directory[] = directories.map((directory) => {
+    // updates `dir [name]` files with a size
     const updatedFiles = directory.files.map((file) => {
-      return file.fileName === `dir ${directoryToUpdate.directoryName}`
+      const directoryAsFileName = `dir ${directoryToUpdate.directoryName}`
+      return file.fileName === directoryAsFileName
         ? { ...file, size: directoryToUpdate.totalSize }
         : file
     })
-    return { ...directory, files: [...updatedFiles] }
+    const newTotalSize = updatedFiles.reduce((acc, curr) => acc + curr.size, 0)
+    return { ...directory, files: updatedFiles, totalSize: newTotalSize }
   })
   return updatedDirectories
 }
@@ -57,26 +62,43 @@ interface DirectorySize {
   totalSize: number
 }
 
-function findDirectorySize(
+function findLowestDirectoryWithNoChildDirectoriesTotalSize(
   directories: Directory[],
   directoryIndex: number
 ): DirectorySize {
   const directoryWithNoSize = directories[directoryIndex].files.find(
     (file) => file.size === 0
   )
+
+  /* Keeps recursively checking for directories without a size in it's children until there isn't any. Then once there is none we can be confident that directory has a file size and no dependent file directories on it, so we update the file size and return it to be updated in all other areas
+   */
+
   if (!!directoryWithNoSize?.fileName) {
     const newTargetDirectory = getAllButLastWord(
       directoryWithNoSize.fileName,
       ' '
     )
+
     const targetDirectoryIndex =
       resolveDirectoryIndexMap(directories)[newTargetDirectory]
 
-    return findDirectorySize(directories, targetDirectoryIndex)
-  }
-  return {
-    directoryName: directories[directoryIndex].directoryName,
-    totalSize: directories[directoryIndex].totalSize,
+    return findLowestDirectoryWithNoChildDirectoriesTotalSize(
+      directories,
+      targetDirectoryIndex
+    )
+  } else {
+    const lowestDirectoryInFileTree = directories[directoryIndex]
+
+    const newTotalSize = lowestDirectoryInFileTree.files.reduce(
+      (acc, curr) => acc + curr.size,
+      0
+    )
+    const resolvedDirectory = {
+      ...lowestDirectoryInFileTree,
+      totalSize: newTotalSize,
+    }
+    console.log({ directory: resolvedDirectory })
+    return resolvedDirectory
   }
 }
 

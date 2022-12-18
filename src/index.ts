@@ -1,3 +1,4 @@
+import { commands } from './consts'
 import { data } from './data/commands'
 import { dayOnePartOne, dayOnePartTwo } from './day01-calorie-counting'
 import { dayTwoPartOne, dayTwoPartTwo } from './day02-rps'
