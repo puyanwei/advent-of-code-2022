@@ -1,153 +1,181 @@
 import { Directory, File } from './types'
+import { writeToJson } from './utilities/writeToJson'
+
+let count = 0
 
 export function daySevenPartOne(input: string) {
   const directories = resolveDirectoryObject(input)
-  const updatedDirectories = updateDirectoryTotals(directories)
-  const directoriesLessThan100k = updatedDirectories.filter(
-    (directory) => directory.totalSize < 100000
-  )
-  const total = directoriesLessThan100k.reduce(
-    (acc, curr) => acc + curr.totalSize,
-    0
-  )
-  return total
+  console.log('DIRECTORY OBJECT', JSON.stringify(directories, undefined, 2))
+  // const updatedDirectories = updateDirectoryTotals(directories)
+  // const directoriesLessThan100k = updatedDirectories.filter(
+  //   (directory) => directory.totalSize <= 100000
+  // )
+  // const total = directoriesLessThan100k.reduce(
+  //   (acc, curr) => acc + curr.totalSize,
+  //   0
+  // )
+  // return total
+  return
 }
 
-function updateDirectoryTotals(directories: Directory[]) {
-  const directoryIndexMap = resolveDirectoryIndexMap(directories)
-  const rootDirectoryIndex = directoryIndexMap['/']
-  const numberOfDirectoriesToUpdate = Object.keys(directoryIndexMap).length
-  let newDirectory = directories
+// function updateDirectoryTotals(directories: Directory[]) {
+//   const directoryIndexMap = resolveDirectoryIndexMap(directories)
+//   const rootDirectoryIndex = directoryIndexMap['/']
+//   // const numberOfDirectoriesToUpdate = Object.keys(directoryIndexMap).length
+//   const numberOfDirectoriesToUpdate = 65
+//   let newDirectories = directories
+//   for (let index = 0; index < numberOfDirectoriesToUpdate; index++) {
+//     const directoryToUpdate =
+//       findLowestDirectoryUpdateSizeAndReturnItToBeUpdatedElsewhere(
+//         newDirectories,
+//         rootDirectoryIndex
+//       )
+//     // console.log('DIRECTORY TO UPDATE', directoryToUpdate)
+//     // if (index === 64) writeToJson(newDirectories, `directories.json`)
+//     newDirectories = updateDirectories(newDirectories, directoryToUpdate)
+//   }
+//   // writeToJson(newDirectories, `directories.json`)
+//   return newDirectories
+// }
 
-  for (let index = 0; index < numberOfDirectoriesToUpdate; index++) {
-    console.log({ iterationNumber: index })
-    const directoryToUpdate =
-      findLowestDirectoryWithNoChildDirectoriesTotalSize(
-        newDirectory,
-        rootDirectoryIndex
-      )
-    newDirectory = updateDirectories(newDirectory, directoryToUpdate)
-  }
-  return newDirectory
-}
+// function updateDirectories(
+//   directories: Directory[],
+//   directoryToUpdate: DirectorySize
+// ) {
+//   const updatedDirectories: Directory[] = directories.map((directory) => {
+//     const updatedFiles = directory.files.map((file) => {
+//       const directoryAsFileName = `dir ${directoryToUpdate.directoryName}`
+//       const isMatchedDirectoryToUpdate =
+//         file.fileName === directoryAsFileName && file.fileName.startsWith('dir')
 
-function updateDirectories(
-  directories: Directory[],
-  directoryToUpdate: DirectorySize
-) {
-  const updatedDirectories: Directory[] = directories.map((directory) => {
-    // updates `dir [name]` files with a size
-    const updatedFiles = directory.files.map((file) => {
-      const directoryAsFileName = `dir ${directoryToUpdate.directoryName}`
-      return file.fileName === directoryAsFileName
-        ? { ...file, size: directoryToUpdate.totalSize }
-        : file
-    })
-    const newTotalSize = updatedFiles.reduce((acc, curr) => acc + curr.size, 0)
-    return { ...directory, files: updatedFiles, totalSize: newTotalSize }
-  })
-  return updatedDirectories
-}
+//       // console.log(
+//       //   'IS MATCHING',
+//       //   isMatchedDirectoryToUpdate,
+//       //   directoryAsFileName,
+//       //   '=>',
+//       //   file.fileName
+//       // )
+//       return isMatchedDirectoryToUpdate
+//         ? { ...file, size: directoryToUpdate.totalSize }
+//         : file
+//     })
+//     const newTotalSize = updatedFiles.reduce((acc, curr) => acc + curr.size, 0)
+//     const updatedDirectory = {
+//       ...directory,
+//       files: updatedFiles,
+//       totalSize: newTotalSize,
+//     }
+//     return updatedDirectory
+//   })
+//   return updatedDirectories
+// }
 
-function resolveDirectoryIndexMap(directories: Directory[]) {
-  const obj: Record<string, number> = {}
-  directories.forEach((directory, index) => {
-    return (obj[directory.directoryName] = index)
-  })
-  return obj
-}
+// function resolveDirectoryIndexMap(directories: Directory[]) {
+//   const obj: Record<string, number> = {}
+//   directories.forEach((directory, index) => {
+//     return (obj[directory.directoryName] = index)
+//   })
+//   return obj
+// }
 
-interface DirectorySize {
-  directoryName: string
-  totalSize: number
-}
+// interface DirectorySize {
+//   directoryName: string
+//   totalSize: number
+// }
 
-function findLowestDirectoryWithNoChildDirectoriesTotalSize(
-  directories: Directory[],
-  directoryIndex: number
-): DirectorySize {
-  const directoryWithNoSize = directories[directoryIndex].files.find(
-    (file) => file.size === 0
-  )
+// function findLowestDirectoryUpdateSizeAndReturnItToBeUpdatedElsewhere(
+//   directories: Directory[],
+//   directoryIndex: number
+// ): DirectorySize {
+//   // console.log(`PARENTS`, directories[directoryIndex].directoryName)
+//   const directoryWithNoSize = directories[directoryIndex].files.find(
+//     (file) => file.size === 0 && file.fileName.startsWith('dir')
+//   )
 
-  /* Keeps recursively checking for directories without a size in it's children until there isn't any. Then once there is none we can be confident that directory has a file size and no dependent file directories on it, so we update the file size and return it to be updated in all other areas
-   */
+//   /* Keeps recursively checking for directories without a size in it's children until there isn't any. Then once there is none we can be confident that directory has a file size and no dependent file directories on it, so we update the file size and return it to be updated in all other areas
+//    */
 
-  if (!!directoryWithNoSize?.fileName) {
-    const newTargetDirectory = getAllButLastWord(
-      directoryWithNoSize.fileName,
-      ' '
-    )
+//   if (!!directoryWithNoSize) {
+//     // console.log(
+//     //   `INTERATION NO. ${count} - PWD IN ${directoryWithNoSize?.fileName}`
+//     // )
+//     const name = getAllButLastWord(directoryWithNoSize.fileName, ' ')
+//     const targetDirectoryIndex = resolveDirectoryIndexMap(directories)[name]
+//     count++
+//     return findLowestDirectoryUpdateSizeAndReturnItToBeUpdatedElsewhere(
+//       directories,
+//       targetDirectoryIndex
+//     )
+//   }
+//   const lowestDirectoryFileInFileTree = directories[directoryIndex]
 
-    const targetDirectoryIndex =
-      resolveDirectoryIndexMap(directories)[newTargetDirectory]
-
-    return findLowestDirectoryWithNoChildDirectoriesTotalSize(
-      directories,
-      targetDirectoryIndex
-    )
-  } else {
-    const lowestDirectoryInFileTree = directories[directoryIndex]
-
-    const newTotalSize = lowestDirectoryInFileTree.files.reduce(
-      (acc, curr) => acc + curr.size,
-      0
-    )
-    const resolvedDirectory = {
-      ...lowestDirectoryInFileTree,
-      totalSize: newTotalSize,
-    }
-    console.log({ directory: resolvedDirectory })
-    return resolvedDirectory
-  }
-}
+//   const newTotalSize = lowestDirectoryFileInFileTree.files.reduce(
+//     (acc, curr) => acc + curr.size,
+//     0
+//   )
+//   const lowestDirectoryWithTotalSize = {
+//     ...lowestDirectoryFileInFileTree,
+//     totalSize: newTotalSize,
+//   }
+//   count++
+//   // console.log(`LOWEST DIRECTORY`, lowestDirectoryWithTotalSize.directoryName)
+//   return lowestDirectoryWithTotalSize
+// }
 
 export function resolveDirectoryObject(string: string): Directory[] {
+  let level = 0
   const directories = string.split('$ cd')
-  const resolvedDirectories = directories
+  const resolvedDirectories: Directory[] = directories
     .map((lines) => {
-      const [resolvedDirectoryName, ls, ...files] = lines
-        .split('\n')
-        .filter((e) => e !== ' ..')
-        .filter((e) => e !== '')
-      const directoryName = resolvedDirectoryName?.trim()
-      const totalSize = resolveTotalSize(files)
+      const [firstWord, $ls, ...fileNames] = lines.split('\n')
+      const directoryName = firstWord?.trim()
+      const totalSize = resolveTotalSize(fileNames)
+      const files = resolveFileObject(fileNames)
+      // console.log(directoryName, files, totalSize, level)
       return {
         directoryName,
-        files: resolveFileObject(files),
+        files,
         totalSize,
+        level,
       }
     })
-    .filter((e) => e.directoryName !== undefined)
+    .filter((e) => e.directoryName !== '..')
   return resolvedDirectories
 }
 
 function resolveFileObject(array: string[]): File[] {
-  const files = array.map((file) => {
-    const [first, ...rest] = file.split(' ')
+  const files: File[] = array
+    .filter((e) => !e.startsWith('$'))
+    .filter((e) => e !== '..')
+    .filter((e) => e !== '')
+    .map((fileInfo) => {
+      const [firstWord, ...rest] = fileInfo.split(' ')
+      // for filename fileInfo, firstWord is a number for size
+      const fileName = fileInfo.startsWith('dir') ? fileInfo : rest.join()
+      const size = fileInfo.startsWith('dir') ? 'unknown' : parseInt(firstWord)
+      const type = fileInfo.startsWith('dir') ? 'folder' : 'file'
 
-    const fileName = first === 'dir' ? file : rest.join()
-    const size = first === 'dir' ? 0 : parseInt(first)
-    return {
-      fileName,
-      size,
-    }
-  })
+      return {
+        fileName,
+        size,
+        type,
+      }
+    })
   return files
 }
 
-function resolveTotalSize(files: string[]): number {
-  if (!files.length) return 0
-  const sizes = files
-    .map((e) => {
-      const [first, ...rest] = e.split(' ')
-      if (first !== 'dir') return parseInt(first)
-      return 0
+function resolveTotalSize(lines: string[]): number | 'unknown' {
+  const sizes = lines
+    .filter((e) => !e.length)
+    .filter((e) => e !== '')
+    .filter((e) => e !== '..')
+    .map((line) => {
+      const [firstWord] = line.split(' ')
+      return parseInt(firstWord) ? parseInt(firstWord) : 'unknown'
     })
-    .filter((e) => e !== undefined)
-  if (!sizes.length || !sizes) return 0
-  const total = sizes.reduce((acc, curr) => acc + curr, 0)
-  return total
+  if (!sizes.length || !sizes) return 'unknown'
+  if (sizes.some((e) => e === 'unknown')) return 'unknown'
+  return sizes.reduce((acc, curr) => (acc as number) + (curr as number), 0)
 }
 
 function getFirstWord(string: string, splitCondition: string) {

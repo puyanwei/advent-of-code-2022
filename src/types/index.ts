@@ -58,13 +58,15 @@ export interface ResolveMarker {
 
 export interface File {
   fileName: string
-  size: number
+  size: number | 'unknown'
+  type: 'folder' | 'file'
 }
 
 export interface Directory {
   directoryName: string
   files: File[]
-  totalSize: number
+  totalSize: number | 'unknown'
+  level: number
 }
 
 export interface Command {
