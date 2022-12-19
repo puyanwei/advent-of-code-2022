@@ -1,3144 +1,3835 @@
 [
   {
+    "directoryName": "",
+    "files": [],
+    "totalSize": "unknown",
+    "level": 1
+  },
+  {
     "directoryName": "/",
     "files": [
       {
         "fileName": "dir btsgrbd",
-        "size": 8506903
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "cprq.fmm",
-        "size": 3868
+        "size": 3868,
+        "type": "file"
       },
       {
         "fileName": "dir gcbpcf",
-        "size": 1519203
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir hfm",
-        "size": 785837
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "lthcng.gnf",
-        "size": 324644
+        "size": 324644,
+        "type": "file"
       },
       {
         "fileName": "nblfzrb.mrr",
-        "size": 133181
+        "size": 133181,
+        "type": "file"
       },
       {
         "fileName": "sfrbjmmh.jnj",
-        "size": 140568
+        "size": 140568,
+        "type": "file"
       },
       {
         "fileName": "dir tfsh",
-        "size": 244821
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir vlsqgrw",
-        "size": 5960587
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "vmpgqbcd",
-        "size": 202279
+        "size": 202279,
+        "type": "file"
       }
     ],
-    "totalSize": 17821891
+    "totalSize": "unknown",
+    "level": 2
   },
   {
     "directoryName": "btsgrbd",
     "files": [
       {
         "fileName": "dir cmfdm",
-        "size": 1051991
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir cqd",
-        "size": 2671117
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir gvwvs",
-        "size": 2728187
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir nblfzrb",
-        "size": 164792
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir nfm",
-        "size": 954160
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "qwnml.bqn",
-        "size": 293979
+        "size": 293979,
+        "type": "file"
       },
       {
         "fileName": "sdwnsgwv.mjm",
-        "size": 159220
+        "size": 159220,
+        "type": "file"
       },
       {
         "fileName": "vzgwwjq.zbp",
-        "size": 327978
+        "size": 327978,
+        "type": "file"
       },
       {
         "fileName": "zvspnvfr.zbc",
-        "size": 155479
+        "size": 155479,
+        "type": "file"
       }
     ],
-    "totalSize": 8506903
-  },
-  {
-    "directoryName": "cmfdm",
-    "files": [
-      {
-        "fileName": "dir gldnjj",
-        "size": 646982
-      },
-      {
-        "fileName": "dir vhf",
-        "size": 405009
-      }
-    ],
-    "totalSize": 1051991
-  },
-  {
-    "directoryName": "gldnjj",
-    "files": [
-      {
-        "fileName": "dir dvght",
-        "size": 276592
-      },
-      {
-        "fileName": "lwvtzd.pws",
-        "size": 93750
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 176529
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 100111
-      }
-    ],
-    "totalSize": 646982
-  },
-  {
-    "directoryName": "dvght",
-    "files": [
-      {
-        "fileName": "dir tfbzq",
-        "size": 276592
-      }
-    ],
-    "totalSize": 276592
-  },
-  {
-    "directoryName": "tfbzq",
-    "files": [
-      {
-        "fileName": "tcghw.srg",
-        "size": 276592
-      }
-    ],
-    "totalSize": 276592
-  },
-  {
-    "directoryName": "vhf",
-    "files": [
-      {
-        "fileName": "hfm.rfp",
-        "size": 240217
-      },
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      }
-    ],
-    "totalSize": 405009
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "jhc",
-        "size": 160378
-      }
-    ],
-    "totalSize": 160378
-  },
-  {
-    "directoryName": "cqd",
-    "files": [
-      {
-        "fileName": "bnddfgrb",
-        "size": 305358
-      },
-      {
-        "fileName": "dir dwqncqp",
-        "size": 401031
-      },
-      {
-        "fileName": "dir hnnfdtbh",
-        "size": 334830
-      },
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      },
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "scnm.qbf",
-        "size": 327762
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 165080
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 190041
-      },
-      {
-        "fileName": "dir zwv",
-        "size": 648797
-      }
-    ],
-    "totalSize": 2671117
-  },
-  {
-    "directoryName": "dwqncqp",
-    "files": [
-      {
-        "fileName": "slpgmhv",
-        "size": 122570
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 278461
-      }
-    ],
-    "totalSize": 401031
-  },
-  {
-    "directoryName": "hnnfdtbh",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 334830
-      }
-    ],
-    "totalSize": 334830
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "fgb.btb",
-        "size": 179593
-      }
-    ],
-    "totalSize": 179593
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "dir clbcgvhc",
-        "size": 0
-      },
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      },
-      {
-        "fileName": "dir lsrnz",
-        "size": 0
-      },
-      {
-        "fileName": "dir mctd",
-        "size": 0
-      }
-    ],
-    "totalSize": 133426
-  },
-  {
-    "directoryName": "clbcgvhc",
-    "files": [
-      {
-        "fileName": "hnn",
-        "size": 285825
-      },
-      {
-        "fileName": "nblfzrb.wvr",
-        "size": 238272
-      }
-    ],
-    "totalSize": 524097
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "nblfzrb.svz",
-        "size": 99731
-      }
-    ],
-    "totalSize": 99731
-  },
-  {
-    "directoryName": "lsrnz",
-    "files": [
-      {
-        "fileName": "fsthnpmd",
-        "size": 257843
-      }
-    ],
-    "totalSize": 257843
-  },
-  {
-    "directoryName": "mctd",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 278117
-      }
-    ],
-    "totalSize": 278117
-  },
-  {
-    "directoryName": "zwv",
-    "files": [
-      {
-        "fileName": "jhc",
-        "size": 40349
-      },
-      {
-        "fileName": "dir pqwml",
-        "size": 0
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 173804
-      }
-    ],
-    "totalSize": 214153
-  },
-  {
-    "directoryName": "pqwml",
-    "files": [
-      {
-        "fileName": "hbzvzwpr",
-        "size": 193573
-      }
-    ],
-    "totalSize": 193573
-  },
-  {
-    "directoryName": "gvwvs",
-    "files": [
-      {
-        "fileName": "dir gjslw",
-        "size": 1800183
-      },
-      {
-        "fileName": "dir gwz",
-        "size": 444427
-      },
-      {
-        "fileName": "dir ljvrjp",
-        "size": 44312
-      },
-      {
-        "fileName": "dir sltlpb",
-        "size": 321945
-      },
-      {
-        "fileName": "dir vbsnq",
-        "size": 117320
-      }
-    ],
-    "totalSize": 2728187
-  },
-  {
-    "directoryName": "gjslw",
-    "files": [
-      {
-        "fileName": "dir gzbm",
-        "size": 1800183
-      }
-    ],
-    "totalSize": 1800183
-  },
-  {
-    "directoryName": "gzbm",
-    "files": [
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      },
-      {
-        "fileName": "dir gpjz",
-        "size": 711752
-      },
-      {
-        "fileName": "dir gzd",
-        "size": 83692
-      },
-      {
-        "fileName": "dir hfm",
-        "size": 785837
-      }
-    ],
-    "totalSize": 1800183
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "mqpg",
-        "size": 99806
-      }
-    ],
-    "totalSize": 99806
-  },
-  {
-    "directoryName": "gpjz",
-    "files": [
-      {
-        "fileName": "dir dnsvsp",
-        "size": 492924
-      },
-      {
-        "fileName": "jhc.dfd",
-        "size": 218828
-      }
-    ],
-    "totalSize": 711752
-  },
-  {
-    "directoryName": "dnsvsp",
-    "files": [
-      {
-        "fileName": "dir vmdbpwj",
-        "size": 258373
-      },
-      {
-        "fileName": "dir zvspnvfr",
-        "size": 234551
-      }
-    ],
-    "totalSize": 492924
-  },
-  {
-    "directoryName": "vmdbpwj",
-    "files": [
-      {
-        "fileName": "jhc",
-        "size": 258373
-      }
-    ],
-    "totalSize": 258373
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 18241
-      }
-    ],
-    "totalSize": 18241
-  },
-  {
-    "directoryName": "gzd",
-    "files": [
-      {
-        "fileName": "chdfwj",
-        "size": 20383
-      },
-      {
-        "fileName": "prrlv.rvn",
-        "size": 63309
-      }
-    ],
-    "totalSize": 83692
-  },
-  {
-    "directoryName": "hfm",
-    "files": [
-      {
-        "fileName": "qhh",
-        "size": 291753
-      }
-    ],
-    "totalSize": 291753
-  },
-  {
-    "directoryName": "gwz",
-    "files": [
-      {
-        "fileName": "hfm.hpn",
-        "size": 29042
-      },
-      {
-        "fileName": "mpc",
-        "size": 184043
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 230539
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 803
-      }
-    ],
-    "totalSize": 444427
-  },
-  {
-    "directoryName": "ljvrjp",
-    "files": [
-      {
-        "fileName": "pfltqw.zvc",
-        "size": 44312
-      }
-    ],
-    "totalSize": 44312
-  },
-  {
-    "directoryName": "sltlpb",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 321945
-      }
-    ],
-    "totalSize": 321945
-  },
-  {
-    "directoryName": "vbsnq",
-    "files": [
-      {
-        "fileName": "twbbg.ftq",
-        "size": 7774
-      },
-      {
-        "fileName": "zpqbp.cts",
-        "size": 109546
-      }
-    ],
-    "totalSize": 117320
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "fst",
-        "size": 89034
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 338143
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 130661
-      },
-      {
-        "fileName": "vrj.zlb",
-        "size": 130071
-      }
-    ],
-    "totalSize": 687909
-  },
-  {
-    "directoryName": "nfm",
-    "files": [
-      {
-        "fileName": "fwmfmtt.hdg",
-        "size": 327853
-      },
-      {
-        "fileName": "vdjs",
-        "size": 151272
-      },
-      {
-        "fileName": "dir wznwjfw",
-        "size": 399343
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 75692
-      }
-    ],
-    "totalSize": 954160
-  },
-  {
-    "directoryName": "wznwjfw",
-    "files": [
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "dir zvspnvfr",
-        "size": 234551
-      }
-    ],
-    "totalSize": 399343
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "fpqfgs.gdl",
-        "size": 271817
-      }
-    ],
-    "totalSize": 271817
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "dir hfm",
-        "size": 785837
-      },
-      {
-        "fileName": "dir mdftsf",
-        "size": 0
-      }
-    ],
-    "totalSize": 785837
-  },
-  {
-    "directoryName": "hfm",
-    "files": [
-      {
-        "fileName": "dir fsgdq",
-        "size": 0
-      },
-      {
-        "fileName": "dir grj",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "fsgdq",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 244565
-      }
-    ],
-    "totalSize": 244565
-  },
-  {
-    "directoryName": "grj",
-    "files": [
-      {
-        "fileName": "rdvvrjf.fwz",
-        "size": 200989
-      }
-    ],
-    "totalSize": 200989
-  },
-  {
-    "directoryName": "mdftsf",
-    "files": [
-      {
-        "fileName": "dir fnzztppm",
-        "size": 0
-      },
-      {
-        "fileName": "jhc.mtl",
-        "size": 21425
-      }
-    ],
-    "totalSize": 21425
-  },
-  {
-    "directoryName": "fnzztppm",
-    "files": [
-      {
-        "fileName": "bvf",
-        "size": 159263
-      }
-    ],
-    "totalSize": 159263
+    "totalSize": "unknown",
+    "level": 3
   },
   {
     "directoryName": "gcbpcf",
     "files": [
       {
         "fileName": "gfprhn.rjj",
-        "size": 295086
+        "size": 295086,
+        "type": "file"
       },
       {
         "fileName": "dir ldwwls",
-        "size": 175977
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir nblfzrb",
-        "size": 164792
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir zvspnvfr",
-        "size": 234551
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir zwv",
-        "size": 648797
+        "size": "unknown",
+        "type": "folder"
       }
     ],
-    "totalSize": 1519203
-  },
-  {
-    "directoryName": "ldwwls",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 175977
-      }
-    ],
-    "totalSize": 175977
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "dir mzshzw",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "mzshzw",
-    "files": [
-      {
-        "fileName": "dir mllqf",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "mllqf",
-    "files": [
-      {
-        "fileName": "hfm.svt",
-        "size": 113563
-      }
-    ],
-    "totalSize": 113563
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "fst",
-        "size": 84524
-      },
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      },
-      {
-        "fileName": "dir llnqc",
-        "size": 0
-      },
-      {
-        "fileName": "nnrwp.shv",
-        "size": 126979
-      },
-      {
-        "fileName": "dir npjd",
-        "size": 0
-      },
-      {
-        "fileName": "dir nptwgdbn",
-        "size": 0
-      },
-      {
-        "fileName": "qtn",
-        "size": 133618
-      },
-      {
-        "fileName": "dir rddftb",
-        "size": 0
-      },
-      {
-        "fileName": "dir thfhbhz",
-        "size": 0
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 129882
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 170834
-      }
-    ],
-    "totalSize": 779263
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "dir pjlj",
-        "size": 0
-      },
-      {
-        "fileName": "dir tfljr",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "pjlj",
-    "files": [
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      }
-    ],
-    "totalSize": 133426
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "dir hqzm",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "hqzm",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 159505
-      }
-    ],
-    "totalSize": 159505
-  },
-  {
-    "directoryName": "tfljr",
-    "files": [
-      {
-        "fileName": "dir dwhjmg",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "dwhjmg",
-    "files": [
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      }
-    ],
-    "totalSize": 164792
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "ppptz",
-        "size": 194723
-      }
-    ],
-    "totalSize": 194723
-  },
-  {
-    "directoryName": "llnqc",
-    "files": [
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 194898
-      }
-    ],
-    "totalSize": 194898
-  },
-  {
-    "directoryName": "npjd",
-    "files": [
-      {
-        "fileName": "dir blvfljfn",
-        "size": 0
-      },
-      {
-        "fileName": "dir dzpplzl",
-        "size": 0
-      },
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 101118
-      },
-      {
-        "fileName": "hbbnl.nvz",
-        "size": 116164
-      },
-      {
-        "fileName": "hfm",
-        "size": 211685
-      },
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      },
-      {
-        "fileName": "dir mcnftw",
-        "size": 0
-      },
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "dir ncpchrj",
-        "size": 0
-      },
-      {
-        "fileName": "dir qrdczsdf",
-        "size": 0
-      },
-      {
-        "fileName": "ttbj",
-        "size": 165190
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 190954
-      }
-    ],
-    "totalSize": 1083329
-  },
-  {
-    "directoryName": "blvfljfn",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 283460
-      },
-      {
-        "fileName": "sqljld",
-        "size": 148100
-      }
-    ],
-    "totalSize": 431560
-  },
-  {
-    "directoryName": "dzpplzl",
-    "files": [
-      {
-        "fileName": "jjlvdvq.mqp",
-        "size": 62592
-      }
-    ],
-    "totalSize": 62592
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "dvd.wvl",
-        "size": 90578
-      },
-      {
-        "fileName": "zqplggf",
-        "size": 165955
-      }
-    ],
-    "totalSize": 256533
-  },
-  {
-    "directoryName": "mcnftw",
-    "files": [
-      {
-        "fileName": "gbqpdt",
-        "size": 157908
-      },
-      {
-        "fileName": "dir jsnrcfbv",
-        "size": 0
-      },
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "qlmd.dbq",
-        "size": 322169
-      },
-      {
-        "fileName": "dir zvspnvfr",
-        "size": 234551
-      }
-    ],
-    "totalSize": 879420
-  },
-  {
-    "directoryName": "jsnrcfbv",
-    "files": [
-      {
-        "fileName": "dir gffj",
-        "size": 0
-      },
-      {
-        "fileName": "hfm",
-        "size": 75682
-      },
-      {
-        "fileName": "dir pmfwlzn",
-        "size": 0
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 160494
-      }
-    ],
-    "totalSize": 236176
-  },
-  {
-    "directoryName": "gffj",
-    "files": [
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "pcqs",
-        "size": 9340
-      }
-    ],
-    "totalSize": 174132
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 216547
-      },
-      {
-        "fileName": "zvspnvfr.nvs",
-        "size": 135235
-      }
-    ],
-    "totalSize": 351782
-  },
-  {
-    "directoryName": "pmfwlzn",
-    "files": [
-      {
-        "fileName": "jbsmwm",
-        "size": 137069
-      }
-    ],
-    "totalSize": 137069
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "dir hflnbmcd",
-        "size": 0
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 11899
-      },
-      {
-        "fileName": "whmq.ftc",
-        "size": 334607
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 347595
-      }
-    ],
-    "totalSize": 694101
-  },
-  {
-    "directoryName": "hflnbmcd",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 275968
-      }
-    ],
-    "totalSize": 275968
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "vmpgqbcd",
-        "size": 75213
-      }
-    ],
-    "totalSize": 75213
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      }
-    ],
-    "totalSize": 133426
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      }
-    ],
-    "totalSize": 133426
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "nblfzrb.mbc",
-        "size": 218236
-      }
-    ],
-    "totalSize": 218236
-  },
-  {
-    "directoryName": "ncpchrj",
-    "files": [
-      {
-        "fileName": "dir cnswqjjd",
-        "size": 0
-      },
-      {
-        "fileName": "dir gvmlgjnj",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "cnswqjjd",
-    "files": [
-      {
-        "fileName": "qpzfr",
-        "size": 134879
-      },
-      {
-        "fileName": "zvspnvfr",
-        "size": 30171
-      }
-    ],
-    "totalSize": 165050
-  },
-  {
-    "directoryName": "gvmlgjnj",
-    "files": [
-      {
-        "fileName": "fst",
-        "size": 209285
-      }
-    ],
-    "totalSize": 209285
-  },
-  {
-    "directoryName": "qrdczsdf",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 201094
-      }
-    ],
-    "totalSize": 201094
-  },
-  {
-    "directoryName": "nptwgdbn",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 217555
-      },
-      {
-        "fileName": "mrhhpr.gdg",
-        "size": 66582
-      }
-    ],
-    "totalSize": 284137
-  },
-  {
-    "directoryName": "rddftb",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 205347
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 195976
-      }
-    ],
-    "totalSize": 401323
-  },
-  {
-    "directoryName": "thfhbhz",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 321628
-      }
-    ],
-    "totalSize": 321628
-  },
-  {
-    "directoryName": "zwv",
-    "files": [
-      {
-        "fileName": "dir lnqb",
-        "size": 66715
-      },
-      {
-        "fileName": "mtv",
-        "size": 311249
-      },
-      {
-        "fileName": "dir tnrtjrlz",
-        "size": 270833
-      }
-    ],
-    "totalSize": 648797
-  },
-  {
-    "directoryName": "lnqb",
-    "files": [
-      {
-        "fileName": "dir vjtnjt",
-        "size": 66715
-      }
-    ],
-    "totalSize": 66715
-  },
-  {
-    "directoryName": "vjtnjt",
-    "files": [
-      {
-        "fileName": "hfm",
-        "size": 66715
-      }
-    ],
-    "totalSize": 66715
-  },
-  {
-    "directoryName": "tnrtjrlz",
-    "files": [
-      {
-        "fileName": "jhc.vpj",
-        "size": 270833
-      }
-    ],
-    "totalSize": 270833
+    "totalSize": "unknown",
+    "level": 3
   },
   {
     "directoryName": "hfm",
     "files": [
       {
         "fileName": "fst.tfn",
-        "size": 220753
+        "size": 220753,
+        "type": "file"
       },
       {
         "fileName": "dir hfm",
-        "size": 785837
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "mnzlvc.jzw",
-        "size": 154659
+        "size": 154659,
+        "type": "file"
       },
       {
         "fileName": "dir nblfzrb",
-        "size": 164792
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir nrqhstc",
-        "size": 0
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir vwc",
-        "size": 0
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir wlpdphhg",
-        "size": 0
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir zpbh",
-        "size": 0
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir zvspnvfr",
-        "size": 234551
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "zvspnvfr.zqt",
-        "size": 160091
+        "size": 160091,
+        "type": "file"
       }
     ],
-    "totalSize": 1720683
-  },
-  {
-    "directoryName": "hfm",
-    "files": [
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      },
-      {
-        "fileName": "dir mfmcqhbz",
-        "size": 0
-      },
-      {
-        "fileName": "dir pdblpszb",
-        "size": 0
-      }
-    ],
-    "totalSize": 218902
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "dir cpll",
-        "size": 0
-      },
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      },
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "dir sbnplvz",
-        "size": 0
-      },
-      {
-        "fileName": "dir vsd",
-        "size": 0
-      },
-      {
-        "fileName": "wlzbsdh",
-        "size": 307662
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 194873
-      }
-    ],
-    "totalSize": 886229
-  },
-  {
-    "directoryName": "cpll",
-    "files": [
-      {
-        "fileName": "pwcmhcf.lwz",
-        "size": 13452
-      }
-    ],
-    "totalSize": 13452
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "dir rqssg",
-        "size": 0
-      }
-    ],
-    "totalSize": 164792
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "dir ltrc",
-        "size": 0
-      },
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "vhwnz",
-        "size": 326613
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 244908
-      }
-    ],
-    "totalSize": 736313
-  },
-  {
-    "directoryName": "ltrc",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 163670
-      }
-    ],
-    "totalSize": 163670
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "dir brpzhf",
-        "size": 0
-      },
-      {
-        "fileName": "fst",
-        "size": 61846
-      },
-      {
-        "fileName": "vccrmc.jbd",
-        "size": 66356
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 72767
-      }
-    ],
-    "totalSize": 200969
-  },
-  {
-    "directoryName": "brpzhf",
-    "files": [
-      {
-        "fileName": "mttr.szf",
-        "size": 224488
-      }
-    ],
-    "totalSize": 224488
-  },
-  {
-    "directoryName": "rqssg",
-    "files": [
-      {
-        "fileName": "bfmhl.cwj",
-        "size": 131534
-      },
-      {
-        "fileName": "hhznnd",
-        "size": 261143
-      },
-      {
-        "fileName": "dir nmb",
-        "size": 0
-      },
-      {
-        "fileName": "vnmwgflj.rhp",
-        "size": 74816
-      },
-      {
-        "fileName": "wdzfzcss.fdc",
-        "size": 251308
-      }
-    ],
-    "totalSize": 718801
-  },
-  {
-    "directoryName": "nmb",
-    "files": [
-      {
-        "fileName": "fst.twf",
-        "size": 264421
-      },
-      {
-        "fileName": "dir jng",
-        "size": 0
-      },
-      {
-        "fileName": "rnt.dlp",
-        "size": 81009
-      },
-      {
-        "fileName": "sftvd",
-        "size": 288053
-      },
-      {
-        "fileName": "dir vfc",
-        "size": 0
-      }
-    ],
-    "totalSize": 633483
-  },
-  {
-    "directoryName": "jng",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 8014
-      },
-      {
-        "fileName": "ppn.qbv",
-        "size": 168688
-      }
-    ],
-    "totalSize": 176702
-  },
-  {
-    "directoryName": "vfc",
-    "files": [
-      {
-        "fileName": "dir bhgstrdl",
-        "size": 0
-      },
-      {
-        "fileName": "dggwnqp.fpl",
-        "size": 138108
-      },
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 303194
-      }
-    ],
-    "totalSize": 441302
-  },
-  {
-    "directoryName": "bhgstrdl",
-    "files": [
-      {
-        "fileName": "fst.nrv",
-        "size": 102559
-      },
-      {
-        "fileName": "trqrlrw.jmc",
-        "size": 269697
-      }
-    ],
-    "totalSize": 372256
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "dir bcj",
-        "size": 0
-      },
-      {
-        "fileName": "dir cqjmmr",
-        "size": 0
-      },
-      {
-        "fileName": "fst.tjf",
-        "size": 256392
-      },
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 7079
-      },
-      {
-        "fileName": "dir gqm",
-        "size": 0
-      },
-      {
-        "fileName": "dir hbqfms",
-        "size": 0
-      },
-      {
-        "fileName": "dir nmgbfhmq",
-        "size": 0
-      },
-      {
-        "fileName": "pvdtbdj",
-        "size": 57962
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 117035
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 64208
-      }
-    ],
-    "totalSize": 502676
-  },
-  {
-    "directoryName": "bcj",
-    "files": [
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      }
-    ],
-    "totalSize": 164792
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "zvspnvfr.dqv",
-        "size": 149417
-      }
-    ],
-    "totalSize": 149417
-  },
-  {
-    "directoryName": "cqjmmr",
-    "files": [
-      {
-        "fileName": "fcq.mmz",
-        "size": 147054
-      },
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      },
-      {
-        "fileName": "dir hfm",
-        "size": 785837
-      },
-      {
-        "fileName": "jcsjjj.mvg",
-        "size": 110840
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 75746
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 333085
-      }
-    ],
-    "totalSize": 1671464
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "vmpgqbcd",
-        "size": 114747
-      }
-    ],
-    "totalSize": 114747
-  },
-  {
-    "directoryName": "hfm",
-    "files": [
-      {
-        "fileName": "dir nvvppmls",
-        "size": 0
-      },
-      {
-        "fileName": "dir phpq",
-        "size": 0
-      },
-      {
-        "fileName": "dir rld",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "nvvppmls",
-    "files": [
-      {
-        "fileName": "dir cdsmgjdb",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "cdsmgjdb",
-    "files": [
-      {
-        "fileName": "hfm.nmw",
-        "size": 158739
-      }
-    ],
-    "totalSize": 158739
-  },
-  {
-    "directoryName": "phpq",
-    "files": [
-      {
-        "fileName": "hfm.hjj",
-        "size": 274026
-      }
-    ],
-    "totalSize": 274026
-  },
-  {
-    "directoryName": "rld",
-    "files": [
-      {
-        "fileName": "hsnngd.tqw",
-        "size": 237915
-      }
-    ],
-    "totalSize": 237915
-  },
-  {
-    "directoryName": "gqm",
-    "files": [
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 188469
-      }
-    ],
-    "totalSize": 188469
-  },
-  {
-    "directoryName": "hbqfms",
-    "files": [
-      {
-        "fileName": "fst",
-        "size": 127163
-      }
-    ],
-    "totalSize": 127163
-  },
-  {
-    "directoryName": "nmgbfhmq",
-    "files": [
-      {
-        "fileName": "gczqzbbd",
-        "size": 257647
-      },
-      {
-        "fileName": "dir hfm",
-        "size": 785837
-      },
-      {
-        "fileName": "dir zvspnvfr",
-        "size": 234551
-      }
-    ],
-    "totalSize": 1278035
-  },
-  {
-    "directoryName": "hfm",
-    "files": [
-      {
-        "fileName": "gbtwdctn.drw",
-        "size": 267774
-      }
-    ],
-    "totalSize": 267774
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 189769
-      }
-    ],
-    "totalSize": 189769
-  },
-  {
-    "directoryName": "sbnplvz",
-    "files": [
-      {
-        "fileName": "dir bln",
-        "size": 0
-      },
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      },
-      {
-        "fileName": "dir hdv",
-        "size": 0
-      },
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      },
-      {
-        "fileName": "jhc.zvm",
-        "size": 31790
-      },
-      {
-        "fileName": "mmmjpp",
-        "size": 102276
-      },
-      {
-        "fileName": "dir zdwzgnb",
-        "size": 0
-      }
-    ],
-    "totalSize": 486394
-  },
-  {
-    "directoryName": "bln",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 161029
-      }
-    ],
-    "totalSize": 161029
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "fst",
-        "size": 333565
-      }
-    ],
-    "totalSize": 333565
-  },
-  {
-    "directoryName": "hdv",
-    "files": [
-      {
-        "fileName": "dir zvpp",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "zvpp",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 143723
-      }
-    ],
-    "totalSize": 143723
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "dir hfm",
-        "size": 785837
-      },
-      {
-        "fileName": "dir hnqpwnfb",
-        "size": 0
-      },
-      {
-        "fileName": "dir jqgfcmjn",
-        "size": 0
-      },
-      {
-        "fileName": "dir mqj",
-        "size": 0
-      },
-      {
-        "fileName": "psdd.ftf",
-        "size": 312345
-      },
-      {
-        "fileName": "dir slsq",
-        "size": 0
-      },
-      {
-        "fileName": "thvhdmm.rpq",
-        "size": 319904
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 317429
-      }
-    ],
-    "totalSize": 1735515
-  },
-  {
-    "directoryName": "hfm",
-    "files": [
-      {
-        "fileName": "bwzrcghg.zwq",
-        "size": 249321
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 38324
-      },
-      {
-        "fileName": "zvspnvfr.jwn",
-        "size": 149647
-      }
-    ],
-    "totalSize": 437292
-  },
-  {
-    "directoryName": "hnqpwnfb",
-    "files": [
-      {
-        "fileName": "bdmtgt",
-        "size": 113118
-      },
-      {
-        "fileName": "bthznc.bjt",
-        "size": 299110
-      }
-    ],
-    "totalSize": 412228
-  },
-  {
-    "directoryName": "jqgfcmjn",
-    "files": [
-      {
-        "fileName": "hfm.wnw",
-        "size": 176495
-      },
-      {
-        "fileName": "mqds",
-        "size": 333817
-      },
-      {
-        "fileName": "vqsmz.cbd",
-        "size": 208755
-      },
-      {
-        "fileName": "zltfds",
-        "size": 298875
-      }
-    ],
-    "totalSize": 1017942
-  },
-  {
-    "directoryName": "mqj",
-    "files": [
-      {
-        "fileName": "brfmpbwn",
-        "size": 186649
-      },
-      {
-        "fileName": "cgdhzzl.bvg",
-        "size": 43322
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 56230
-      }
-    ],
-    "totalSize": 286201
-  },
-  {
-    "directoryName": "slsq",
-    "files": [
-      {
-        "fileName": "dir dtsg",
-        "size": 0
-      },
-      {
-        "fileName": "rjgvt.sgc",
-        "size": 343453
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 313784
-      }
-    ],
-    "totalSize": 657237
-  },
-  {
-    "directoryName": "dtsg",
-    "files": [
-      {
-        "fileName": "zvspnvfr.dqq",
-        "size": 308070
-      }
-    ],
-    "totalSize": 308070
-  },
-  {
-    "directoryName": "zdwzgnb",
-    "files": [
-      {
-        "fileName": "dir zvspnvfr",
-        "size": 234551
-      }
-    ],
-    "totalSize": 234551
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "glqszhnp",
-        "size": 278754
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 199713
-      }
-    ],
-    "totalSize": 478467
-  },
-  {
-    "directoryName": "vsd",
-    "files": [
-      {
-        "fileName": "fdrg.cft",
-        "size": 17978
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 320284
-      },
-      {
-        "fileName": "tpfmtww.jbs",
-        "size": 230059
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 168301
-      }
-    ],
-    "totalSize": 736622
-  },
-  {
-    "directoryName": "mfmcqhbz",
-    "files": [
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      },
-      {
-        "fileName": "dir lwlsnt",
-        "size": 0
-      },
-      {
-        "fileName": "dir mqqdst",
-        "size": 0
-      }
-    ],
-    "totalSize": 218902
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "dir cln",
-        "size": 0
-      },
-      {
-        "fileName": "hfm.mhr",
-        "size": 235621
-      },
-      {
-        "fileName": "qwfwj",
-        "size": 4347
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 226297
-      }
-    ],
-    "totalSize": 466265
-  },
-  {
-    "directoryName": "cln",
-    "files": [
-      {
-        "fileName": "dir cfz",
-        "size": 0
-      },
-      {
-        "fileName": "dir njptzz",
-        "size": 0
-      },
-      {
-        "fileName": "dir rcbps",
-        "size": 0
-      },
-      {
-        "fileName": "rjl.pfg",
-        "size": 161994
-      },
-      {
-        "fileName": "dir tcqttb",
-        "size": 0
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 22809
-      },
-      {
-        "fileName": "zvspnvfr.gbw",
-        "size": 225782
-      }
-    ],
-    "totalSize": 410585
-  },
-  {
-    "directoryName": "cfz",
-    "files": [
-      {
-        "fileName": "zvspnvfr",
-        "size": 168184
-      }
-    ],
-    "totalSize": 168184
-  },
-  {
-    "directoryName": "njptzz",
-    "files": [
-      {
-        "fileName": "hfm.mjh",
-        "size": 286155
-      }
-    ],
-    "totalSize": 286155
-  },
-  {
-    "directoryName": "rcbps",
-    "files": [
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 256675
-      }
-    ],
-    "totalSize": 256675
-  },
-  {
-    "directoryName": "tcqttb",
-    "files": [
-      {
-        "fileName": "flmgglv.gjw",
-        "size": 91505
-      },
-      {
-        "fileName": "ftbjzt.lcm",
-        "size": 270377
-      }
-    ],
-    "totalSize": 361882
-  },
-  {
-    "directoryName": "lwlsnt",
-    "files": [
-      {
-        "fileName": "dir ztrcwjw",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "ztrcwjw",
-    "files": [
-      {
-        "fileName": "vjcldgfj.twb",
-        "size": 342059
-      }
-    ],
-    "totalSize": 342059
-  },
-  {
-    "directoryName": "mqqdst",
-    "files": [
-      {
-        "fileName": "dhlhzzj.sbh",
-        "size": 326143
-      },
-      {
-        "fileName": "dir lmsbg",
-        "size": 0
-      },
-      {
-        "fileName": "nblfzrb.nnr",
-        "size": 13108
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 256325
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 146133
-      }
-    ],
-    "totalSize": 741709
-  },
-  {
-    "directoryName": "lmsbg",
-    "files": [
-      {
-        "fileName": "zvspnvfr.zwq",
-        "size": 282223
-      }
-    ],
-    "totalSize": 282223
-  },
-  {
-    "directoryName": "pdblpszb",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 167164
-      }
-    ],
-    "totalSize": 167164
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 161555
-      }
-    ],
-    "totalSize": 161555
-  },
-  {
-    "directoryName": "nrqhstc",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 316797
-      },
-      {
-        "fileName": "nblfzrb.cjr",
-        "size": 263838
-      },
-      {
-        "fileName": "dir pppmp",
-        "size": 0
-      },
-      {
-        "fileName": "dir shcwlggz",
-        "size": 0
-      }
-    ],
-    "totalSize": 580635
-  },
-  {
-    "directoryName": "pppmp",
-    "files": [
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      },
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 328237
-      },
-      {
-        "fileName": "hzv.prf",
-        "size": 288094
-      },
-      {
-        "fileName": "pcnhmmw",
-        "size": 260275
-      },
-      {
-        "fileName": "pptjlrn.pls",
-        "size": 214496
-      },
-      {
-        "fileName": "dir tqjgrc",
-        "size": 0
-      },
-      {
-        "fileName": "vmbvl.zvh",
-        "size": 315647
-      }
-    ],
-    "totalSize": 1625651
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "dtt",
-        "size": 4441
-      },
-      {
-        "fileName": "jhdqj.tpt",
-        "size": 115073
-      },
-      {
-        "fileName": "zlnbcwr",
-        "size": 337681
-      }
-    ],
-    "totalSize": 457195
-  },
-  {
-    "directoryName": "tqjgrc",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 6491
-      }
-    ],
-    "totalSize": 6491
-  },
-  {
-    "directoryName": "shcwlggz",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 251509
-      },
-      {
-        "fileName": "slsnbzm",
-        "size": 331578
-      },
-      {
-        "fileName": "wlchqtzj.ljz",
-        "size": 158534
-      },
-      {
-        "fileName": "wmdvjs.tjb",
-        "size": 341686
-      }
-    ],
-    "totalSize": 1083307
-  },
-  {
-    "directoryName": "vwc",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 94599
-      },
-      {
-        "fileName": "hql.hss",
-        "size": 298110
-      },
-      {
-        "fileName": "dir rsrfc",
-        "size": 0
-      },
-      {
-        "fileName": "vmpgqbcd",
-        "size": 230201
-      },
-      {
-        "fileName": "dir zcsqst",
-        "size": 0
-      },
-      {
-        "fileName": "dir zrz",
-        "size": 0
-      },
-      {
-        "fileName": "zvspnvfr",
-        "size": 58810
-      }
-    ],
-    "totalSize": 681720
-  },
-  {
-    "directoryName": "rsrfc",
-    "files": [
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      }
-    ],
-    "totalSize": 218902
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "bflpjwd.wbj",
-        "size": 259462
-      },
-      {
-        "fileName": "cvh.fnr",
-        "size": 177686
-      }
-    ],
-    "totalSize": 437148
-  },
-  {
-    "directoryName": "zcsqst",
-    "files": [
-      {
-        "fileName": "bbbd.ncl",
-        "size": 344114
-      },
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 282111
-      },
-      {
-        "fileName": "jhc",
-        "size": 327171
-      },
-      {
-        "fileName": "qwzwmffq.chl",
-        "size": 43867
-      }
-    ],
-    "totalSize": 997263
-  },
-  {
-    "directoryName": "zrz",
-    "files": [
-      {
-        "fileName": "dir zvspnvfr",
-        "size": 234551
-      }
-    ],
-    "totalSize": 234551
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "dir fst",
-        "size": 218902
-      }
-    ],
-    "totalSize": 218902
-  },
-  {
-    "directoryName": "fst",
-    "files": [
-      {
-        "fileName": "fst.jmg",
-        "size": 218902
-      }
-    ],
-    "totalSize": 218902
-  },
-  {
-    "directoryName": "wlpdphhg",
-    "files": [
-      {
-        "fileName": "dir lllph",
-        "size": 0
-      },
-      {
-        "fileName": "wmn",
-        "size": 41390
-      }
-    ],
-    "totalSize": 41390
-  },
-  {
-    "directoryName": "lllph",
-    "files": [
-      {
-        "fileName": "bbfqftlg.pll",
-        "size": 167740
-      }
-    ],
-    "totalSize": 167740
-  },
-  {
-    "directoryName": "zpbh",
-    "files": [
-      {
-        "fileName": "jhc.tfs",
-        "size": 63568
-      },
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "dir rlsvrfrb",
-        "size": 0
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 29977
-      },
-      {
-        "fileName": "dir zvspnvfr",
-        "size": 234551
-      }
-    ],
-    "totalSize": 492888
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "gbvpw.bpm",
-        "size": 154990
-      },
-      {
-        "fileName": "dir hfm",
-        "size": 785837
-      },
-      {
-        "fileName": "jhc",
-        "size": 148488
-      },
-      {
-        "fileName": "jhc.zlg",
-        "size": 301795
-      },
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      },
-      {
-        "fileName": "rvhcfsrw.crj",
-        "size": 115285
-      },
-      {
-        "fileName": "wsqdt",
-        "size": 320034
-      }
-    ],
-    "totalSize": 1991221
-  },
-  {
-    "directoryName": "hfm",
-    "files": [
-      {
-        "fileName": "vmpgqbcd",
-        "size": 141530
-      }
-    ],
-    "totalSize": 141530
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "dir rnhn",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "rnhn",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 46251
-      }
-    ],
-    "totalSize": 46251
-  },
-  {
-    "directoryName": "rlsvrfrb",
-    "files": [
-      {
-        "fileName": "hfm",
-        "size": 140923
-      },
-      {
-        "fileName": "zvspnvfr.mvl",
-        "size": 228981
-      }
-    ],
-    "totalSize": 369904
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "gnhh.hpw",
-        "size": 182280
-      },
-      {
-        "fileName": "vvlt.pgf",
-        "size": 95206
-      }
-    ],
-    "totalSize": 277486
-  },
-  {
-    "directoryName": "zvspnvfr",
-    "files": [
-      {
-        "fileName": "wsfjhlqc.zsj",
-        "size": 234551
-      }
-    ],
-    "totalSize": 234551
+    "totalSize": "unknown",
+    "level": 3
   },
   {
     "directoryName": "tfsh",
     "files": [
       {
         "fileName": "dir fbrqvwgr",
-        "size": 244821
+        "size": "unknown",
+        "type": "folder"
       }
     ],
-    "totalSize": 244821
-  },
-  {
-    "directoryName": "fbrqvwgr",
-    "files": [
-      {
-        "fileName": "nrhm",
-        "size": 244821
-      }
-    ],
-    "totalSize": 244821
+    "totalSize": "unknown",
+    "level": 3
   },
   {
     "directoryName": "vlsqgrw",
     "files": [
       {
         "fileName": "dir dzdd",
-        "size": 91558
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "fst.rjm",
-        "size": 18805
+        "size": 18805,
+        "type": "file"
       },
       {
         "fileName": "gfprhn.rjj",
-        "size": 50694
+        "size": 50694,
+        "type": "file"
       },
       {
         "fileName": "jlnrm",
-        "size": 55025
+        "size": 55025,
+        "type": "file"
       },
       {
         "fileName": "dir pnsbfz",
-        "size": 1132469
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir qjjjgd",
-        "size": 4330225
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir whrtnh",
-        "size": 253405
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "zggjjcct.fsz",
-        "size": 28406
+        "size": 28406,
+        "type": "file"
       }
     ],
-    "totalSize": 5960587
+    "totalSize": "unknown",
+    "level": 3
+  },
+  {
+    "directoryName": "cmfdm",
+    "files": [
+      {
+        "fileName": "dir gldnjj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir vhf",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "cqd",
+    "files": [
+      {
+        "fileName": "bnddfgrb",
+        "size": 305358,
+        "type": "file"
+      },
+      {
+        "fileName": "dir dwqncqp",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir hnnfdtbh",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "scnm.qbf",
+        "size": 327762,
+        "type": "file"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 165080,
+        "type": "file"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 190041,
+        "type": "file"
+      },
+      {
+        "fileName": "dir zwv",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "gvwvs",
+    "files": [
+      {
+        "fileName": "dir gjslw",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir gwz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir ljvrjp",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir sltlpb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir vbsnq",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "fst",
+        "size": 89034,
+        "type": "file"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 338143,
+        "type": "file"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 130661,
+        "type": "file"
+      },
+      {
+        "fileName": "vrj.zlb",
+        "size": 130071,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "nfm",
+    "files": [
+      {
+        "fileName": "fwmfmtt.hdg",
+        "size": 327853,
+        "type": "file"
+      },
+      {
+        "fileName": "vdjs",
+        "size": 151272,
+        "type": "file"
+      },
+      {
+        "fileName": "dir wznwjfw",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 75692,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "ldwwls",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 175977,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "dir mzshzw",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "fst",
+        "size": 84524,
+        "type": "file"
+      },
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir llnqc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "nnrwp.shv",
+        "size": 126979,
+        "type": "file"
+      },
+      {
+        "fileName": "dir npjd",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir nptwgdbn",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "qtn",
+        "size": 133618,
+        "type": "file"
+      },
+      {
+        "fileName": "dir rddftb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir thfhbhz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 129882,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 170834,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "zwv",
+    "files": [
+      {
+        "fileName": "dir lnqb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "mtv",
+        "size": 311249,
+        "type": "file"
+      },
+      {
+        "fileName": "dir tnrtjrlz",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "hfm",
+    "files": [
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mfmcqhbz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir pdblpszb",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 161555,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "nrqhstc",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 316797,
+        "type": "file"
+      },
+      {
+        "fileName": "nblfzrb.cjr",
+        "size": 263838,
+        "type": "file"
+      },
+      {
+        "fileName": "dir pppmp",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir shcwlggz",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "vwc",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 94599,
+        "type": "file"
+      },
+      {
+        "fileName": "hql.hss",
+        "size": 298110,
+        "type": "file"
+      },
+      {
+        "fileName": "dir rsrfc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 230201,
+        "type": "file"
+      },
+      {
+        "fileName": "dir zcsqst",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir zrz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "zvspnvfr",
+        "size": 58810,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "wlpdphhg",
+    "files": [
+      {
+        "fileName": "dir lllph",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "wmn",
+        "size": 41390,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "zpbh",
+    "files": [
+      {
+        "fileName": "jhc.tfs",
+        "size": 63568,
+        "type": "file"
+      },
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir rlsvrfrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 29977,
+        "type": "file"
+      },
+      {
+        "fileName": "dir zvspnvfr",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "wsfjhlqc.zsj",
+        "size": 234551,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "fbrqvwgr",
+    "files": [
+      {
+        "fileName": "nrhm",
+        "size": 244821,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 4
   },
   {
     "directoryName": "dzdd",
     "files": [
       {
         "fileName": "dir hjmv",
-        "size": 91558
+        "size": "unknown",
+        "type": "folder"
       }
     ],
-    "totalSize": 91558
-  },
-  {
-    "directoryName": "hjmv",
-    "files": [
-      {
-        "fileName": "hfm.qcd",
-        "size": 91558
-      }
-    ],
-    "totalSize": 91558
+    "totalSize": "unknown",
+    "level": 4
   },
   {
     "directoryName": "pnsbfz",
     "files": [
       {
         "fileName": "dir bmgmh",
-        "size": 656339
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir nblfzrb",
-        "size": 164792
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir zvfg",
-        "size": 311338
+        "size": "unknown",
+        "type": "folder"
       }
     ],
-    "totalSize": 1132469
-  },
-  {
-    "directoryName": "bmgmh",
-    "files": [
-      {
-        "fileName": "dir dvh",
-        "size": 273181
-      },
-      {
-        "fileName": "dir mwfbthpj",
-        "size": 75900
-      },
-      {
-        "fileName": "dir swqbph",
-        "size": 307258
-      }
-    ],
-    "totalSize": 656339
-  },
-  {
-    "directoryName": "dvh",
-    "files": [
-      {
-        "fileName": "dir jhc",
-        "size": 133426
-      },
-      {
-        "fileName": "dir jtp",
-        "size": 54117
-      },
-      {
-        "fileName": "rzlt.llb",
-        "size": 85638
-      }
-    ],
-    "totalSize": 273181
-  },
-  {
-    "directoryName": "jhc",
-    "files": [
-      {
-        "fileName": "dir dltqbnpq",
-        "size": 133426
-      }
-    ],
-    "totalSize": 133426
-  },
-  {
-    "directoryName": "dltqbnpq",
-    "files": [
-      {
-        "fileName": "zlnbcwr",
-        "size": 133426
-      }
-    ],
-    "totalSize": 133426
-  },
-  {
-    "directoryName": "jtp",
-    "files": [
-      {
-        "fileName": "dir clh",
-        "size": 54117
-      }
-    ],
-    "totalSize": 54117
-  },
-  {
-    "directoryName": "clh",
-    "files": [
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 54117
-      }
-    ],
-    "totalSize": 54117
-  },
-  {
-    "directoryName": "mwfbthpj",
-    "files": [
-      {
-        "fileName": "zwslwbr.chm",
-        "size": 75900
-      }
-    ],
-    "totalSize": 75900
-  },
-  {
-    "directoryName": "swqbph",
-    "files": [
-      {
-        "fileName": "jrlljc.ntl",
-        "size": 307258
-      }
-    ],
-    "totalSize": 307258
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "zdjg.qsj",
-        "size": 106071
-      }
-    ],
-    "totalSize": 106071
-  },
-  {
-    "directoryName": "zvfg",
-    "files": [
-      {
-        "fileName": "zvspnvfr.dqj",
-        "size": 311338
-      }
-    ],
-    "totalSize": 311338
+    "totalSize": "unknown",
+    "level": 4
   },
   {
     "directoryName": "qjjjgd",
     "files": [
       {
         "fileName": "dir cdmwgn",
-        "size": 164792
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir fqmln",
-        "size": 282233
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "gfprhn.rjj",
-        "size": 285733
+        "size": 285733,
+        "type": "file"
       },
       {
         "fileName": "dir gswsc",
-        "size": 1042999
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir htpzdb",
-        "size": 1459603
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "jwc",
-        "size": 261929
+        "size": 261929,
+        "type": "file"
       },
       {
         "fileName": "dir lvzpqqv",
-        "size": 380822
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir mlc",
-        "size": 7978
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir mzbpmhf",
-        "size": 38713
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "sdwnsgwv.mjm",
-        "size": 329303
+        "size": 329303,
+        "type": "file"
       },
       {
         "fileName": "vmpgqbcd",
-        "size": 76120
+        "size": 76120,
+        "type": "file"
       }
     ],
-    "totalSize": 4330225
-  },
-  {
-    "directoryName": "cdmwgn",
-    "files": [
-      {
-        "fileName": "dir bttff",
-        "size": 164792
-      }
-    ],
-    "totalSize": 164792
-  },
-  {
-    "directoryName": "bttff",
-    "files": [
-      {
-        "fileName": "dir nblfzrb",
-        "size": 164792
-      }
-    ],
-    "totalSize": 164792
-  },
-  {
-    "directoryName": "nblfzrb",
-    "files": [
-      {
-        "fileName": "jhc.hzf",
-        "size": 346048
-      },
-      {
-        "fileName": "dir nccq",
-        "size": 0
-      },
-      {
-        "fileName": "dir rwtddj",
-        "size": 0
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 149890
-      }
-    ],
-    "totalSize": 495938
-  },
-  {
-    "directoryName": "nccq",
-    "files": [
-      {
-        "fileName": "gfprhn.rjj",
-        "size": 141144
-      },
-      {
-        "fileName": "hfm",
-        "size": 65628
-      }
-    ],
-    "totalSize": 206772
-  },
-  {
-    "directoryName": "rwtddj",
-    "files": [
-      {
-        "fileName": "dir jctw",
-        "size": 0
-      }
-    ],
-    "totalSize": 0
-  },
-  {
-    "directoryName": "jctw",
-    "files": [
-      {
-        "fileName": "thcfz.frn",
-        "size": 141075
-      }
-    ],
-    "totalSize": 141075
-  },
-  {
-    "directoryName": "fqmln",
-    "files": [
-      {
-        "fileName": "cjgh",
-        "size": 282233
-      }
-    ],
-    "totalSize": 282233
-  },
-  {
-    "directoryName": "gswsc",
-    "files": [
-      {
-        "fileName": "ccjg.zml",
-        "size": 153758
-      },
-      {
-        "fileName": "dir cllgt",
-        "size": 132862
-      },
-      {
-        "fileName": "ctqdpq.clq",
-        "size": 257967
-      },
-      {
-        "fileName": "jhc",
-        "size": 117673
-      },
-      {
-        "fileName": "wqcz.tww",
-        "size": 258604
-      },
-      {
-        "fileName": "zvspnvfr.grb",
-        "size": 122135
-      }
-    ],
-    "totalSize": 1042999
-  },
-  {
-    "directoryName": "cllgt",
-    "files": [
-      {
-        "fileName": "vmpgqbcd",
-        "size": 132862
-      }
-    ],
-    "totalSize": 132862
-  },
-  {
-    "directoryName": "htpzdb",
-    "files": [
-      {
-        "fileName": "dir hfm",
-        "size": 785837
-      },
-      {
-        "fileName": "dir mlplp",
-        "size": 256802
-      },
-      {
-        "fileName": "nblfzrb",
-        "size": 231759
-      },
-      {
-        "fileName": "pqpbjbqp",
-        "size": 159823
-      },
-      {
-        "fileName": "vzgwwjq.zbp",
-        "size": 25382
-      }
-    ],
-    "totalSize": 1459603
-  },
-  {
-    "directoryName": "hfm",
-    "files": [
-      {
-        "fileName": "bbbsd",
-        "size": 155413
-      },
-      {
-        "fileName": "jhhmwq",
-        "size": 288638
-      },
-      {
-        "fileName": "dir lnss",
-        "size": 341786
-      }
-    ],
-    "totalSize": 785837
-  },
-  {
-    "directoryName": "lnss",
-    "files": [
-      {
-        "fileName": "zvspnvfr",
-        "size": 341786
-      }
-    ],
-    "totalSize": 341786
-  },
-  {
-    "directoryName": "mlplp",
-    "files": [
-      {
-        "fileName": "zhcq.gzj",
-        "size": 256802
-      }
-    ],
-    "totalSize": 256802
-  },
-  {
-    "directoryName": "lvzpqqv",
-    "files": [
-      {
-        "fileName": "dir cgj",
-        "size": 74595
-      },
-      {
-        "fileName": "dir mdb",
-        "size": 167891
-      },
-      {
-        "fileName": "dir shpdtb",
-        "size": 138336
-      }
-    ],
-    "totalSize": 380822
-  },
-  {
-    "directoryName": "cgj",
-    "files": [
-      {
-        "fileName": "nblfzrb.lcc",
-        "size": 74595
-      }
-    ],
-    "totalSize": 74595
-  },
-  {
-    "directoryName": "mdb",
-    "files": [
-      {
-        "fileName": "zvspnvfr.ldc",
-        "size": 167891
-      }
-    ],
-    "totalSize": 167891
-  },
-  {
-    "directoryName": "shpdtb",
-    "files": [
-      {
-        "fileName": "bvff.hsf",
-        "size": 45889
-      },
-      {
-        "fileName": "sdwnsgwv.mjm",
-        "size": 92447
-      }
-    ],
-    "totalSize": 138336
-  },
-  {
-    "directoryName": "mlc",
-    "files": [
-      {
-        "fileName": "mrblf",
-        "size": 7978
-      }
-    ],
-    "totalSize": 7978
-  },
-  {
-    "directoryName": "mzbpmhf",
-    "files": [
-      {
-        "fileName": "jhbs",
-        "size": 38713
-      }
-    ],
-    "totalSize": 38713
+    "totalSize": "unknown",
+    "level": 4
   },
   {
     "directoryName": "whrtnh",
     "files": [
       {
         "fileName": "dir jbbwzd",
-        "size": 88613
+        "size": "unknown",
+        "type": "folder"
       },
       {
         "fileName": "dir nblfzrb",
-        "size": 164792
+        "size": "unknown",
+        "type": "folder"
       }
     ],
-    "totalSize": 253405
+    "totalSize": "unknown",
+    "level": 4
+  },
+  {
+    "directoryName": "gldnjj",
+    "files": [
+      {
+        "fileName": "dir dvght",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "lwvtzd.pws",
+        "size": 93750,
+        "type": "file"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 176529,
+        "type": "file"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 100111,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "vhf",
+    "files": [
+      {
+        "fileName": "hfm.rfp",
+        "size": 240217,
+        "type": "file"
+      },
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "dwqncqp",
+    "files": [
+      {
+        "fileName": "slpgmhv",
+        "size": 122570,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 278461,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "hnnfdtbh",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 334830,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "fgb.btb",
+        "size": 179593,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "dir clbcgvhc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir lsrnz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mctd",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "zwv",
+    "files": [
+      {
+        "fileName": "jhc",
+        "size": 40349,
+        "type": "file"
+      },
+      {
+        "fileName": "dir pqwml",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 173804,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "gjslw",
+    "files": [
+      {
+        "fileName": "dir gzbm",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "gwz",
+    "files": [
+      {
+        "fileName": "hfm.hpn",
+        "size": 29042,
+        "type": "file"
+      },
+      {
+        "fileName": "mpc",
+        "size": 184043,
+        "type": "file"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 230539,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 803,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "ljvrjp",
+    "files": [
+      {
+        "fileName": "pfltqw.zvc",
+        "size": 44312,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "sltlpb",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 321945,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "vbsnq",
+    "files": [
+      {
+        "fileName": "twbbg.ftq",
+        "size": 7774,
+        "type": "file"
+      },
+      {
+        "fileName": "zpqbp.cts",
+        "size": 109546,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "wznwjfw",
+    "files": [
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir zvspnvfr",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "mzshzw",
+    "files": [
+      {
+        "fileName": "dir mllqf",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "dir pjlj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir tfljr",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "llnqc",
+    "files": [
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 194898,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "npjd",
+    "files": [
+      {
+        "fileName": "dir blvfljfn",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir dzpplzl",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 101118,
+        "type": "file"
+      },
+      {
+        "fileName": "hbbnl.nvz",
+        "size": 116164,
+        "type": "file"
+      },
+      {
+        "fileName": "hfm",
+        "size": 211685,
+        "type": "file"
+      },
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mcnftw",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir ncpchrj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir qrdczsdf",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "ttbj",
+        "size": 165190,
+        "type": "file"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 190954,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "nptwgdbn",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 217555,
+        "type": "file"
+      },
+      {
+        "fileName": "mrhhpr.gdg",
+        "size": 66582,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "rddftb",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 205347,
+        "type": "file"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 195976,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "thfhbhz",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 321628,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "lnqb",
+    "files": [
+      {
+        "fileName": "dir vjtnjt",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "tnrtjrlz",
+    "files": [
+      {
+        "fileName": "jhc.vpj",
+        "size": 270833,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "dir cpll",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir sbnplvz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir vsd",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "wlzbsdh",
+        "size": 307662,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 194873,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "mfmcqhbz",
+    "files": [
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir lwlsnt",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mqqdst",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "pdblpszb",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 167164,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "pppmp",
+    "files": [
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 328237,
+        "type": "file"
+      },
+      {
+        "fileName": "hzv.prf",
+        "size": 288094,
+        "type": "file"
+      },
+      {
+        "fileName": "pcnhmmw",
+        "size": 260275,
+        "type": "file"
+      },
+      {
+        "fileName": "pptjlrn.pls",
+        "size": 214496,
+        "type": "file"
+      },
+      {
+        "fileName": "dir tqjgrc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vmbvl.zvh",
+        "size": 315647,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "shcwlggz",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 251509,
+        "type": "file"
+      },
+      {
+        "fileName": "slsnbzm",
+        "size": 331578,
+        "type": "file"
+      },
+      {
+        "fileName": "wlchqtzj.ljz",
+        "size": 158534,
+        "type": "file"
+      },
+      {
+        "fileName": "wmdvjs.tjb",
+        "size": 341686,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "rsrfc",
+    "files": [
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "zcsqst",
+    "files": [
+      {
+        "fileName": "bbbd.ncl",
+        "size": 344114,
+        "type": "file"
+      },
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 282111,
+        "type": "file"
+      },
+      {
+        "fileName": "jhc",
+        "size": 327171,
+        "type": "file"
+      },
+      {
+        "fileName": "qwzwmffq.chl",
+        "size": 43867,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "zrz",
+    "files": [
+      {
+        "fileName": "dir zvspnvfr",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "lllph",
+    "files": [
+      {
+        "fileName": "bbfqftlg.pll",
+        "size": 167740,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "gbvpw.bpm",
+        "size": 154990,
+        "type": "file"
+      },
+      {
+        "fileName": "dir hfm",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "jhc",
+        "size": 148488,
+        "type": "file"
+      },
+      {
+        "fileName": "jhc.zlg",
+        "size": 301795,
+        "type": "file"
+      },
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "rvhcfsrw.crj",
+        "size": 115285,
+        "type": "file"
+      },
+      {
+        "fileName": "wsqdt",
+        "size": 320034,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "rlsvrfrb",
+    "files": [
+      {
+        "fileName": "hfm",
+        "size": 140923,
+        "type": "file"
+      },
+      {
+        "fileName": "zvspnvfr.mvl",
+        "size": 228981,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "gnhh.hpw",
+        "size": 182280,
+        "type": "file"
+      },
+      {
+        "fileName": "vvlt.pgf",
+        "size": 95206,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "hjmv",
+    "files": [
+      {
+        "fileName": "hfm.qcd",
+        "size": 91558,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "bmgmh",
+    "files": [
+      {
+        "fileName": "dir dvh",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mwfbthpj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir swqbph",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "zdjg.qsj",
+        "size": 106071,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "zvfg",
+    "files": [
+      {
+        "fileName": "zvspnvfr.dqj",
+        "size": 311338,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "cdmwgn",
+    "files": [
+      {
+        "fileName": "dir bttff",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "fqmln",
+    "files": [
+      {
+        "fileName": "cjgh",
+        "size": 282233,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "gswsc",
+    "files": [
+      {
+        "fileName": "ccjg.zml",
+        "size": 153758,
+        "type": "file"
+      },
+      {
+        "fileName": "dir cllgt",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "ctqdpq.clq",
+        "size": 257967,
+        "type": "file"
+      },
+      {
+        "fileName": "jhc",
+        "size": 117673,
+        "type": "file"
+      },
+      {
+        "fileName": "wqcz.tww",
+        "size": 258604,
+        "type": "file"
+      },
+      {
+        "fileName": "zvspnvfr.grb",
+        "size": 122135,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "htpzdb",
+    "files": [
+      {
+        "fileName": "dir hfm",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mlplp",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "nblfzrb",
+        "size": 231759,
+        "type": "file"
+      },
+      {
+        "fileName": "pqpbjbqp",
+        "size": 159823,
+        "type": "file"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 25382,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "lvzpqqv",
+    "files": [
+      {
+        "fileName": "dir cgj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mdb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir shpdtb",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "mlc",
+    "files": [
+      {
+        "fileName": "mrblf",
+        "size": 7978,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "mzbpmhf",
+    "files": [
+      {
+        "fileName": "jhbs",
+        "size": 38713,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 5
   },
   {
     "directoryName": "jbbwzd",
     "files": [
       {
         "fileName": "jhc.qqw",
-        "size": 88613
+        "size": 88613,
+        "type": "file"
       }
     ],
-    "totalSize": 88613
+    "totalSize": "unknown",
+    "level": 5
   },
   {
     "directoryName": "nblfzrb",
     "files": [
       {
         "fileName": "zlnbcwr",
-        "size": 164792
+        "size": 164792,
+        "type": "file"
       }
     ],
-    "totalSize": 164792
+    "totalSize": "unknown",
+    "level": 5
+  },
+  {
+    "directoryName": "dvght",
+    "files": [
+      {
+        "fileName": "dir tfbzq",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "jhc",
+        "size": 160378,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "clbcgvhc",
+    "files": [
+      {
+        "fileName": "hnn",
+        "size": 285825,
+        "type": "file"
+      },
+      {
+        "fileName": "nblfzrb.wvr",
+        "size": 238272,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "nblfzrb.svz",
+        "size": 99731,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "lsrnz",
+    "files": [
+      {
+        "fileName": "fsthnpmd",
+        "size": 257843,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "mctd",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 278117,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "pqwml",
+    "files": [
+      {
+        "fileName": "hbzvzwpr",
+        "size": 193573,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "gzbm",
+    "files": [
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir gpjz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir gzd",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir hfm",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "fpqfgs.gdl",
+        "size": 271817,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "dir hfm",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mdftsf",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "mllqf",
+    "files": [
+      {
+        "fileName": "hfm.svt",
+        "size": 113563,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "pjlj",
+    "files": [
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "tfljr",
+    "files": [
+      {
+        "fileName": "dir dwhjmg",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "blvfljfn",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 283460,
+        "type": "file"
+      },
+      {
+        "fileName": "sqljld",
+        "size": 148100,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "dzpplzl",
+    "files": [
+      {
+        "fileName": "jjlvdvq.mqp",
+        "size": 62592,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "dvd.wvl",
+        "size": 90578,
+        "type": "file"
+      },
+      {
+        "fileName": "zqplggf",
+        "size": 165955,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "mcnftw",
+    "files": [
+      {
+        "fileName": "gbqpdt",
+        "size": 157908,
+        "type": "file"
+      },
+      {
+        "fileName": "dir jsnrcfbv",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "qlmd.dbq",
+        "size": 322169,
+        "type": "file"
+      },
+      {
+        "fileName": "dir zvspnvfr",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "ncpchrj",
+    "files": [
+      {
+        "fileName": "dir cnswqjjd",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir gvmlgjnj",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "qrdczsdf",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 201094,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "vjtnjt",
+    "files": [
+      {
+        "fileName": "hfm",
+        "size": 66715,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "cpll",
+    "files": [
+      {
+        "fileName": "pwcmhcf.lwz",
+        "size": 13452,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir rqssg",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "dir bcj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir cqjmmr",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "fst.tjf",
+        "size": 256392,
+        "type": "file"
+      },
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 7079,
+        "type": "file"
+      },
+      {
+        "fileName": "dir gqm",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir hbqfms",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir nmgbfhmq",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "pvdtbdj",
+        "size": 57962,
+        "type": "file"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 117035,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 64208,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "sbnplvz",
+    "files": [
+      {
+        "fileName": "dir bln",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir hdv",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "jhc.zvm",
+        "size": 31790,
+        "type": "file"
+      },
+      {
+        "fileName": "mmmjpp",
+        "size": 102276,
+        "type": "file"
+      },
+      {
+        "fileName": "dir zdwzgnb",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "vsd",
+    "files": [
+      {
+        "fileName": "fdrg.cft",
+        "size": 17978,
+        "type": "file"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 320284,
+        "type": "file"
+      },
+      {
+        "fileName": "tpfmtww.jbs",
+        "size": 230059,
+        "type": "file"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 168301,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "dir cln",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "hfm.mhr",
+        "size": 235621,
+        "type": "file"
+      },
+      {
+        "fileName": "qwfwj",
+        "size": 4347,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 226297,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "lwlsnt",
+    "files": [
+      {
+        "fileName": "dir ztrcwjw",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "mqqdst",
+    "files": [
+      {
+        "fileName": "dhlhzzj.sbh",
+        "size": 326143,
+        "type": "file"
+      },
+      {
+        "fileName": "dir lmsbg",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "nblfzrb.nnr",
+        "size": 13108,
+        "type": "file"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 256325,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 146133,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "dtt",
+        "size": 4441,
+        "type": "file"
+      },
+      {
+        "fileName": "jhdqj.tpt",
+        "size": 115073,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 337681,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "tqjgrc",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 6491,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "bflpjwd.wbj",
+        "size": 259462,
+        "type": "file"
+      },
+      {
+        "fileName": "cvh.fnr",
+        "size": 177686,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "hfm",
+    "files": [
+      {
+        "fileName": "vmpgqbcd",
+        "size": 141530,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "dir rnhn",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "dvh",
+    "files": [
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir jtp",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "rzlt.llb",
+        "size": 85638,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "mwfbthpj",
+    "files": [
+      {
+        "fileName": "zwslwbr.chm",
+        "size": 75900,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "swqbph",
+    "files": [
+      {
+        "fileName": "jrlljc.ntl",
+        "size": 307258,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "bttff",
+    "files": [
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "cllgt",
+    "files": [
+      {
+        "fileName": "vmpgqbcd",
+        "size": 132862,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "hfm",
+    "files": [
+      {
+        "fileName": "bbbsd",
+        "size": 155413,
+        "type": "file"
+      },
+      {
+        "fileName": "jhhmwq",
+        "size": 288638,
+        "type": "file"
+      },
+      {
+        "fileName": "dir lnss",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "mlplp",
+    "files": [
+      {
+        "fileName": "zhcq.gzj",
+        "size": 256802,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "cgj",
+    "files": [
+      {
+        "fileName": "nblfzrb.lcc",
+        "size": 74595,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "mdb",
+    "files": [
+      {
+        "fileName": "zvspnvfr.ldc",
+        "size": 167891,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "shpdtb",
+    "files": [
+      {
+        "fileName": "bvff.hsf",
+        "size": 45889,
+        "type": "file"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 92447,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 6
+  },
+  {
+    "directoryName": "tfbzq",
+    "files": [
+      {
+        "fileName": "tcghw.srg",
+        "size": 276592,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "mqpg",
+        "size": 99806,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "gpjz",
+    "files": [
+      {
+        "fileName": "dir dnsvsp",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "jhc.dfd",
+        "size": 218828,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "gzd",
+    "files": [
+      {
+        "fileName": "chdfwj",
+        "size": 20383,
+        "type": "file"
+      },
+      {
+        "fileName": "prrlv.rvn",
+        "size": 63309,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "hfm",
+    "files": [
+      {
+        "fileName": "qhh",
+        "size": 291753,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "hfm",
+    "files": [
+      {
+        "fileName": "dir fsgdq",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir grj",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "mdftsf",
+    "files": [
+      {
+        "fileName": "dir fnzztppm",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "jhc.mtl",
+        "size": 21425,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "dir hqzm",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "dwhjmg",
+    "files": [
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "jsnrcfbv",
+    "files": [
+      {
+        "fileName": "dir gffj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "hfm",
+        "size": 75682,
+        "type": "file"
+      },
+      {
+        "fileName": "dir pmfwlzn",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 160494,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "dir hflnbmcd",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 11899,
+        "type": "file"
+      },
+      {
+        "fileName": "whmq.ftc",
+        "size": 334607,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 347595,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "vmpgqbcd",
+        "size": 75213,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "dir jhc",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "cnswqjjd",
+    "files": [
+      {
+        "fileName": "qpzfr",
+        "size": 134879,
+        "type": "file"
+      },
+      {
+        "fileName": "zvspnvfr",
+        "size": 30171,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "gvmlgjnj",
+    "files": [
+      {
+        "fileName": "fst",
+        "size": 209285,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "dir ltrc",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vhwnz",
+        "size": 326613,
+        "type": "file"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 244908,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "rqssg",
+    "files": [
+      {
+        "fileName": "bfmhl.cwj",
+        "size": 131534,
+        "type": "file"
+      },
+      {
+        "fileName": "hhznnd",
+        "size": 261143,
+        "type": "file"
+      },
+      {
+        "fileName": "dir nmb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vnmwgflj.rhp",
+        "size": 74816,
+        "type": "file"
+      },
+      {
+        "fileName": "wdzfzcss.fdc",
+        "size": 251308,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "bcj",
+    "files": [
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "cqjmmr",
+    "files": [
+      {
+        "fileName": "fcq.mmz",
+        "size": 147054,
+        "type": "file"
+      },
+      {
+        "fileName": "dir fst",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir hfm",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "jcsjjj.mvg",
+        "size": 110840,
+        "type": "file"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 75746,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 333085,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "gqm",
+    "files": [
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 188469,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "hbqfms",
+    "files": [
+      {
+        "fileName": "fst",
+        "size": 127163,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "nmgbfhmq",
+    "files": [
+      {
+        "fileName": "gczqzbbd",
+        "size": 257647,
+        "type": "file"
+      },
+      {
+        "fileName": "dir hfm",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir zvspnvfr",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "bln",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 161029,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "fst",
+        "size": 333565,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "hdv",
+    "files": [
+      {
+        "fileName": "dir zvpp",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "dir hfm",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir hnqpwnfb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir jqgfcmjn",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir mqj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "psdd.ftf",
+        "size": 312345,
+        "type": "file"
+      },
+      {
+        "fileName": "dir slsq",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "thvhdmm.rpq",
+        "size": 319904,
+        "type": "file"
+      },
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 317429,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "zdwzgnb",
+    "files": [
+      {
+        "fileName": "dir zvspnvfr",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "cln",
+    "files": [
+      {
+        "fileName": "dir cfz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir njptzz",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir rcbps",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "rjl.pfg",
+        "size": 161994,
+        "type": "file"
+      },
+      {
+        "fileName": "dir tcqttb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 22809,
+        "type": "file"
+      },
+      {
+        "fileName": "zvspnvfr.gbw",
+        "size": 225782,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "ztrcwjw",
+    "files": [
+      {
+        "fileName": "vjcldgfj.twb",
+        "size": 342059,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "lmsbg",
+    "files": [
+      {
+        "fileName": "zvspnvfr.zwq",
+        "size": 282223,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "fst.jmg",
+        "size": 218902,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "rnhn",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 46251,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "dir dltqbnpq",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "jtp",
+    "files": [
+      {
+        "fileName": "dir clh",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "jhc.hzf",
+        "size": 346048,
+        "type": "file"
+      },
+      {
+        "fileName": "dir nccq",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir rwtddj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 149890,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "lnss",
+    "files": [
+      {
+        "fileName": "zvspnvfr",
+        "size": 341786,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 7
+  },
+  {
+    "directoryName": "dnsvsp",
+    "files": [
+      {
+        "fileName": "dir vmdbpwj",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir zvspnvfr",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "fsgdq",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 244565,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "grj",
+    "files": [
+      {
+        "fileName": "rdvvrjf.fwz",
+        "size": 200989,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "fnzztppm",
+    "files": [
+      {
+        "fileName": "bvf",
+        "size": 159263,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "hqzm",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 159505,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "ppptz",
+        "size": 194723,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "gffj",
+    "files": [
+      {
+        "fileName": "dir nblfzrb",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "pcqs",
+        "size": 9340,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "pmfwlzn",
+    "files": [
+      {
+        "fileName": "jbsmwm",
+        "size": 137069,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "hflnbmcd",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 275968,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "jhc",
+    "files": [
+      {
+        "fileName": "nblfzrb.mbc",
+        "size": 218236,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "ltrc",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 163670,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "dir brpzhf",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "fst",
+        "size": 61846,
+        "type": "file"
+      },
+      {
+        "fileName": "vccrmc.jbd",
+        "size": 66356,
+        "type": "file"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 72767,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "nmb",
+    "files": [
+      {
+        "fileName": "fst.twf",
+        "size": 264421,
+        "type": "file"
+      },
+      {
+        "fileName": "dir jng",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "rnt.dlp",
+        "size": 81009,
+        "type": "file"
+      },
+      {
+        "fileName": "sftvd",
+        "size": 288053,
+        "type": "file"
+      },
+      {
+        "fileName": "dir vfc",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "zvspnvfr.dqv",
+        "size": 149417,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "fst",
+    "files": [
+      {
+        "fileName": "vmpgqbcd",
+        "size": 114747,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "hfm",
+    "files": [
+      {
+        "fileName": "dir nvvppmls",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir phpq",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dir rld",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "hfm",
+    "files": [
+      {
+        "fileName": "gbtwdctn.drw",
+        "size": 267774,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 189769,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "zvpp",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 143723,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "hfm",
+    "files": [
+      {
+        "fileName": "bwzrcghg.zwq",
+        "size": 249321,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 38324,
+        "type": "file"
+      },
+      {
+        "fileName": "zvspnvfr.jwn",
+        "size": 149647,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "hnqpwnfb",
+    "files": [
+      {
+        "fileName": "bdmtgt",
+        "size": 113118,
+        "type": "file"
+      },
+      {
+        "fileName": "bthznc.bjt",
+        "size": 299110,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "jqgfcmjn",
+    "files": [
+      {
+        "fileName": "hfm.wnw",
+        "size": 176495,
+        "type": "file"
+      },
+      {
+        "fileName": "mqds",
+        "size": 333817,
+        "type": "file"
+      },
+      {
+        "fileName": "vqsmz.cbd",
+        "size": 208755,
+        "type": "file"
+      },
+      {
+        "fileName": "zltfds",
+        "size": 298875,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "mqj",
+    "files": [
+      {
+        "fileName": "brfmpbwn",
+        "size": 186649,
+        "type": "file"
+      },
+      {
+        "fileName": "cgdhzzl.bvg",
+        "size": 43322,
+        "type": "file"
+      },
+      {
+        "fileName": "zlnbcwr",
+        "size": 56230,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "slsq",
+    "files": [
+      {
+        "fileName": "dir dtsg",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "rjgvt.sgc",
+        "size": 343453,
+        "type": "file"
+      },
+      {
+        "fileName": "vmpgqbcd",
+        "size": 313784,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "glqszhnp",
+        "size": 278754,
+        "type": "file"
+      },
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 199713,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "cfz",
+    "files": [
+      {
+        "fileName": "zvspnvfr",
+        "size": 168184,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "njptzz",
+    "files": [
+      {
+        "fileName": "hfm.mjh",
+        "size": 286155,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "rcbps",
+    "files": [
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 256675,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "tcqttb",
+    "files": [
+      {
+        "fileName": "flmgglv.gjw",
+        "size": 91505,
+        "type": "file"
+      },
+      {
+        "fileName": "ftbjzt.lcm",
+        "size": 270377,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "dltqbnpq",
+    "files": [
+      {
+        "fileName": "zlnbcwr",
+        "size": 133426,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "clh",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 54117,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "nccq",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 141144,
+        "type": "file"
+      },
+      {
+        "fileName": "hfm",
+        "size": 65628,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "rwtddj",
+    "files": [
+      {
+        "fileName": "dir jctw",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 8
+  },
+  {
+    "directoryName": "vmdbpwj",
+    "files": [
+      {
+        "fileName": "jhc",
+        "size": 258373,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "zvspnvfr",
+    "files": [
+      {
+        "fileName": "vzgwwjq.zbp",
+        "size": 18241,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "nblfzrb",
+    "files": [
+      {
+        "fileName": "sdwnsgwv.mjm",
+        "size": 216547,
+        "type": "file"
+      },
+      {
+        "fileName": "zvspnvfr.nvs",
+        "size": 135235,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "brpzhf",
+    "files": [
+      {
+        "fileName": "mttr.szf",
+        "size": 224488,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "jng",
+    "files": [
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 8014,
+        "type": "file"
+      },
+      {
+        "fileName": "ppn.qbv",
+        "size": 168688,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "vfc",
+    "files": [
+      {
+        "fileName": "dir bhgstrdl",
+        "size": "unknown",
+        "type": "folder"
+      },
+      {
+        "fileName": "dggwnqp.fpl",
+        "size": 138108,
+        "type": "file"
+      },
+      {
+        "fileName": "gfprhn.rjj",
+        "size": 303194,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "nvvppmls",
+    "files": [
+      {
+        "fileName": "dir cdsmgjdb",
+        "size": "unknown",
+        "type": "folder"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "phpq",
+    "files": [
+      {
+        "fileName": "hfm.hjj",
+        "size": 274026,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "rld",
+    "files": [
+      {
+        "fileName": "hsnngd.tqw",
+        "size": 237915,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "dtsg",
+    "files": [
+      {
+        "fileName": "zvspnvfr.dqq",
+        "size": 308070,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "jctw",
+    "files": [
+      {
+        "fileName": "thcfz.frn",
+        "size": 141075,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 9
+  },
+  {
+    "directoryName": "bhgstrdl",
+    "files": [
+      {
+        "fileName": "fst.nrv",
+        "size": 102559,
+        "type": "file"
+      },
+      {
+        "fileName": "trqrlrw.jmc",
+        "size": 269697,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 10
+  },
+  {
+    "directoryName": "cdsmgjdb",
+    "files": [
+      {
+        "fileName": "hfm.nmw",
+        "size": 158739,
+        "type": "file"
+      }
+    ],
+    "totalSize": "unknown",
+    "level": 10
   }
 ]

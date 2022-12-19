@@ -5,7 +5,11 @@ let count = 0
 
 export function daySevenPartOne(input: string) {
   const directories = resolveDirectoryObject(input)
-  console.log('DIRECTORY OBJECT', JSON.stringify(directories, undefined, 2))
+  const directoreiesSortedByLowestLevels = directories.sort(
+    (a, b) => a.level - b.level
+  )
+  writeToJson(directoreiesSortedByLowestLevels, `directories.json`)
+
   // const updatedDirectories = updateDirectoryTotals(directories)
   // const directoriesLessThan100k = updatedDirectories.filter(
   //   (directory) => directory.totalSize <= 100000
@@ -123,7 +127,7 @@ export function daySevenPartOne(input: string) {
 // }
 
 export function resolveDirectoryObject(string: string): Directory[] {
-  let level = 0
+  let resolvedLevel = 0
   const directories = string.split('$ cd')
   const resolvedDirectories: Directory[] = directories
     .map((lines) => {
@@ -131,16 +135,21 @@ export function resolveDirectoryObject(string: string): Directory[] {
       const directoryName = firstWord?.trim()
       const totalSize = resolveTotalSize(fileNames)
       const files = resolveFileObject(fileNames)
-      // console.log(directoryName, files, totalSize, level)
+
+      const level = lines === ' ..\n' ? resolvedLevel-- : resolvedLevel++
       return {
         directoryName,
         files,
         totalSize,
-        level,
+        level: resolvedLevel,
       }
     })
     .filter((e) => e.directoryName !== '..')
   return resolvedDirectories
+}
+
+function resolveLevel(string: string): number {
+  return 9
 }
 
 function resolveFileObject(array: string[]): File[] {
