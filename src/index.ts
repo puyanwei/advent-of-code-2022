@@ -1,15 +1,15 @@
-import { commands } from './consts'
-import { data } from './data/commands'
-import { dayOnePartOne, dayOnePartTwo } from './day01-calorie-counting'
-import { dayTwoPartOne, dayTwoPartTwo } from './day02-rps'
+import { commands } from "./consts"
+import { data } from "./data/commands"
+import { dayOnePartOne, dayOnePartTwo } from "./day01-calorie-counting"
+import { dayTwoPartOne, dayTwoPartTwo } from "./day02-rps"
 import {
   dayThreePartOne,
   dayThreePartTwo,
-} from './day03-rucksack-reorganization'
-import { dayFourPartOne, dayFourPartTwo } from './day04-camp-cleanup'
-import { dayFivePartOne, dayFivePartTwo } from './day05-supply-stacks'
-import { daySixPartOne, daySixPartTwo } from './day06-tuning-trouble'
-import { daySevenPartOne } from './day07-no-space-left'
+} from "./day03-rucksack-reorganization"
+import { dayFourPartOne, dayFourPartTwo } from "./day04-camp-cleanup"
+import { dayFivePartOne, dayFivePartTwo } from "./day05-supply-stacks"
+import { daySixPartOne, daySixPartTwo } from "./day06-tuning-trouble"
+import { daySevenPartOne } from "./day07-no-space-left"
 
 // console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
 // console.warn(`Day 1 part 2 - Total calories of top 3 is ${dayOnePartTwo()}`)
