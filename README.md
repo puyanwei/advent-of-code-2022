@@ -150,3 +150,9 @@ Recursion strategy - 0. Create map to index the diff directories
 5. Recursion should end at '/' no matter what, with a success or fail
 
 Parking this now. I've attempted this three times, first one using a tree based format object, the other two just creating an array of objects where each object is a directory. Seems the logic steps are solid but the answer is wrong unfortunately. First and second attempts have a recursive function within a loop, but the third one doesn't use recursion.
+
+### Day 8 - Tree Top Tree Houses
+
+Added a `planning` folder to encourage my planning process. This is done using the [Excalidraw VS Code Extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor).
+
+// TODO: Add screenshot of planning here
