@@ -8,7 +8,9 @@ import { dayFourPartOne, dayFourPartTwo } from "./day04-camp-cleanup"
 import { dayFivePartOne, dayFivePartTwo } from "./day05-supply-stacks"
 import { daySixPartOne, daySixPartTwo } from "./day06-tuning-trouble"
 import { daySevenPartOne } from "./day07-no-space-left"
+import { dayEightPartOne } from "./day08- tree-top-tree-house"
 
+/*
 console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
 console.warn(`Day 1 part 2 - Total calories of top 3 is ${dayOnePartTwo()}`)
 console.warn(`Day 2 part 1 - The sum of all the points are ${dayTwoPartOne()}`)
@@ -39,11 +41,14 @@ console.warn(
 console.warn(
   `Day 6 part 2 - The first message marker appears after character ${daySixPartTwo()}`
 )
+*/
 
 /* FAIL!
- console.warn(
-   `Day 6 part 1 - The sum of the total sizes of directories under 100k is ${daySevenPartOne(
-     data
-   )}`
- )
+console.warn(
+  `Day 6 part 1 - The sum of the total sizes of directories under 100k is ${daySevenPartOne()}`
+)
 */
+
+console.warn(
+  `Day 7 part 1 - The number of trees that are visible from outside the grid are ${dayEightPartOne()}`
+)

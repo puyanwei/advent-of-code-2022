@@ -1,8 +1,9 @@
 import { Directory, File } from "./types"
-import { logObject, sum, writeToJson } from "./helpers"
+import { sum, writeToJson } from "./helpers"
+import { data } from "./data/commands"
 
-export function daySevenPartOne(input: string) {
-  const directories = resolveDirectoryObject(input)
+export function daySevenPartOne() {
+  const directories = resolveDirectoryObject(data)
   const directoriesSortedByLowestLevels = directories.sort(
     (a, b) => b.level - a.level
   )
@@ -21,8 +22,7 @@ export function daySevenPartOne(input: string) {
   })
 
   // logObject(updatedDirectory)
-
-  writeToJson(directoriesLessThan100k, "updated-dir2")
+  // writeToJson(directoriesLessThan100k, "updated-dir2")
 
   const total = sum(
     directoriesLessThan100k.map((directory) => directory.totalSize as number)
