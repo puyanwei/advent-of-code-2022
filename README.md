@@ -148,3 +148,5 @@ Recursion strategy - 0. Create map to index the diff directories
 3. if first word dir and size === 0, use name to refernce that directory
 4. attempt to sum up that directory. If successful recurse
 5. Recursion should end at '/' no matter what, with a success or fail
+
+Parking this now. I've attempted this three times, first one using a tree based format object, the other two just creating an array of objects where each object is a directory. Seems the logic steps are solid but the answer is wrong unfortunately. First and second attempts have a recursive function within a loop, but the third one doesn't use recursion.
