@@ -155,8 +155,20 @@ Parking this now. I've attempted this three times, first one using a tree based 
 
 Added a `planning` folder to encourage my planning process. This is done using the [Excalidraw VS Code Extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor).
 
+### Part 1
+
 ![d__coding_advent-of-code-2022_src_planning_day08p1](https://user-images.githubusercontent.com/14803518/209682822-c6524c89-1f77-48e9-8962-1e85700392fc.png)
 
 Apart from a few hiccups this actually went very smoothly. I had written a lot of tests this time to give me more confidence in my code. This learned from the previous challenge where I ended up rabbit holing it without tests and just decided to go with it.
 
-The hardest thing was writing the function/tests for the `isTreeVisible` function as it uses the `.some` method which only returns truthy values, and here I wanted to return the falsey ones, so I had to reverse that in order for it to work.
+The hardest thing was writing the function/tests for the `isTreeVisible` function as it uses the `.some` method which only returns truthy values, and here I wanted to return the falsey ones, so I had to reverse that in order for it to work which was hella confusing!
+
+### Part 2
+
+![d__coding_advent-of-code-2022_src_planning_day08p2](https://user-images.githubusercontent.com/14803518/209702536-affc3d4e-b99e-4a89-ab57-929aee9d239a.png)
+
+Something that tripped me up a little (but not too much!) was realising that you had to reverse the order of the surrounding trees arrays for `above` and `left` as from the current tree's position that is what you would see. That in tern affects the calculations too.
+
+A lesson learned from the infamous `DAY 7`, I wrote tests and that gave me better confidence and visiblity in what was working or not...
+
+![image](https://user-images.githubusercontent.com/14803518/209703152-17b65e7d-0996-49a8-b02f-6931c9d3519a.png)
