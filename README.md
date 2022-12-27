@@ -120,7 +120,7 @@ I attempted to use the newly added `structuredClone` to clone the object, but th
 
 4. Due to the code being split out into smaller functions, I generalised the function to take in a length word to adjust for part 2, wrote some extra tests and made sure they passed. Did make a bit of a tangent today so brought it back to the part 1 commit. Got it working then refactored.
 
-### Day 7 - No Space Left On Devie
+### Day 7 - No Space Left On Device
 
 1. In solving the problem as fast as possible, I would assume that we would want to keep track of the `cd` commands to see how deep into the file system we are, and sum up the numbers there. However with the anticipation of part 2, I would like to put the data into JSON format so that its flexible to use for it.
 2. Write up the interface for the object. This should be a tree style recursive object, with nodes and children (which contains more nodes). There should be a `file` interface which contains information about the files that are not nodes.
@@ -155,4 +155,8 @@ Parking this now. I've attempted this three times, first one using a tree based 
 
 Added a `planning` folder to encourage my planning process. This is done using the [Excalidraw VS Code Extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor).
 
-// TODO: Add screenshot of planning here
+![d__coding_advent-of-code-2022_src_planning_day08p1](https://user-images.githubusercontent.com/14803518/209682822-c6524c89-1f77-48e9-8962-1e85700392fc.png)
+
+Apart from a few hiccups this actually went very smoothly. I had written a lot of tests this time to give me more confidence in my code. This learned from the previous challenge where I ended up rabbit holing it without tests and just decided to go with it.
+
+The hardest thing was writing the function/tests for the `isTreeVisible` function as it uses the `.some` method which only returns truthy values, and here I wanted to return the falsey ones, so I had to reverse that in order for it to work.
