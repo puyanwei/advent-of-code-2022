@@ -5,7 +5,7 @@ import {
   resolveTreeGrid,
   transposeMatrix,
 } from "../day08p1 - tree-top-tree-house"
-import { resolveBlockingTrees } from "../day08p2 - tree-top-tree-house"
+import { multiplyAll, resolveBlockingTrees } from "../day08p2 - tree-top-tree-house"
 import { logObject } from "../helpers"
 import { Tree } from "../types"
 
@@ -228,7 +228,7 @@ describe(`isEdgeOfGrid`, () => {
   })
 })
 
-describe.only(`resolveBlockingtrees()`, () => {
+describe(`resolveBlockingtrees()`, () => {
   it(`returns an array of numbers representing the blocking trees above, below, left and right of it`, () => {
     const tree: Tree = {
       position: [1, 1],
@@ -242,6 +242,7 @@ describe.only(`resolveBlockingtrees()`, () => {
     }
 
     expect(resolveBlockingTrees(tree)).toEqual([1, 1, 1, 1])
+
     const treeTwo: Tree = {
       position: [1, 2],
       height: 5,
@@ -253,7 +254,28 @@ describe.only(`resolveBlockingtrees()`, () => {
       },
     }
 
-    // up, left, right, down
     expect(resolveBlockingTrees(treeTwo)).toEqual([1, 1, 2, 2])
+    const treeThree: Tree = {
+      position: [3, 2],
+      height: 5,
+      surroundingTreeHeights: {
+        right: [4, 9],
+        left: [3, 3],
+        above: [3, 5, 3],
+        below: [3],
+      },
+    }
+
+    // up, left, right, down
+    expect(resolveBlockingTrees(treeThree)).toEqual([2, 2, 2, 1])
+  })
+})
+
+describe(`multiply()`, () => {
+  it(`multiplies all values of an array of numbers`, () => {
+    expect(multiplyAll([1, 4, 6, 2])).toEqual(48)
+    expect(multiplyAll([2, 8, 9, 5])).toEqual(720)
+    expect(multiplyAll([44, 18, 99, 5])).toEqual(392040)
+    expect(multiplyAll([9, 4, 0, 12])).toEqual(0)
   })
 })

@@ -1,40 +1,44 @@
 import { treeGridScanDirection, trees } from "./consts"
 import { data } from "./data/trees"
 import { isEdgeOfGrid, resolveTree, resolveTreeGrid } from "./day08p1 - tree-top-tree-house"
-import { logObject } from "./helpers"
+import { flattenArray, logObject } from "./helpers"
 import { Tree, Directions } from "./types"
 
 export function dayEightPartTwo() {
-  const treeGrid = resolveTreeGrid(trees)
+  const treeGrid = resolveTreeGrid(data)
 
-  const arrayOfVisibleTrees = treeGrid
-  // .map((rows, rowIndex) =>
-  // rows.map((columns, colIndex) => {
-  // cycle through array of arrays' positions
-  // const tree = resolveTree([rowIndex, colIndex], treeGrid)
-  const tree = resolveTree([1, 2], treeGrid, true)
-  logObject(tree)
-  const blockingTreesArray = resolveBlockingTrees(tree)
-  // console.log(11111, blockingTreesArray)
-  // })
-  // )
-
-  return arrayOfVisibleTrees
+  const scoreMatrix: number[][] = treeGrid.map((rows, rowIndex) =>
+    rows.map((columns, colIndex) => {
+      // cycle through array of arrays' positions
+      const tree = resolveTree([rowIndex, colIndex], treeGrid, true)
+      const blockingTreesArray: number[] = resolveBlockingTrees(tree)
+      if (blockingTreesArray.includes(0)) return 0
+      return multiplyAll(blockingTreesArray)
+    })
+  )
+  const scoresArray = flattenArray(scoreMatrix)
+  const highestScore = Math.max(...scoresArray)
+  return highestScore
 }
 
-export function resolveBlockingTrees(tree: Tree) {
+export function resolveBlockingTrees(tree: Tree): number[] {
   const visibleTreeArray = treeGridScanDirection.map((direction) => {
     let isTallerTreeReached = false
     const isTreeVisibleByDirection = tree.surroundingTreeHeights[direction as Directions]
       .map((surroundingTreeHeight) => {
-        const isTargetTreeTallerThanSurroundingTree = tree.height <= surroundingTreeHeight
+        const isSurroundingTreeBlocking = tree.height <= surroundingTreeHeight
         if (isTallerTreeReached) return
-        if (!isTargetTreeTallerThanSurroundingTree) return isTargetTreeTallerThanSurroundingTree
+        if (!isSurroundingTreeBlocking) return isSurroundingTreeBlocking
         isTallerTreeReached = true
-        return isTargetTreeTallerThanSurroundingTree
+        return isSurroundingTreeBlocking
       })
       .filter((e) => e !== undefined).length
+
     return isTreeVisibleByDirection
   })
   return visibleTreeArray
+}
+
+export function multiplyAll(array: number[]): number {
+  return array.reduce((prev, curr) => (prev *= curr), 1)
 }
