@@ -4,7 +4,8 @@ import {
   resolveTree,
   resolveTreeGrid,
   transposeMatrix,
-} from "../day08- tree-top-tree-house"
+} from "../day08p1 - tree-top-tree-house"
+import { resolveBlockingTrees } from "../day08p2 - tree-top-tree-house"
 import { logObject } from "../helpers"
 import { Tree } from "../types"
 
@@ -92,6 +93,29 @@ describe(`resolveTree()`, () => {
     }
 
     const result = resolveTree([0, 0], forest)
+    expect(result).toEqual(tree)
+  })
+  it(`has option to invert left and above surrounding tree orderings to reflect the view from the tree's perspective going outwards`, () => {
+    const forest = [
+      [3, 0, 3, 7, 3],
+      [2, 5, 5, 1, 2],
+      [6, 5, 3, 3, 2],
+      [3, 3, 5, 4, 9],
+      [3, 5, 3, 9, 0],
+    ]
+
+    const tree = {
+      position: [2, 3],
+      height: 3,
+      surroundingTreeHeights: {
+        left: [3, 5, 6],
+        right: [2],
+        above: [1, 7],
+        below: [4, 9],
+      },
+    }
+
+    const result = resolveTree([2, 3], forest, true)
     expect(result).toEqual(tree)
   })
 })
@@ -192,20 +216,44 @@ describe(`isEdgeOfGrid`, () => {
       isEdgeOfGrid([5, 1], forest)
     } catch (error) {
       expect(error).toBeInstanceOf(Error)
-      expect(error).toHaveProperty(
-        "message",
-        "Target row is bigger then grid row"
-      )
+      expect(error).toHaveProperty("message", "Target row is bigger then grid row")
     }
 
     try {
       isEdgeOfGrid([1, 7], forest)
     } catch (error) {
       expect(error).toBeInstanceOf(Error)
-      expect(error).toHaveProperty(
-        "message",
-        "Target column is bigger then grid column"
-      )
+      expect(error).toHaveProperty("message", "Target column is bigger then grid column")
     }
+  })
+})
+
+describe.only(`resolveBlockingtrees()`, () => {
+  it(`returns an array of numbers representing the blocking trees above, below, left and right of it`, () => {
+    const tree: Tree = {
+      position: [1, 1],
+      height: 5,
+      surroundingTreeHeights: {
+        left: [2],
+        right: [5, 1, 2],
+        above: [0],
+        below: [5, 3, 5],
+      },
+    }
+
+    expect(resolveBlockingTrees(tree)).toEqual([1, 1, 1, 1])
+    const treeTwo: Tree = {
+      position: [1, 2],
+      height: 5,
+      surroundingTreeHeights: {
+        right: [1, 2],
+        left: [5, 2],
+        above: [3],
+        below: [3, 5, 3],
+      },
+    }
+
+    // up, left, right, down
+    expect(resolveBlockingTrees(treeTwo)).toEqual([1, 1, 2, 2])
   })
 })

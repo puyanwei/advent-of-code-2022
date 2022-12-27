@@ -30,7 +30,11 @@ export function resolveTreeGrid(data: string): number[][] {
   return grid
 }
 
-export function resolveTree(target: Position, grid: Grid): Tree {
+export function resolveTree(
+  target: Position,
+  grid: Grid,
+  isOutwardView = false
+): Tree {
   const [row, column] = target // rows is the first param due to how the array of arrays are structured
   const height = grid[row][column]
   const transposedGrid = transposeMatrix(grid)
@@ -44,9 +48,13 @@ export function resolveTree(target: Position, grid: Grid): Tree {
     (tree, index) => index > row
   )
 
-  const left = resolveEmptyArray(resolvedLeft)
+  const above = isOutwardView
+    ? resolveEmptyArray(resolvedAbove).reverse()
+    : resolveEmptyArray(resolvedAbove)
   const right = resolveEmptyArray(resolvedRight)
-  const above = resolveEmptyArray(resolvedAbove)
+  const left = isOutwardView
+    ? resolveEmptyArray(resolvedLeft).reverse()
+    : resolveEmptyArray(resolvedLeft)
   const below = resolveEmptyArray(resolvedBelow)
 
   return {

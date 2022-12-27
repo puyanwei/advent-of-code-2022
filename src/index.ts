@@ -8,7 +8,8 @@ import { dayFourPartOne, dayFourPartTwo } from "./day04-camp-cleanup"
 import { dayFivePartOne, dayFivePartTwo } from "./day05-supply-stacks"
 import { daySixPartOne, daySixPartTwo } from "./day06-tuning-trouble"
 import { daySevenPartOne } from "./day07-no-space-left"
-import { dayEightPartOne } from "./day08- tree-top-tree-house"
+import { dayEightPartOne } from "./day08p1 - tree-top-tree-house"
+import { dayEightPartTwo } from "./day08p2 - tree-top-tree-house"
 
 /*
 console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
@@ -49,6 +50,9 @@ console.warn(
 )
 */
 
+// console.warn(
+//   `Day 8 part 1 - The number of trees that are visible from outside the grid are ${dayEightPartOne()}`
+// )
 console.warn(
-  `Day 7 part 1 - The number of trees that are visible from outside the grid are ${dayEightPartOne()}`
+  `Day 8 part 2 - The highest scenic score for a tree is ${dayEightPartTwo()}`
 )
