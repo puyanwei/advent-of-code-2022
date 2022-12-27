@@ -1,4 +1,4 @@
-import { Command, Directory, File, SupplyStack } from '../types'
+import { Command, Directory, File, SupplyStack } from "../types"
 
 export const alphabetrpsMatchPointsMapper: Record<string, number> = {
   a: 1,
@@ -56,12 +56,12 @@ export const alphabetrpsMatchPointsMapper: Record<string, number> = {
 } as const
 
 export const RPSMap: Record<string, string> = {
-  A: 'rock',
-  B: 'paper',
-  C: 'scissors',
-  X: 'rock',
-  Y: 'paper',
-  Z: 'scissors',
+  A: "rock",
+  B: "paper",
+  C: "scissors",
+  X: "rock",
+  Y: "paper",
+  Z: "scissors",
 } as const
 
 export const rpsMatchPointsMap: Record<string, number> = {
@@ -77,9 +77,9 @@ export const rpsMatchPointsMap: Record<string, number> = {
 } as const
 
 export const rpsResultMap: Record<string, string> = {
-  X: 'lose',
-  Y: 'draw',
-  Z: 'win',
+  X: "lose",
+  Y: "draw",
+  Z: "win",
 } as const
 
 export const rpsStringToPointsMap: Record<string, number> = {
@@ -106,77 +106,77 @@ export const rpsStringToPointsMap: Record<string, number> = {
 export const initialSupplyStacks: SupplyStack[] = [
   {
     stackNumber: 1,
-    crates: ['G', 'T', 'R', 'W'],
+    crates: ["G", "T", "R", "W"],
   },
   {
     stackNumber: 2,
-    crates: ['G', 'C', 'H', 'P', 'M', 'S', 'V', 'W'],
+    crates: ["G", "C", "H", "P", "M", "S", "V", "W"],
   },
   {
     stackNumber: 3,
-    crates: ['C', 'L', 'T', 'S', 'G', 'M'],
+    crates: ["C", "L", "T", "S", "G", "M"],
   },
   {
     stackNumber: 4,
-    crates: ['J', 'H', 'D', 'M', 'W', 'R', 'F'],
+    crates: ["J", "H", "D", "M", "W", "R", "F"],
   },
   {
     stackNumber: 5,
-    crates: ['P', 'Q', 'L', 'H', 'S', 'W', 'F', 'J'],
+    crates: ["P", "Q", "L", "H", "S", "W", "F", "J"],
   },
   {
     stackNumber: 6,
-    crates: ['P', 'J', 'D', 'N', 'F', 'M', 'S'],
+    crates: ["P", "J", "D", "N", "F", "M", "S"],
   },
   {
     stackNumber: 7,
-    crates: ['Z', 'B', 'D', 'F', 'G', 'C', 'S', 'J'],
+    crates: ["Z", "B", "D", "F", "G", "C", "S", "J"],
   },
   {
     stackNumber: 8,
-    crates: ['R', 'T', 'B'],
+    crates: ["R", "T", "B"],
   },
   {
     stackNumber: 9,
-    crates: ['H', 'N', 'W', 'L', 'C'],
+    crates: ["H", "N", "W", "L", "C"],
   },
 ]
 export const initialSupplyStacksForUpgradedCrane: SupplyStack[] = [
   {
     stackNumber: 1,
-    crates: ['G', 'T', 'R', 'W'],
+    crates: ["G", "T", "R", "W"],
   },
   {
     stackNumber: 2,
-    crates: ['G', 'C', 'H', 'P', 'M', 'S', 'V', 'W'],
+    crates: ["G", "C", "H", "P", "M", "S", "V", "W"],
   },
   {
     stackNumber: 3,
-    crates: ['C', 'L', 'T', 'S', 'G', 'M'],
+    crates: ["C", "L", "T", "S", "G", "M"],
   },
   {
     stackNumber: 4,
-    crates: ['J', 'H', 'D', 'M', 'W', 'R', 'F'],
+    crates: ["J", "H", "D", "M", "W", "R", "F"],
   },
   {
     stackNumber: 5,
-    crates: ['P', 'Q', 'L', 'H', 'S', 'W', 'F', 'J'],
+    crates: ["P", "Q", "L", "H", "S", "W", "F", "J"],
   },
   {
     stackNumber: 6,
-    crates: ['P', 'J', 'D', 'N', 'F', 'M', 'S'],
+    crates: ["P", "J", "D", "N", "F", "M", "S"],
   },
   {
     stackNumber: 7,
-    crates: ['Z', 'B', 'D', 'F', 'G', 'C', 'S', 'J'],
+    crates: ["Z", "B", "D", "F", "G", "C", "S", "J"],
   },
   {
     stackNumber: 8,
-    crates: ['R', 'T', 'B'],
+    crates: ["R", "T", "B"],
   },
   {
     stackNumber: 9,
-    crates: ['H', 'N', 'W', 'L', 'C'],
+    crates: ["H", "N", "W", "L", "C"],
   },
 ]
 
@@ -203,3 +203,9 @@ $ ls
 8033020 d.log
 5626152 d.ext
 7214296 k`
+
+export const trees = `30373
+25512
+65332
+33549
+35390`

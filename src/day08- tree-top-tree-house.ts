@@ -1,38 +1,25 @@
+import { trees } from "./consts"
 import { data } from "./data/trees"
-
-type Position = [number, number]
-type Grid = number[][]
-type Directions = "above" | "below" | "left" | "right"
-interface SurroundingTreeHeights {
-  above: number[]
-  right: number[]
-  below: number[]
-  left: number[]
-}
-export interface Tree {
-  position: Position
-  height: number
-  surroundingTreeHeights: SurroundingTreeHeights
-}
-
-const exampleData = `30373
-25512
-65332
-33549
-35390`
-
-const targetTree: Position = [0, 0]
+import { logObject } from "./helpers"
+import { Position, Grid, Tree, SurroundingTreeHeights } from "./types"
 
 export function dayEightPartOne() {
-  const treeGrid = resolveTreeGrid(exampleData)
+  const treeGrid = resolveTreeGrid(data)
 
-  const tree = resolveTree(targetTree, treeGrid) // Lets do one tree first
+  const arrayOfVisibleTrees = treeGrid
+    .map((rows, rowIndex) =>
+      rows.map((columns, colIndex) => {
+        // cycle through array of arrays' positions
+        const tree = resolveTree([rowIndex, colIndex], treeGrid)
+        return isEdgeOfGrid(tree.position, treeGrid)
+          ? true
+          : isTreeVisible(tree)
+      })
+    )
+    .flatMap((e) => e)
+    .filter((e) => !!e).length
 
-  const arrayOfVisibleTrees = isEdgeOfGrid(tree.position, treeGrid)
-    ? true
-    : isTreeVisible(tree)
-
-  return 0
+  return arrayOfVisibleTrees
 }
 
 export function resolveTreeGrid(data: string): number[][] {
@@ -46,7 +33,7 @@ export function resolveTreeGrid(data: string): number[][] {
 export function resolveTree(target: Position, grid: Grid): Tree {
   const [row, column] = target // rows is the first param due to how the array of arrays are structured
   const height = grid[row][column]
-  const transposedGrid = transpose(grid)
+  const transposedGrid = transposeMatrix(grid)
 
   const resolvedRight = grid[row].filter((tree, index) => index > column)
   const resolvedLeft = grid[row].filter((tree, index) => index < column)
@@ -78,12 +65,8 @@ function resolveEmptyArray(array: number[]): number[] | [0] {
   return !array.length ? [0] : array
 }
 
-export function transpose<T>(grid: T[][]): T[][] {
+export function transposeMatrix<T>(grid: T[][]): T[][] {
   return grid[0].map((_, colIndex) => grid.map((row) => row[colIndex]))
-}
-
-type TreeHeights = {
-  [Property in Directions]: number[]
 }
 
 export function isTreeVisible(tree: Tree) {

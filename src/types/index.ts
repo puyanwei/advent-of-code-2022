@@ -15,8 +15,8 @@ export interface RuckSackTeams {
   authenticitySticker: string
 }
 
-export type RPS = 'rock' | 'paper' | 'scissors'
-export type Outcome = 'win' | 'lose' | 'draw'
+export type RPS = "rock" | "paper" | "scissors"
+export type Outcome = "win" | "lose" | "draw"
 
 export interface RPSMatch {
   hero: RPS
@@ -58,18 +58,37 @@ export interface ResolveMarker {
 
 export interface File {
   fileName: string
-  size: number | 'unknown'
-  type: 'folder' | 'file'
+  size: number | "unknown"
+  type: "folder" | "file"
 }
 
 export interface Directory {
   directoryName: string
   files: File[]
-  totalSize: number | 'unknown'
+  totalSize: number | "unknown"
   level: number
 }
 
 export interface Command {
   command: string
   dir?: File[]
+}
+
+export type Position = [number, number]
+export type Grid = number[][]
+export type Directions = "above" | "below" | "left" | "right"
+export interface SurroundingTreeHeights {
+  above: number[]
+  right: number[]
+  below: number[]
+  left: number[]
+}
+export interface Tree {
+  position: Position
+  height: number
+  surroundingTreeHeights: SurroundingTreeHeights
+}
+
+export type TreeHeights = {
+  [Property in Directions]: number[]
 }

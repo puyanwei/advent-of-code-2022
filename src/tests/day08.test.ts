@@ -1,12 +1,12 @@
 import {
-  Tree,
   isEdgeOfGrid,
   isTreeVisible,
   resolveTree,
   resolveTreeGrid,
-  transpose,
+  transposeMatrix,
 } from "../day08- tree-top-tree-house"
 import { logObject } from "../helpers"
+import { Tree } from "../types"
 
 describe(`resolveTreeGrid()`, () => {
   it(`parses the string into a grided array format`, () => {
@@ -43,7 +43,7 @@ describe(`transpose()`, () => {
       [7, 1, 3, 4, 9],
       [3, 2, 2, 9, 0],
     ]
-    expect(transpose(grid)).toEqual(result)
+    expect(transposeMatrix(grid)).toEqual(result)
   })
 })
 
