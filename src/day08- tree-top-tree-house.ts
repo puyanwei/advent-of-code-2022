@@ -27,7 +27,11 @@ export function dayEightPartOne() {
   const treeGrid = resolveTreeGrid(exampleData)
 
   const tree = resolveTree(targetTree, treeGrid) // Lets do one tree first
-  const result = isTreeVisible(tree)
+
+  const arrayOfVisibleTrees = isEdgeOfGrid(tree.position, treeGrid)
+    ? true
+    : isTreeVisible(tree)
+
   return 0
 }
 
@@ -40,13 +44,12 @@ export function resolveTreeGrid(data: string): number[][] {
 }
 
 export function resolveTree(target: Position, grid: Grid): Tree {
-  const [row, column] = target
+  const [row, column] = target // rows is the first param due to how the array of arrays are structured
   const height = grid[row][column]
+  const transposedGrid = transpose(grid)
 
   const resolvedRight = grid[row].filter((tree, index) => index > column)
   const resolvedLeft = grid[row].filter((tree, index) => index < column)
-
-  const transposedGrid = transpose(grid)
   const resolvedAbove = transposedGrid[column].filter(
     (tree, index) => index < row
   )
@@ -99,4 +102,19 @@ export function isTreeVisible(tree: Tree) {
       return !isTreeVisibleByDirection // Flip it back
     })
     .some((e) => e)
+}
+
+export function isEdgeOfGrid(target: Position, grid: Grid): boolean {
+  const lastRow = grid.length - 1
+  const lastCol = grid[lastRow].length - 1
+  const [row, column] = target
+
+  if (row > lastRow) throw new Error("Target row is bigger then grid row")
+  if (column > lastCol)
+    throw new Error("Target column is bigger then grid column")
+  if (row === 0) return true
+  if (row === lastRow) return true
+  if (column === 0) return true
+  if (column === lastCol) return true
+  return false
 }

@@ -19,7 +19,7 @@ export function resolveFileTree(
       if (element.command === 'ls') return element
     })
     .filter((e) => e !== undefined)
-  console.log({ arrayOfLS })
+  console.warn({ arrayOfLS })
 
   const updatedDirectories = arrayOfLS.map((element) => {
     return element?.dir?.map((element) => {
@@ -35,7 +35,7 @@ export function resolveFileTree(
     })
   })
 
-  console.log(updatedDirectories.map((e) => console.log(e)))
+  console.warn(updatedDirectories.map((e) => console.warn(e)))
   return {}
 }
 
