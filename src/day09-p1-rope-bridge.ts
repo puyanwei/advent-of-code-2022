@@ -18,7 +18,8 @@ export function dayNinePartOne() {
 
 // [0, 0] is the starting point
 
-type Position = [number, number]
+export type PositionBounds = -2 | -1 | 0 | 1 | 2
+export type Position = [PositionBounds, PositionBounds]
 
 interface Rope {
   head: Position[]
@@ -32,18 +33,19 @@ interface Step {
 }
 
 export function resolveMove(direction: string, currentPosition: Position) {
-  // creates the step object
-  // move head
-  // resolve head array
-  // check previous move so that tail can move correctly - stay or move tail
-  // resolve tail array
+  // creating the step object
+  // resolve head position
+  // resolve tail array - stay or move tail
   // return step object
+
+  const head = resolveHeadPosition(direction, currentPosition)
+  const tail = resolveTailPosition(direction, currentPosition, head)
 
   return {
     name: direction,
     currentPositions: {
-      head: resolveHeadPosition(direction, currentPosition),
-      // tail: resolveTailPosition(direction, currentPosition),
+      head,
+      tail,
     },
     // previousPostions: resolvePreviousPosition(direction),
   }
@@ -74,10 +76,19 @@ export function resolveHeadPosition(direction: string, currentPosition: Position
     if (letter === "R") newPosition = [currentX + number, currentY]
     if (letter === "U") newPosition = [currentX, currentY + number]
     if (letter === "D") newPosition = [currentX, currentY - number]
-    console.log({ newPosition })
     return newPosition
   }
   throw Error("Split word does not contain direction command")
 }
 
-// export function resolveHeadPosition(direction: string, position: Position) {}
+export function resolveTailPosition(
+  direction: string,
+  currentPosition: Position,
+  headPosition: Position
+) {
+  /* Combos of tail to head positioning
+
+
+
+*/
+}

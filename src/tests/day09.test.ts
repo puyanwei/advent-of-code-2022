@@ -1,5 +1,19 @@
 import { resolveHeadPosition, resolveMove } from "../day09-p1-rope-bridge"
 
+describe(`resolveMoveInstructions()`, () {
+  it(`translates the data into tuples of x/y coordinates`,() => {
+    const data = `R 4 
+U 4
+L 3
+D 1
+R 4
+D 1
+L 5
+R 2`
+const result = [[0,1], [0,1], [0,1], [0,1],[-1,0],[-1,0],[-1,0],[0,-1],[1,0], [1,0],[1,0],[1,0],[0,-1],[-1,0],[-1,0],[-1,0],[-1,0],[-1,0],[1,0],[1,0]]
+  })
+})
+
 // describe.only(`resolveMove()`, () => {
 //   it(`returns an object containing move data`, () => {
 //     const result = {
@@ -18,8 +32,8 @@ import { resolveHeadPosition, resolveMove } from "../day09-p1-rope-bridge"
 //   })
 // })
 
-describe.only(`resolvePosition()`, () => {
-  it.only(`returns a tuple containing the move data`, () => {
+describe(`resolvePosition()`, () => {
+  it(`returns a tuple containing the move data`, () => {
     expect(resolveHeadPosition(`L 1`, [0, 0])).toEqual([-1, 0])
     expect(resolveHeadPosition(`R 1`, [0, 0])).toEqual([1, 0])
     expect(resolveHeadPosition(`U 1`, [0, 0])).toEqual([0, 1])
