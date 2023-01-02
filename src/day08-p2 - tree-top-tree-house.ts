@@ -1,6 +1,6 @@
 import { treeGridScanDirection, trees } from "./consts"
 import { data } from "./data/trees"
-import { isEdgeOfGrid, resolveTree, resolveTreeGrid } from "./day08p1 - tree-top-tree-house"
+import { isEdgeOfGrid, resolveTree, resolveTreeGrid } from "./day08-p1 - tree-top-tree-house"
 import { flattenArray, logObject } from "./helpers"
 import { Tree, Directions } from "./types"
 

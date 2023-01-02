@@ -5,9 +5,11 @@ import { dayFourPartOne, dayFourPartTwo } from "./day04-camp-cleanup"
 import { dayFivePartOne, dayFivePartTwo } from "./day05-supply-stacks"
 import { daySixPartOne, daySixPartTwo } from "./day06-tuning-trouble"
 import { daySevenPartOne } from "./day07-no-space-left"
-import { dayEightPartOne } from "./day08p1 - tree-top-tree-house"
-import { dayEightPartTwo } from "./day08p2 - tree-top-tree-house"
+import { dayEightPartOne } from "./day08-p1 - tree-top-tree-house"
+import { dayEightPartTwo } from "./day08-p2 - tree-top-tree-house"
+import { dayNinePartOne } from "./day09-p1-rope-bridge"
 
+/*
 console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
 console.warn(`Day 1 part 2 - Total calories of top 3 is ${dayOnePartTwo()}`)
 console.warn(`Day 2 part 1 - The sum of all the points are ${dayTwoPartOne()}`)
@@ -27,13 +29,15 @@ console.warn(
 console.warn(`Day 6 part 1 - The first marker appears after character ${daySixPartOne()}`)
 console.warn(`Day 6 part 2 - The first message marker appears after character ${daySixPartTwo()}`)
 
-/* FAIL!
-console.warn(
+// FAILED!
+// console.warn(
   `Day 6 part 1 - The sum of the total sizes of directories under 100k is ${daySevenPartOne()}`
 )
-*/
 
 console.warn(
   `Day 8 part 1 - The number of trees that are visible from outside the grid are ${dayEightPartOne()}`
 )
 console.warn(`Day 8 part 2 - The highest scenic score for a tree is ${dayEightPartTwo()}`)
+*/
+
+console.warn(`Day 9 part 1 - The tail visited ${dayNinePartOne()} positions at least once`)
