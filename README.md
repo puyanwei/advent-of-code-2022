@@ -4,8 +4,6 @@ My code solutions for Advent of Code 2022. WATCH OUT, SPOILERS!
 
 https://adventofcode.com/2022
 
-Node with Typescript setup from - https://github.com/colt/express-ts
-
 ## Aim & Focus
 
 Advent of code releases a new coding problem to solve everyday during December. It gives you points based on how quickly you solve the problem after it is released.
@@ -31,7 +29,7 @@ npm install
 Type `npm start` to run node on the code for the answers
 Type `npm test` to run the jest tests
 
-## Dairy (Probs wont make sense to anyone else this is just me recording my thoughts and process)
+## Process Dairy
 
 ### Day One - Calorie Counting
 
