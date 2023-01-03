@@ -1,16 +1,44 @@
-import { resolveHeadPosition, resolveMove } from "../day09-p1-rope-bridge"
+// import { resolveHeadPosition, resolveMove } from "../day09-p1-rope-bridge"
 
-describe(`resolveMoveInstructions()`, () {
-  it(`translates the data into tuples of x/y coordinates`,() => {
-    const data = `R 4 
-U 4
-L 3
-D 1
-R 4
-D 1
-L 5
-R 2`
-const result = [[0,1], [0,1], [0,1], [0,1],[-1,0],[-1,0],[-1,0],[0,-1],[1,0], [1,0],[1,0],[1,0],[0,-1],[-1,0],[-1,0],[-1,0],[-1,0],[-1,0],[1,0],[1,0]]
+import { resolveSteps } from "../day09-p1-rope-bridge"
+
+describe(`resolveSteps()`, () => {
+  it(`translates the data into tuples of x/y coordinates`, () => {
+    const data = `R 4
+    U 4
+    L 3
+    D 1
+    R 4
+    D 1
+    L 5
+    R 2`
+    const result = [
+      [1, 0],
+      [1, 0],
+      [1, 0],
+      [1, 0],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [-1, 0],
+      [-1, 0],
+      [-1, 0],
+      [0, -1],
+      [1, 0],
+      [1, 0],
+      [1, 0],
+      [1, 0],
+      [0, -1],
+      [-1, 0],
+      [-1, 0],
+      [-1, 0],
+      [-1, 0],
+      [-1, 0],
+      [1, 0],
+      [1, 0],
+    ]
+    expect(resolveSteps(data)).toEqual(result)
   })
 })
 
@@ -31,7 +59,7 @@ const result = [[0,1], [0,1], [0,1], [0,1],[-1,0],[-1,0],[-1,0],[0,-1],[1,0], [1
 //     expect(resolveMove(`R 1`, [0, 0])).toEqual(result)
 //   })
 // })
-
+/*
 describe(`resolvePosition()`, () => {
   it(`returns a tuple containing the move data`, () => {
     expect(resolveHeadPosition(`L 1`, [0, 0])).toEqual([-1, 0])
@@ -52,3 +80,4 @@ describe(`resolvePosition()`, () => {
     }
   })
 })
+*/
