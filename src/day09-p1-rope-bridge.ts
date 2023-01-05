@@ -1,43 +1,47 @@
 import { directions } from "./consts"
-import { directionMap } from "./consts/maps"
+import { directionMap, tailsToHeadsCoordsMap } from "./consts/maps"
 import { logObject } from "./helpers"
-
-export type Position = [number, number]
-
-type DirectionAbr = "U" | "D" | "L" | "R"
-type DirectionNumber = 0 | 1 | -1
-type DirectionMap = Record<DirectionAbr, [DirectionNumber, DirectionNumber]>
-type Move = [DirectionNumber, DirectionNumber]
-type SplitDirection = [DirectionAbr, string]
-
-interface Rope {
-  head: Position[]
-  tail: Position[]
-}
-
-interface Step {
-  name: string
-  currentPositions: Rope
-  // prevPositions: Rope // do we need prev position?
-}
+import { Position, Move, DirectionAbr, DirectionNumber } from "./types"
 
 export function dayNinePartOne() {
   // return array of tuples spreading out the duplicate steps into single steps
-  const resolvedDirections = resolveData(directions)
+  const resolvedDirections = resolveIntoSingleSteps(directions)
 
-  let currentHeadPosition: Position = [0, 0]
+  // initial head and tail positions
+  let headPosition: Position = [0, 0]
+  let tailPosition: Position = [0, 0]
   const pathHistory = resolvedDirections.map((direction) => {
-    const steps = resolveMoveObject(direction, currentHeadPosition)
+    const steps = resolveMoveObject(direction, headPosition, tailPosition)
   })
 
-  // const tailMoves = steps.map(step => step.currentPosition.tail)
   // const uniqueTailMoves = new Map(tailMoves)
   // return uniqueTailMoves
 
   return 999
 }
 
-export function resolveData(string: string): Move[] {
+export function resolveMoveObject(direction: Move, headPosition: Position, tailPosition: Position) {
+  const head = calculateNextMove(direction, headPosition)
+  const tail = resolveTailPosition(headPosition, tailPosition)
+
+  return {
+    name: direction,
+    currentPositions: {
+      head,
+      tail,
+    },
+  }
+}
+
+export function resolveTailPosition(tailPosition: Position, headPosition: Position): Position {
+  // Need to resolve the coordinate relationship tuple between head and tail
+  const relativeCoords = getRelativeCoordinates(tailPosition, headPosition)
+  const coords = `[${relativeCoords}]`
+  console.log(coords)
+  return tailsToHeadsCoordsMap[coords]
+}
+
+export function resolveIntoSingleSteps(string: string): Move[] {
   const steps = string.split(`\n`).map((e) => e.trim())
 
   const resolveSingleSteps = steps
@@ -54,7 +58,7 @@ export function resolveData(string: string): Move[] {
         const directionCoords = directionMap[letter]
         const number = parseInt(resolvedNumber)
 
-        let arr: any = []
+        let arr: [DirectionNumber, DirectionNumber][] = []
         for (let index = 0; index < number; index++) arr.push(directionCoords)
         return arr
       }
@@ -64,26 +68,14 @@ export function resolveData(string: string): Move[] {
   return resolveSingleSteps
 }
 
-export function resolveMoveObject(direction: Move, currentPosition: Position) {
-  // creating the step object
-  // resolve head position
-  // resolve tail array - stay or move tail
-  // return step object
-
-  const head = calculateNextMove(direction, currentPosition)
-  //  const tail = resolveTailPosition(direction, currentPosition, head)
-
-  return {
-    name: direction,
-    currentPositions: {
-      head,
-      // tail,
-    },
-  }
-}
-
 export function calculateNextMove(direction: Move, currentCoords: Position) {
   const [directionX, directionY] = direction
   const [currentCoordsX, currentCoordsY] = currentCoords
   return [directionX + currentCoordsX, directionY + currentCoordsY]
+}
+
+export function getRelativeCoordinates(tailPosition: Position, headPosition: Position) {
+  const [tailX, tailY] = tailPosition
+  const [headX, headY] = headPosition
+  return [tailX - headX, tailY - headY]
 }
