@@ -2,6 +2,7 @@ import { tailsToHeadsCoordsMap } from "../consts/maps"
 import {
   calculateNextMove,
   getRelativeCoordinates,
+  resolveMoveObject,
   resolveTailPosition,
 } from "../day09-p1-rope-bridge"
 
@@ -40,6 +41,7 @@ describe(`tailsToHeadsCoordsMap`, () => {
 describe(`calculateNextMove()`, () => {
   it(`adds up the tuple coordinates`, () => {
     expect(calculateNextMove([0, 1], [1, 2])).toEqual([1, 3])
+    expect(calculateNextMove([0, 1], [0, 1])).toEqual([0, 2])
     expect(calculateNextMove([1, 0], [6, 8])).toEqual([7, 8])
     expect(calculateNextMove([0, -1], [4, 4])).toEqual([4, 3])
     expect(calculateNextMove([-1, 0], [-2, 2])).toEqual([-3, 2])
@@ -47,7 +49,17 @@ describe(`calculateNextMove()`, () => {
 })
 
 describe(`resolveMoveObject()`, () => {
-  it.todo(`returns the move object based on the head & tail position`)
+  it(`returns an object containing move data`, () => {
+    const result = {
+      name: "up",
+      currentPositions: {
+        head: [0, 2],
+        tail: [0, 1],
+      },
+    }
+
+    expect(resolveMoveObject([0, 1], [0, 1], [0, 0])).toEqual(result)
+  })
 })
 
 describe(`resolveTailPosition`, () => {
@@ -73,21 +85,3 @@ describe(`getRelativeCoordinates()`, () => {
     expect(getRelativeCoordinates([2, 2], [4, 4])).toEqual([-2, -2])
   })
 })
-
-// describe.only(`resolveMoveObject()`, () => {
-//   it(`returns an object containing move data`, () => {
-//     const result = {
-//       name: `R 1`,
-//       prevPosition: {
-//         head: [0, 0],
-//         tail: [0, 0],
-//       },
-//       currentPosition: {
-//         head: [1, 0],
-//         tail: [0, 0],
-//       },
-//     }
-
-//     expect(resolveMove(`R 1`, [0, 0])).toEqual(result)
-//   })
-// })

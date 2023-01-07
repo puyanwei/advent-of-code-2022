@@ -7,6 +7,13 @@ export const directionMap: Record<string, [DirectionNumber, DirectionNumber]> = 
   R: [1, 0],
 }
 
+export const coordsToDirMap: Record<string, string> = {
+  "[0,1]": `up`,
+  "[0,-1]": `down`,
+  "[-1,0]": `left`,
+  "[1,0]": `right`,
+}
+
 // how the tail moves relative to head position
 export const tailsToHeadsCoordsMap: Readonly<Record<string, Move>> = {
   "[-2,-2]": [1, 1],

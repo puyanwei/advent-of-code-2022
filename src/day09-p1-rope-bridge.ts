@@ -1,5 +1,5 @@
 import { directions } from "./consts"
-import { directionMap, tailsToHeadsCoordsMap } from "./consts/maps"
+import { coordsToDirMap, directionMap, tailsToHeadsCoordsMap } from "./consts/maps"
 import { logObject } from "./helpers"
 import { Position, Move, DirectionAbr, DirectionNumber } from "./types"
 
@@ -25,7 +25,7 @@ export function resolveMoveObject(direction: Move, headPosition: Position, tailP
   const tail = resolveTailPosition(headPosition, tailPosition)
 
   return {
-    name: direction,
+    name: coordsToDirMap[`[${direction}]`],
     currentPositions: {
       head,
       tail,
