@@ -26,7 +26,7 @@ describe(`tailsToHeadsCoordsMap`, () => {
     expect(tailsToHeadsCoordsMap[`[2,-2]`]).toEqual([-1, 1])
 
     expect(tailsToHeadsCoordsMap[`[-2,-1]`]).toEqual([1, 0])
-    expect(tailsToHeadsCoordsMap[`[2,-1]`]).toEqual([1, 0])
+    expect(tailsToHeadsCoordsMap[`[2,-1]`]).toEqual([-1, 0])
 
     expect(tailsToHeadsCoordsMap[`[-2,0]`]).toEqual([1, 0])
     expect(tailsToHeadsCoordsMap[`[2,0]`]).toEqual([-1, 0])
@@ -52,7 +52,7 @@ describe(`resolveMoveObject()`, () => {
   it(`returns an object containing move data`, () => {
     const result = {
       name: "up",
-      currentPositions: {
+      currentPosition: {
         head: [0, 2],
         tail: [0, 1],
       },
