@@ -1,4 +1,4 @@
-import { DirectionNumber, Position } from "../types"
+import { DirectionNumber, Move, Position } from "../types"
 
 export const directionMap: Record<string, [DirectionNumber, DirectionNumber]> = {
   U: [0, 1],
@@ -7,26 +7,26 @@ export const directionMap: Record<string, [DirectionNumber, DirectionNumber]> = 
   R: [1, 0],
 }
 
-export const tailsToHeadsCoordsMap: Readonly<Record<string, Position>> = {
-  "[-2,-2]": [-1, 1],
-  "[-1,-2]": [-1, 1],
+export const tailsToHeadsCoordsMap: Readonly<Record<string, Move>> = {
+  "[-2,-2]": [-1, -1],
+  "[-1,-2]": [-1, -1],
   "[0,-2]": [0, -1],
   "[1,-2]": [1, -1],
   "[2,-2]": [1, -1],
   "[-2,-1]": [-1, -1],
-  "[-1,-1]": [-1, -1],
-  "[0,-1]": [0, -1],
-  "[1,-1]": [1, -1],
+  "[-1,-1]": [0, 0],
+  "[0,-1]": [0, 0],
+  "[1,-1]": [0, 0],
   "[2,-1]": [1, -1],
   "[-2,0]": [-1, 0],
-  "[-1,0]": [-1, 0],
+  "[-1,0]": [0, 0],
   "[0,0]": [0, 0],
-  "[1,0]": [1, 0],
+  "[1,0]": [0, 0],
   "[2,0]": [1, 0],
   "[-2,1]": [-1, 1],
-  "[-1,1]": [-1, 1],
-  "[0,1]": [0, 1],
-  "[1,1]": [1, 1],
+  "[-1,1]": [0, 0],
+  "[0,1]": [0, 0],
+  "[1,1]": [0, 0],
   "[2,1]": [1, 1],
   "[-2,2]": [-1, 1],
   "[-1,2]": [-1, 1],

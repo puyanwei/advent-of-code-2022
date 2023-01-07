@@ -34,11 +34,12 @@ export function resolveMoveObject(direction: Move, headPosition: Position, tailP
 }
 
 export function resolveTailPosition(tailPosition: Position, headPosition: Position): Position {
-  // Need to resolve the coordinate relationship tuple between head and tail
+  // returns the move of the tail in relation to the head
   const relativeCoords = getRelativeCoordinates(tailPosition, headPosition)
   const coords = `[${relativeCoords}]`
-  console.log(coords)
-  return tailsToHeadsCoordsMap[coords]
+  const newPosition = tailsToHeadsCoordsMap[coords] as Move
+  console.log({ newPosition, tailPosition, coords })
+  return calculateNextMove(newPosition, tailPosition)
 }
 
 export function resolveIntoSingleSteps(string: string): Move[] {
@@ -68,7 +69,7 @@ export function resolveIntoSingleSteps(string: string): Move[] {
   return resolveSingleSteps
 }
 
-export function calculateNextMove(direction: Move, currentCoords: Position) {
+export function calculateNextMove(direction: Move, currentCoords: Position): Position {
   const [directionX, directionY] = direction
   const [currentCoordsX, currentCoordsY] = currentCoords
   return [directionX + currentCoordsX, directionY + currentCoordsY]
@@ -77,5 +78,6 @@ export function calculateNextMove(direction: Move, currentCoords: Position) {
 export function getRelativeCoordinates(tailPosition: Position, headPosition: Position) {
   const [tailX, tailY] = tailPosition
   const [headX, headY] = headPosition
+
   return [tailX - headX, tailY - headY]
 }
