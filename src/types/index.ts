@@ -1,3 +1,5 @@
+import { directionMap, tailsToHeadsCoordsMap } from "../consts/maps"
+
 export interface ElfInventory {
   elfNumber: number
   food: number[]
@@ -103,7 +105,19 @@ export interface Rope {
   tail: Position[]
 }
 
+export type TailsToHeadsCoordsMapKey = keyof typeof tailsToHeadsCoordsMap
+export type MoveDirection = "up" | "down" | "left" | "right" | "none"
+
 export interface Step {
-  name: string
-  currentPositions: Rope
+  moveDirection: MoveDirection
+  currentPosition: {
+    head: Position
+    tail: Position
+  }
+}
+
+export interface ResolveTailPosition {
+  tailPosition: Position
+  headPosition: Position
+  moveDirection: MoveDirection
 }
