@@ -17,12 +17,13 @@ export const coordsToDirMap: Record<string, string> = {
 // how the tail moves relative to head position. From top left to bottom right. Corners with a 1 gap shouldn't be possible. Those diagonally touching head has 2 outcomes so not including it in this map
 
 export const tailsToHeadsCoordsMap = {
-  "[-1,2]": [0, -1],
+  "[-1,2]": [1, -1],
   "[0,2]": [0, -1],
-  "[1,2]": [0, -1],
+  "[1,2]": [-1, -1],
+
+  "[-2,1]": [1, -1],
   "[0,1]": [0, 0],
-  "[-2,1]": [1, 0],
-  "[2,1]": [-1, 0],
+  "[2,1]": [-1, -1],
 
   "[-2,0]": [-1, 0],
   "[-1,0]": [0, 0],
@@ -30,13 +31,13 @@ export const tailsToHeadsCoordsMap = {
   "[1,0]": [0, 0],
   "[2,0]": [-1, 0],
 
-  "[-2,-1]": [1, 0],
+  "[-2,-1]": [1, -1],
   "[0,-1]": [0, 0],
-  "[2,-1]": [-1, 0],
+  "[2,-1]": [-1, -1],
 
-  "[-1,-2]": [0, 1],
+  "[-1,-2]": [1, 1],
   "[0,-2]": [0, 1],
-  "[1,-2]": [0, 1],
+  "[1,-2]": [-1, -1],
 } as const
 
 export const alphabetrpsMatchPointsMapper: Record<string, number> = {
