@@ -98,12 +98,6 @@ export type TreeHeights = {
 export type DirectionAbr = "U" | "D" | "L" | "R"
 export type DirectionNumber = 0 | 1 | -1
 export type DirectionMap = Record<DirectionAbr, [DirectionNumber, DirectionNumber]>
-export type Move = [DirectionNumber, DirectionNumber]
-
-export interface Rope {
-  head: Position[]
-  tail: Position[]
-}
 
 export type TailsToHeadsCoordsMapKey = keyof typeof tailsToHeadsCoordsMap
 export type MoveDirection = "up" | "down" | "left" | "right" | "none"
@@ -116,8 +110,17 @@ export interface Step {
   }
 }
 
-export interface ResolveTailPosition {
+export interface ResolvePosition {
   tailPosition: Position
   headPosition: Position
-  moveDirection: MoveDirection
+  moveDirection: Position
+}
+
+export interface CalculatNextMove {
+  relativeCoords: Position
+  currentCoords: Position
+}
+export interface CalculateTailPosition {
+  relativeTailCoords: Position
+  currentCoords: Position
 }

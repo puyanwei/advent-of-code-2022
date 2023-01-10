@@ -1,4 +1,4 @@
-import { DirectionNumber, Move, Position } from "../types"
+import { DirectionNumber, Position } from "../types"
 
 export const directionMap: Record<string, [DirectionNumber, DirectionNumber]> = {
   U: [0, 1],
