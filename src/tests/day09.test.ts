@@ -2,6 +2,7 @@ import { tailsToHeadsCoordsMap } from "../consts/maps"
 import {
   calculateNextMove,
   getRelativeCoordinates,
+  resolveDiagonalTailPosition,
   resolveStepObject,
   resolveTailPosition,
 } from "../day09-p1-rope-bridge"
@@ -33,7 +34,65 @@ describe(`tailsToHeadsCoordsMap`, () => {
   })
 })
 
-it.todo(`resolveDiagonals()`)
+describe(`resolveDiagonalTailPosition()`, () => {
+  it.only(`moves the tail next to or behind the head`, () => {
+    // bottom right of head, head went up, tail goes right
+    const bottomRightHeadUp = resolveDiagonalTailPosition({
+      relativeCoords: [1, -1],
+      headMoveDirection: [0, 1],
+    })
+    expect(bottomRightHeadUp).toEqual([-1, 0])
+
+    // bottom right of head, head went left, tail goes up
+    const bottomRightHeadLeft = resolveDiagonalTailPosition({
+      relativeCoords: [1, -1],
+      headMoveDirection: [-1, 0],
+    })
+    expect(bottomRightHeadLeft).toEqual([0, 1])
+
+    // bottom left of head, head went up, tail goes right
+    const bottomLeftHeadUp = resolveDiagonalTailPosition({
+      relativeCoords: [-1, -1],
+      headMoveDirection: [0, 1],
+    })
+    expect(bottomLeftHeadUp).toEqual([1, 0])
+
+    // bottom left of head, head went right, tail goes up
+    const bottomLeftHeadRight = resolveDiagonalTailPosition({
+      relativeCoords: [-1, -1],
+      headMoveDirection: [1, 0],
+    })
+    expect(bottomLeftHeadRight).toEqual([0, 1])
+
+    // top left of head, head went down, tail goes right
+    const topLeftHeadDown = resolveDiagonalTailPosition({
+      relativeCoords: [-1, 1],
+      headMoveDirection: [0, -1],
+    })
+    expect(topLeftHeadDown).toEqual([1, 0])
+  })
+
+  // top left of head, head went right, tail goes down
+  const topLeftHeadRight = resolveDiagonalTailPosition({
+    relativeCoords: [-1, 1],
+    headMoveDirection: [1, 0],
+  })
+  expect(topLeftHeadRight).toEqual([0, -1])
+
+  // top right of head, head went down, tail goes left
+  const topRightHeadDown = resolveDiagonalTailPosition({
+    relativeCoords: [1, 1],
+    headMoveDirection: [0, -1],
+  })
+  expect(topRightHeadDown).toEqual([-1, 0])
+
+  // top right of head, head went left, tail goes down
+  const topRightHeadLeft = resolveDiagonalTailPosition({
+    relativeCoords: [1, 1],
+    headMoveDirection: [-1, 0],
+  })
+  expect(topRightHeadLeft).toEqual([0, -1])
+})
 
 describe(`calculateNextMove()`, () => {
   it(`adds up the tuple coordinates`, () => {

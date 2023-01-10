@@ -1,4 +1,22 @@
-import { DirectionNumber, Position } from "../types"
+import { DirectionNumber } from "../types"
+
+export const diagonalCoords = [
+  [1, -1],
+  [1, 1],
+  [-1, -1],
+  [1, -1],
+] as const
+
+export const diagonalCoordsToDirMap = {
+  "[1,-1,0,1]": [-1, 0],
+  "[1,-1,-1,0]": [0, 1],
+  "[-1,-1,0,1]": [1, 0],
+  "[-1,-1,1,0]": [0, 1],
+  "[-1,1,1,0]": [0, -1],
+  "[-1,1,0,-1]": [1, 0],
+  "[1,1,0,-1]": [-1, 0],
+  "[1,1,-1,0]": [0, -1],
+}
 
 export const directionMap: Record<string, [DirectionNumber, DirectionNumber]> = {
   U: [0, 1],

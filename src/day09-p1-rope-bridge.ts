@@ -1,5 +1,11 @@
 import { directions } from "./consts"
-import { coordsToDirMap, directionMap, tailsToHeadsCoordsMap } from "./consts/maps"
+import {
+  coordsToDirMap,
+  diagonalCoords,
+  diagonalCoordsToDirMap,
+  directionMap,
+  tailsToHeadsCoordsMap,
+} from "./consts/maps"
 import { data } from "./data/directions"
 import { logObject } from "./helpers"
 import {
@@ -12,6 +18,8 @@ import {
   ResolvePosition,
   CalculatNextMove,
   CalculateTailPosition,
+  ResolveDiagonalTailPosition,
+  DiagonalTailsToHeadsCoordsMapKey,
 } from "./types"
 
 export function dayNinePartOne() {
@@ -63,13 +71,38 @@ export function resolveTailPosition({
 }: ResolvePosition): Position {
   // returns the move of the tail in relation to the head
   const relativeCoords = getRelativeCoordinates(tailPosition, headPosition) as Position
+
+  // TODO: diagonals -> based on prev head movement
+
+  if (
+    diagonalCoords.some((diagonalCoord) =>
+      isSameTuple(diagonalCoord as [number, number], relativeCoords)
+    )
+  ) {
+    const relativeTailCoords = resolveDiagonalTailPosition({
+      relativeCoords,
+      headMoveDirection: moveDirection,
+    }) as Position
+    return calculateNewTailPosition({ relativeTailCoords, currentCoords: tailPosition })
+  }
+
   const stringifiedCoords = `[${relativeCoords}]` as TailsToHeadsCoordsMapKey
-  console.log({ stringifiedCoords })
+
   if (!(stringifiedCoords in tailsToHeadsCoordsMap))
     throw new Error(`key of tailsToHeadsCoordsMap does not exist`)
 
   const relativeTailCoords = tailsToHeadsCoordsMap[stringifiedCoords] as Position
   return calculateNewTailPosition({ relativeTailCoords, currentCoords: tailPosition })
+}
+
+export function resolveDiagonalTailPosition({
+  relativeCoords,
+  headMoveDirection,
+}: ResolveDiagonalTailPosition) {
+  const stringifiedDiagonalCoords =
+    `[${relativeCoords},${headMoveDirection}]` as DiagonalTailsToHeadsCoordsMapKey
+  console.log({ stringifiedDiagonalCoords })
+  return diagonalCoordsToDirMap[stringifiedDiagonalCoords]
 }
 
 export function calculateNextMove({ relativeCoords, currentCoords }: CalculatNextMove): Position {
@@ -118,4 +151,8 @@ export function resolveIntoSingleSteps(string: string): Position[] {
     })
     .flat(1)
   return resolveSingleSteps
+}
+
+function isSameTuple(arr1: [number, number], arr2: [number, number]) {
+  return arr1[0] === arr2[0] && arr1[1] === arr2[1]
 }
