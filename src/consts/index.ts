@@ -1,5 +1,176 @@
 import { Command, Directory, File, SupplyStack } from "../types"
 
+export const moveDirectoryResult = [
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [1, 0],
+      tail: [0, 0],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [2, 0],
+      tail: [1, 0],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [3, 0],
+      tail: [2, 0],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [4, 0],
+      tail: [3, 0],
+    },
+  },
+  {
+    headMoveDirection: "up",
+    currentPosition: {
+      head: [4, 1],
+      tail: [3, 0],
+    },
+  },
+  {
+    headMoveDirection: "up",
+    currentPosition: {
+      head: [4, 2],
+      tail: [4, 1],
+    },
+  },
+  {
+    headMoveDirection: "up",
+    currentPosition: {
+      head: [4, 3],
+      tail: [4, 2],
+    },
+  },
+  {
+    headMoveDirection: "up",
+    currentPosition: {
+      head: [4, 4],
+      tail: [4, 3],
+    },
+  },
+  {
+    headMoveDirection: "left",
+    currentPosition: {
+      head: [3, 4],
+      tail: [4, 3],
+    },
+  },
+  {
+    headMoveDirection: "left",
+    currentPosition: {
+      head: [2, 4],
+      tail: [3, 4],
+    },
+  },
+  {
+    headMoveDirection: "left",
+    currentPosition: {
+      head: [1, 4],
+      tail: [2, 4],
+    },
+  },
+  {
+    headMoveDirection: "down",
+    currentPosition: {
+      head: [1, 3],
+      tail: [2, 4],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [2, 3],
+      tail: [2, 4],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [3, 3],
+      tail: [2, 4],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [4, 3],
+      tail: [3, 3],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [5, 3],
+      tail: [4, 3],
+    },
+  },
+  {
+    headMoveDirection: "down",
+    currentPosition: {
+      head: [5, 2],
+      tail: [4, 3],
+    },
+  },
+  {
+    headMoveDirection: "left",
+    currentPosition: {
+      head: [4, 2],
+      tail: [4, 3],
+    },
+  },
+  {
+    headMoveDirection: "left",
+    currentPosition: {
+      head: [3, 2],
+      tail: [4, 3],
+    },
+  },
+  {
+    headMoveDirection: "left",
+    currentPosition: {
+      head: [2, 2],
+      tail: [3, 2],
+    },
+  },
+  {
+    headMoveDirection: "left",
+    currentPosition: {
+      head: [1, 2],
+      tail: [2, 2],
+    },
+  },
+  {
+    headMoveDirection: "left",
+    currentPosition: {
+      head: [0, 2],
+      tail: [1, 2],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [1, 2],
+      tail: [1, 2],
+    },
+  },
+  {
+    headMoveDirection: "right",
+    currentPosition: {
+      head: [2, 2],
+      tail: [1, 2],
+    },
+  },
+]
+
 /* Starting crate stack positions
     [W]         [J]     [J]        
     [V]     [F] [F] [S] [S]        
