@@ -203,4 +203,10 @@ The plan ended up being;
 5. Remove duplicates from array
 6. Return elements of the array will be the number of unique moves by tail
 
+#### Reflection & TIL
+
 I definitely wasted some time as I was right about the movement, then doubted myself and went down another route, before realising! Always read the question/examples well!! :/
+
+With such fiddly numbers I wrote a lot of tests so that I could keep track of them and make sure that I would have visibility over it, which was really helpful.
+
+Another thing I did was to use more objects as parameters, I found myself getting mixed up with the ordering with the parameters and getting some false positives which was annoying
