@@ -1,12 +1,6 @@
 import { directions } from "./consts"
-import {
-  coordsToDirMap,
-  diagonalCoordsToDirMap,
-  directionMap,
-  tailsToHeadsCoordsMap,
-} from "./consts/maps"
+import { coordsToDirMap, directionMap, tailsToHeadsCoordsMap } from "./consts/maps"
 import { data } from "./data/directions"
-import { logObject } from "./helpers"
 import {
   Position,
   DirectionAbr,
@@ -17,34 +11,27 @@ import {
   ResolvePosition,
   CalculatNextMove,
   CalculateTailPosition,
-  ResolveDiagonalTailPosition,
-  DiagonalTailsToHeadsCoordsMapKey,
+  ResolveTailPosition,
 } from "./types"
 
-export function dayNinePartOne() {
+export function dayNinePartOne(dataSet = data) {
   // return array of arrays by a single step at a time representing the movement of the head
-  const resolvedDirections = resolveIntoSingleSteps(directions)
+  const resolvedDirections = resolveIntoSingleSteps(dataSet)
 
   // initial head and tail positions
   let headPosition: Position = [0, 0]
   let tailPosition: Position = [0, 0]
-  let lastMoveDirection: MoveDirection | "" = ""
   const tailMoves: string[] = []
 
-  const arr = resolvedDirections.map((direction) => {
+  resolvedDirections.map((direction) => {
     const step = resolveStepObject({ moveDirection: direction, headPosition, tailPosition })
-    const {
-      currentPosition: { head, tail },
-      headMoveDirection,
-    } = step
+    const { head, tail } = step.currentPosition
 
     headPosition = head
     tailPosition = tail
-    lastMoveDirection = headMoveDirection
     tailMoves.push(`${tailPosition}`)
     return step
   })
-
   const uniqueTailMoves = new Set(tailMoves)
   return uniqueTailMoves.size
 }
@@ -56,7 +43,7 @@ export function resolveStepObject({
 }: ResolvePosition): Step {
   const direction = coordsToDirMap[`[${moveDirection}]`] as MoveDirection
   const head = calculateNextMove({ relativeCoords: moveDirection, currentCoords: headPosition })
-  const tail = resolveTailPosition({ tailPosition, headPosition: head, moveDirection })
+  const tail = resolveTailPosition({ tailPosition, headPosition: head })
   return {
     headMoveDirection: direction,
     currentPosition: {
@@ -66,11 +53,7 @@ export function resolveStepObject({
   }
 }
 
-export function resolveTailPosition({
-  tailPosition,
-  headPosition,
-  moveDirection,
-}: ResolvePosition): Position {
+export function resolveTailPosition({ tailPosition, headPosition }: ResolveTailPosition): Position {
   // returns the move of the tail in relation to the head
   const relativeCoords = getRelativeCoordinates(tailPosition, headPosition) as Position
   const stringifiedCoords = `[${relativeCoords}]` as TailsToHeadsCoordsMapKey
@@ -78,7 +61,6 @@ export function resolveTailPosition({
   if (!(stringifiedCoords in tailsToHeadsCoordsMap)) {
     throw new Error(`key of tailsToHeadsCoordsMap does not exist`)
   }
-
   const relativeTailCoords = tailsToHeadsCoordsMap[stringifiedCoords] as Position
   return calculateNewTailPosition({ relativeTailCoords, currentCoords: tailPosition })
 }
@@ -92,9 +74,9 @@ export function calculateNewTailPosition({
   relativeTailCoords,
   currentCoords,
 }: CalculateTailPosition): Position {
-  const [directionX, directionY] = relativeTailCoords
+  const [relativeX, relativeY] = relativeTailCoords
   const [currentCoordsX, currentCoordsY] = currentCoords
-  return [currentCoordsX + directionX, currentCoordsY + directionY]
+  return [currentCoordsX + relativeX, currentCoordsY + relativeY]
 }
 
 export function getRelativeCoordinates(tailPosition: Position, headPosition: Position) {

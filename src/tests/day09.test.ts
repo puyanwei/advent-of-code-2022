@@ -2,12 +2,13 @@ import { directions, moveDirectoryResult } from "../consts"
 import { tailsToHeadsCoordsMap } from "../consts/maps"
 import {
   calculateNextMove,
+  dayNinePartOne,
   getRelativeCoordinates,
   resolveIntoSingleSteps,
   resolveStepObject,
   resolveTailPosition,
 } from "../day09-p1-rope-bridge"
-import { Position, MoveDirection } from "../types"
+import { Position } from "../types"
 
 describe(`tailsToHeadsCoordsMap`, () => {
   it(`the tail does not need to move as it is touching the head`, () => {
@@ -26,13 +27,13 @@ describe(`tailsToHeadsCoordsMap`, () => {
     expect(tailsToHeadsCoordsMap[`[1,0]`]).toEqual([0, 0])
     expect(tailsToHeadsCoordsMap[`[2,0]`]).toEqual([-1, 0])
 
-    expect(tailsToHeadsCoordsMap[`[-2,-1]`]).toEqual([1, -1])
+    expect(tailsToHeadsCoordsMap[`[-2,-1]`]).toEqual([1, 1])
     expect(tailsToHeadsCoordsMap[`[0,-1]`]).toEqual([0, 0])
     expect(tailsToHeadsCoordsMap[`[2,-1]`]).toEqual([-1, 1])
 
     expect(tailsToHeadsCoordsMap[`[-1,-2]`]).toEqual([1, 1])
     expect(tailsToHeadsCoordsMap[`[0,-2]`]).toEqual([0, 1])
-    expect(tailsToHeadsCoordsMap[`[1,-2]`]).toEqual([-1, -1])
+    expect(tailsToHeadsCoordsMap[`[1,-2]`]).toEqual([-1, 1])
   })
 })
 
@@ -47,30 +48,25 @@ describe(`calculateNextMove()`, () => {
 })
 
 describe(`resolveTailPosition`, () => {
-  it(`returns the tail's position in relation to head's position`, () => {
-    expect(
-      resolveTailPosition({ tailPosition: [0, 0], headPosition: [0, 0], moveDirection: [0, 0] })
-    ).toEqual([0, 0])
-    expect(
-      resolveTailPosition({ tailPosition: [2, 2], headPosition: [3, 3], moveDirection: [0, 1] })
-    ).toEqual([2, 2])
+  it(`if the tail is one step away from the head, it does not move`, () => {
+    expect(resolveTailPosition({ tailPosition: [0, 0], headPosition: [0, 0] })).toEqual([0, 0])
+    expect(resolveTailPosition({ tailPosition: [2, 2], headPosition: [3, 3] })).toEqual([2, 2])
     expect(
       resolveTailPosition({
         tailPosition: [5, 5],
         headPosition: [4, 4],
-        moveDirection: [-1, 0],
       })
     ).toEqual([5, 5])
+  })
+
+  it(`if the tail is one chess knight's move away from the head, it moves diagonally towards the head so it becomes beside it`, () => {
     expect(
       resolveTailPosition({
         tailPosition: [1, -2],
         headPosition: [0, 0],
-        moveDirection: [0, 1],
       })
-    ).toEqual([0, -3])
-    expect(
-      resolveTailPosition({ tailPosition: [0, 2], headPosition: [2, 2], moveDirection: [1, 0] })
-    ).toEqual([1, 2])
+    ).toEqual([0, -1])
+    expect(resolveTailPosition({ tailPosition: [0, 2], headPosition: [2, 2] })).toEqual([1, 2])
   })
 })
 
@@ -87,27 +83,25 @@ describe(`getRelativeCoordinates()`, () => {
   })
 })
 
-describe(`integration test`, () => {
+describe(`integration tests`, () => {
   it(`outputs the correct object using the example dataset`, () => {
     const resolvedDirections = resolveIntoSingleSteps(directions)
     let headPosition: Position = [0, 0]
     let tailPosition: Position = [0, 0]
-    let lastMoveDirection: MoveDirection | "" = ""
     const tailMoves: string[] = []
 
     const arr = resolvedDirections.map((direction) => {
       const step = resolveStepObject({ moveDirection: direction, headPosition, tailPosition })
-      const {
-        currentPosition: { head, tail },
-        headMoveDirection,
-      } = step
+      const { head, tail } = step.currentPosition
 
       headPosition = head
       tailPosition = tail
-      lastMoveDirection = headMoveDirection
       tailMoves.push(`${tailPosition}`)
       return step
     })
     expect(JSON.stringify(arr)).toEqual(JSON.stringify(moveDirectoryResult))
+  })
+  it(`returns 13 as the result to represent the number of positions the tail had visited once`, () => {
+    expect(dayNinePartOne(directions)).toEqual(13)
   })
 })

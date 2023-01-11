@@ -153,7 +153,7 @@ Parking this now. I've attempted this three times, first one using a tree based 
 
 Added a `planning` folder to encourage my planning process. This is done using the [Excalidraw VS Code Extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor).
 
-### Part 1
+#### Part 1
 
 ![d__coding_advent-of-code-2022_src_planning_day08p1](https://user-images.githubusercontent.com/14803518/209682822-c6524c89-1f77-48e9-8962-1e85700392fc.png)
 
@@ -161,7 +161,7 @@ Apart from a few hiccups this actually went very smoothly. I had written a lot o
 
 The hardest thing was writing the function/tests for the `isTreeVisible` function as it uses the `.some` method which only returns truthy values, and here I wanted to return the falsey ones, so I had to reverse that in order for it to work which was hella confusing!
 
-### Part 2
+#### Part 2
 
 ![d__coding_advent-of-code-2022_src_planning_day08p2](https://user-images.githubusercontent.com/14803518/209702536-affc3d4e-b99e-4a89-ab57-929aee9d239a.png)
 
@@ -170,3 +170,37 @@ Something that tripped me up a little (but not too much!) was realising that you
 A lesson learned from the infamous `DAY 7`, I wrote tests and that gave me better confidence and visiblity in what was working or not...
 
 ![image](https://user-images.githubusercontent.com/14803518/209703152-17b65e7d-0996-49a8-b02f-6931c9d3519a.png)
+
+### Day 9 - Rope Bridge
+
+#### Part 1
+
+Did good planning but realised that I needed to break down the problem even further by splitting up each command into single commands. Not performant but solves the problem for now.
+
+![image](https://user-images.githubusercontent.com/14803518/211863445-78c83b97-7abd-4665-bc57-0ce837c1cb0d.png)
+
+To calculate the tail's movement you had to calculate the head's movement first and then pass that in as a parameter. There were 3 different ways the tail can move once the head had moved. It is impossible for the head and tail to be diagonally square to each other (being 2 squares x & 2 squares y away from each other)
+
+- After the head moves, tail remains in the same position if it is touching, including if it is on the same spot (9 outcomes)
+- If the head has a one gapper vertically or horizonatally then move the tail in that direction so they are next to each other (4 outcomes)
+- If the head and tail are positioned in a [knight's move](<https://en.wikipedia.org/wiki/Knight_(chess)>) away, the tail moves diagonally towards the head so that it is either vertically or horizontally next to it (4 outcomes)
+
+![image](https://user-images.githubusercontent.com/14803518/211863553-27c594c6-87ff-41b6-b7d1-73c0f9e01f07.png)
+
+(Note that not sure if the row calculations are correct at this point xD)
+
+Creating a map allows the code to reference where the tail should go once it is worked out where the head and tail is after the head has moved
+
+![image](https://user-images.githubusercontent.com/14803518/211866135-3d3efd7e-8a31-4d0c-8168-2037086ce3ae.png)
+(Should be correct here!)
+
+The plan ended up being;
+
+1. Split string commands
+2. Split each command into one step commands
+3. Create object for each move which includes the head and tail positions
+4. Create an array of the tail's movements from that object
+5. Remove duplicates from array
+6. Return elements of the array will be the number of unique moves by tail
+
+I definitely wasted some time as I was right about the movement, then doubted myself and went down another route, before realising! Always read the question/examples well!! :/

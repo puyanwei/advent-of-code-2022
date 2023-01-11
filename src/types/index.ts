@@ -116,6 +116,10 @@ export interface ResolvePosition {
   headPosition: Position
   moveDirection: Position
 }
+export interface ResolveTailPosition {
+  tailPosition: Position
+  headPosition: Position
+}
 
 export interface CalculatNextMove {
   relativeCoords: Position
