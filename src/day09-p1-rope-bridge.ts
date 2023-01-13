@@ -26,7 +26,6 @@ export function dayNinePartOne(dataSet = data) {
   resolvedDirections.map((direction) => {
     const step = resolveStepObject({ moveDirection: direction, headPosition, tailPosition })
     const { head, tail } = step.currentPosition
-
     headPosition = head
     tailPosition = tail
     tailMoves.push(`${tailPosition}`)
@@ -82,7 +81,6 @@ export function calculateNewTailPosition({
 export function getRelativeCoordinates(tailPosition: Position, headPosition: Position) {
   const [tailX, tailY] = tailPosition
   const [headX, headY] = headPosition
-
   return [tailX - headX, tailY - headY]
 }
 

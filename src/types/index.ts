@@ -1,4 +1,4 @@
-import { diagonalCoordsToDirMap, directionMap, tailsToHeadsCoordsMap } from "../consts/maps"
+import { tailsToHeadsCoordsMap } from "../consts/maps"
 
 export interface ElfInventory {
   elfNumber: number
@@ -100,7 +100,6 @@ export type DirectionNumber = 0 | 1 | -1
 export type DirectionMap = Record<DirectionAbr, [DirectionNumber, DirectionNumber]>
 
 export type TailsToHeadsCoordsMapKey = keyof typeof tailsToHeadsCoordsMap
-export type DiagonalTailsToHeadsCoordsMapKey = keyof typeof diagonalCoordsToDirMap
 export type MoveDirection = "up" | "down" | "left" | "right" | "none"
 
 export interface Step {
