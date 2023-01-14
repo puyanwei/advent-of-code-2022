@@ -8,26 +8,32 @@ import {
   resolveIntoSingleSteps,
   resolveTailPosition,
 } from "./day09-p1-rope-bridge"
+import { logObject } from "./helpers"
 import { MoveDirection, Position, ResolvePosition, Step, TailsToHeadsCoordsMapKey } from "./types"
 
 export function dayNinePartTwo(dataSet = data) {
   const ropeLength = 6
 
   // return array of arrays by a single step at a time representing the movement of the head
-  const resolvedDirections = resolveIntoSingleSteps(`L 3`)
+  const resolvedDirections = resolveIntoSingleSteps(directions)
 
   let knotPositions: number[][] = []
   for (let index = 0; index < ropeLength; index++) knotPositions.push([0, 0])
 
-  // const tailMoves: string[] = []
+  const tailMoves: string[] = []
 
   resolvedDirections.map((direction) => {
     const step = resolveStepObject({ moveDirection: direction, knotPositions })
+    logObject(step)
+    const tail = step.knotPositions.at(-1)
+    if (!tail) throw new Error(`no tail found`)
+    tailMoves.push(`${tail}`)
     return step
   })
-  // const uniqueTailMoves = new Set(tailMoves)
-  // return uniqueTailMoves.size
-  return 999
+
+  const uniqueTailMoves = new Set(tailMoves)
+  console.log(tailMoves, uniqueTailMoves)
+  return uniqueTailMoves.size
 }
 
 interface RopeStep {
@@ -53,8 +59,6 @@ export function resolveStepObject({
   let newKnotPositions: number[][] = knotPositions
   let currentKnotPosition = knotPositions[0]
 
-  console.log({ currentKnotPosition })
-
   for (let index = 0; index < knotPositions.length; index++) {
     if (index === 0) {
       const newCurrentPosition = calculateNextMove({
@@ -68,15 +72,16 @@ export function resolveStepObject({
       break
     }
 
+    const nextKnot = knotPositions[index + 1] as Position
+    if (!nextKnot) break
+
     const nextPosition = resolveNextKnotPosition({
-      nextPosition: knotPositions[index + 1] as Position,
+      nextPosition: nextKnot,
       currentPosition: currentKnotPosition as Position,
     })
     newKnotPositions.unshift(nextPosition)
     newKnotPositions.pop()
   }
-
-  console.log({ newKnotPositions })
 
   return {
     headMoveDirection: direction,
