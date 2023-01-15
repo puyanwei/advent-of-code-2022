@@ -1,4 +1,4 @@
-import { directions, moveDirectoryResult } from "../consts"
+import { moveDirectoryResult } from "../consts"
 import { tailsToHeadsCoordsMap } from "../consts/maps"
 import {
   calculateNextMove,
@@ -85,23 +85,40 @@ describe(`getRelativeCoordinates()`, () => {
 
 describe(`integration tests`, () => {
   it(`outputs the correct object using the example dataset`, () => {
-    const resolvedDirections = resolveIntoSingleSteps(directions)
+    const data = `R 4
+    U 4
+    L 3
+    D 1
+    R 4
+    D 1
+    L 5
+    R 2`
+
+    const resolvedDirections = resolveIntoSingleSteps(data)
+
     let headPosition: Position = [0, 0]
     let tailPosition: Position = [0, 0]
     const tailMoves: string[] = []
 
-    const arr = resolvedDirections.map((direction) => {
+    const result = resolvedDirections.map((direction) => {
       const step = resolveStepObject({ moveDirection: direction, headPosition, tailPosition })
       const { head, tail } = step.currentPosition
-
       headPosition = head
       tailPosition = tail
       tailMoves.push(`${tailPosition}`)
       return step
     })
-    expect(JSON.stringify(arr)).toEqual(JSON.stringify(moveDirectoryResult))
+    expect(JSON.stringify(result)).toEqual(JSON.stringify(moveDirectoryResult))
   })
   it(`returns 13 as the result to represent the number of positions the tail had visited once`, () => {
-    expect(dayNinePartOne(directions)).toEqual(13)
+    const data = `R 4
+U 4
+L 3
+D 1
+R 4
+D 1
+L 5
+R 2`
+    expect(dayNinePartOne(data)).toEqual(13)
   })
 })

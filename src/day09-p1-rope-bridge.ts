@@ -53,7 +53,7 @@ export function resolveStepObject({
 }
 
 export function resolveTailPosition({ tailPosition, headPosition }: ResolveTailPosition): Position {
-  // returns the move of the tail in relation to the head
+  // returns the move of the tail in relation to the head after head has moved
   const relativeCoords = getRelativeCoordinates(tailPosition, headPosition) as Position
   const stringifiedCoords = `[${relativeCoords}]` as TailsToHeadsCoordsMapKey
 
