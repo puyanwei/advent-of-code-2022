@@ -132,3 +132,18 @@ export interface ResolveDiagonalTailPosition {
   relativeCoords: Position
   headMoveDirection: Position
 }
+
+export interface RopeStep {
+  headMoveDirection: MoveDirection
+  knotPositions: number[][]
+}
+
+export interface ResolveRopeStepObject {
+  knotPositions: number[][]
+  moveDirection: Position
+}
+
+export interface ResolveNextPosition {
+  currentPosition: Position
+  nextPosition: Position
+}

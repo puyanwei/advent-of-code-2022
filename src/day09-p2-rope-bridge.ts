@@ -6,49 +6,41 @@ import {
   calculateNextMove,
   getRelativeCoordinates,
   resolveIntoSingleSteps,
-  resolveTailPosition,
 } from "./day09-p1-rope-bridge"
 import { logObject } from "./helpers"
-import { MoveDirection, Position, ResolvePosition, Step, TailsToHeadsCoordsMapKey } from "./types"
+import {
+  MoveDirection,
+  Position,
+  ResolveNextPosition,
+  ResolveRopeStepObject,
+  RopeStep,
+  TailsToHeadsCoordsMapKey,
+} from "./types"
 
 export function dayNinePartTwo(dataSet = data) {
   const ropeLength = 6
 
   // return array of arrays by a single step at a time representing the movement of the head
-  const resolvedDirections = resolveIntoSingleSteps(directions)
+  const resolvedDirections = resolveIntoSingleSteps(`R 1`)
+  // const resolvedDirections = resolveIntoSingleSteps(directions)
 
   let knotPositions: number[][] = []
   for (let index = 0; index < ropeLength; index++) knotPositions.push([0, 0])
 
-  const tailMoves: string[] = []
+  const tailMoves: number[][] = []
 
   resolvedDirections.map((direction) => {
     const step = resolveStepObject({ moveDirection: direction, knotPositions })
-    logObject(step)
     const tail = step.knotPositions.at(-1)
     if (!tail) throw new Error(`no tail found`)
-    tailMoves.push(`${tail}`)
+    tailMoves.push(tail)
+    // logObject(step)
     return step
   })
 
-  const uniqueTailMoves = new Set(tailMoves)
-  console.log(tailMoves, uniqueTailMoves)
-  return uniqueTailMoves.size
-}
-
-interface RopeStep {
-  headMoveDirection: MoveDirection
-  knotPositions: number[][]
-}
-
-interface ResolveRopeStepObject {
-  knotPositions: number[][]
-  moveDirection: Position
-}
-
-export interface ResolveNextPosition {
-  currentPosition: Position
-  nextPosition: Position
+  // const uniqueTailMoves = new Set(tailMoves)
+  // return uniqueTailMoves.size
+  return 99
 }
 
 export function resolveStepObject({
@@ -56,40 +48,41 @@ export function resolveStepObject({
   knotPositions,
 }: ResolveRopeStepObject): RopeStep {
   const direction = coordsToDirMap[`[${moveDirection}]`] as MoveDirection
-  let newKnotPositions: number[][] = knotPositions
-  let currentKnotPosition = knotPositions[0]
+  let prevKnot = [] as Position | []
 
-  for (let index = 0; index < knotPositions.length; index++) {
+  const newKnotPositions = knotPositions.map((knot, index) => {
     if (index === 0) {
-      const newCurrentPosition = calculateNextMove({
+      const head = calculateNextMove({
         relativeCoords: moveDirection,
-        currentCoords: currentKnotPosition as Position,
+        currentCoords: knot as Position,
       })
-      newKnotPositions.unshift(newCurrentPosition)
-      newKnotPositions.pop()
-
-      currentKnotPosition = newCurrentPosition
-      break
+      prevKnot = head
+      return head
     }
+    console.log({ prevKnot, knot })
 
-    const nextKnot = knotPositions[index + 1] as Position
-    if (!nextKnot) break
-
-    const nextPosition = resolveNextKnotPosition({
-      nextPosition: nextKnot,
-      currentPosition: currentKnotPosition as Position,
+    const currentKnot = calculateNextMove({
+      relativeCoords: moveDirection,
+      currentCoords: knot as Position,
     })
-    newKnotPositions.unshift(nextPosition)
-    newKnotPositions.pop()
-  }
 
-  return {
+    return resolveNextPosition({
+      currentPosition: prevKnot as Position,
+      nextPosition: currentKnot as Position,
+    })
+  })
+  console.log({ newKnotPositions })
+  const obj = {
     headMoveDirection: direction,
     knotPositions: newKnotPositions,
   }
+
+  // logObject(obj)
+
+  return obj
 }
 
-export function resolveNextKnotPosition({
+export function resolveNextPosition({
   nextPosition,
   currentPosition,
 }: ResolveNextPosition): Position {
