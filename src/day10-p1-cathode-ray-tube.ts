@@ -6,10 +6,7 @@ interface Cycle {
   command: string
   x: number
 }
-// note that the very last command has x's value but doesn't make an object
-// in the cycle array
-let x = 1
-let cycle = 0
+// note that the very last command has x's value but doesn't make an object in the cycle array
 
 export function dayTenPartOne(dataSet = data) {
   const cycles = resolveCycleData(dataSet)
@@ -24,7 +21,9 @@ export function dayTenPartOne(dataSet = data) {
   return sum(signalStrengths)
 }
 
-export function resolveCycleData(data: string) {
+export function resolveCycleData(data: string): Cycle[] {
+  let x = 1
+  let cycle = 0
   const commands = data.split(`\n`)
   const cycleData = commands
     .map((command) => {
@@ -34,39 +33,39 @@ export function resolveCycleData(data: string) {
     })
     .flat(1)
   return cycleData
-}
 
-export function resolveAddX(command: string) {
-  const [addXWord, number] = command.split(` `)
-  if (!number) throw new Error(`No addX number found`)
-  const addxCycle = [
-    {
-      cycle: cycle + 1,
-      command,
-      x,
-    },
-    {
-      cycle: cycle + 2,
-      command: "[pending]",
-      x,
-    },
-  ]
-  x = x + parseInt(number)
-  cycle = cycle + 2
-  return addxCycle
-}
-
-function resolveNoop(command: string) {
-  {
-    const noopCycle = [
+  function resolveAddX(command: string) {
+    const [addXWord, number] = command.split(` `)
+    if (!number) throw new Error(`No addX number found`)
+    const addxCycle = [
       {
         cycle: cycle + 1,
         command,
         x,
       },
+      {
+        cycle: cycle + 2,
+        command: "[pending]",
+        x,
+      },
     ]
-    cycle++
-    return noopCycle
+    x = x + parseInt(number)
+    cycle = cycle + 2
+    return addxCycle
+  }
+
+  function resolveNoop(command: string) {
+    {
+      const noopCycle = [
+        {
+          cycle: cycle + 1,
+          command,
+          x,
+        },
+      ]
+      cycle++
+      return noopCycle
+    }
   }
 }
 

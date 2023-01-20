@@ -1,22 +1,17 @@
 import { programTwo, programOne, programThree, duplicateCycleData } from "../consts"
 import { cycleResult } from "../consts/mocks"
-import {
-  dayTenPartOne,
-  resolveAddX,
-  resolveCycleData,
-  resolveXFromCycle,
-} from "../day10-p1-cathode-ray-tube"
+import { dayTenPartOne, resolveCycleData, resolveXFromCycle } from "../day10-p1-cathode-ray-tube"
 
-describe(`resolveAddX()`, () => {
-  it(`throws an error if there is no number`, () => {
-    try {
-      resolveAddX(`addx`)
-    } catch (error) {
-      expect(error).toBeInstanceOf(Error)
-      expect(error).toHaveProperty("message", "No addX number found")
-    }
-  })
-})
+// describe(`resolveAddX()`, () => {
+//   it(`throws an error if there is no number`, () => {
+//     try {
+//       resolveAddX(`addx`)
+//     } catch (error) {
+//       expect(error).toBeInstanceOf(Error)
+//       expect(error).toHaveProperty("message", "No addX number found")
+//     }
+//   })
+// })
 
 describe(`resolveCycleData()`, () => {
   describe(`takes in a string of commands and returns an array of cycle objects`, () => {
@@ -74,7 +69,7 @@ describe(`resolveCycleData()`, () => {
   })
 })
 
-describe.only(`integration test`, () => {
+describe(`integration test`, () => {
   it(`returns the sum of the six signal strengths`, () => {
     expect(dayTenPartOne(programThree)).toEqual(13140)
   })
