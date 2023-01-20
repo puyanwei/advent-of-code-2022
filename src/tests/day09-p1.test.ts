@@ -47,7 +47,7 @@ describe(`calculateNextMove()`, () => {
   })
 })
 
-describe(`resolveTailPosition`, () => {
+describe(`resolveTailPosition()`, () => {
   it(`if the tail is one step away from the head, it does not move`, () => {
     expect(resolveTailPosition({ tailPosition: [0, 0], headPosition: [0, 0] })).toEqual([0, 0])
     expect(resolveTailPosition({ tailPosition: [2, 2], headPosition: [3, 3] })).toEqual([2, 2])
