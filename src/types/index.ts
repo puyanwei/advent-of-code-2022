@@ -141,6 +141,7 @@ export interface RopeStep {
 export interface ResolveRopeStepObject {
   knotPositions: number[][]
   moveDirection: Position
+  ropeLength: number
 }
 
 export interface ResolveNextPosition {

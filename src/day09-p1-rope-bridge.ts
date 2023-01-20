@@ -64,7 +64,10 @@ export function resolveTailPosition({ tailPosition, headPosition }: ResolveTailP
   return calculateNewTailPosition({ relativeTailCoords, currentCoords: tailPosition })
 }
 
-export function calculateNextMove({ relativeCoords, currentCoords }: CalculatNextMove): Position {
+export function calculateNextMove({
+  relativeCoords,
+  currentCoords = [0, 0],
+}: CalculatNextMove): Position {
   const [directionX, directionY] = relativeCoords
   const [currentCoordsX, currentCoordsY] = currentCoords
   return [directionX + currentCoordsX, directionY + currentCoordsY]

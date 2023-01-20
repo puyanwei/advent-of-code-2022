@@ -1,6 +1,6 @@
-import { alphabetrpsMatchPointsMapper } from './consts'
-import { dayThreeData } from './data/rucksack'
-import { RuckSack, RuckSackTeams } from './types'
+import { alphabetrpsMatchPointsMapper } from "./consts/maps"
+import { dayThreeData } from "./data/rucksack"
+import { RuckSack, RuckSackTeams } from "./types"
 
 export function dayThreePartOne() {
   const arrayOfRuckSacks: string[] = dayThreeData.split(`\n`)
@@ -16,14 +16,10 @@ export function dayThreePartTwo() {
   const arrayOfRuckSacks: string[] = dayThreeData.split(`\n`)
   const ruckSackTeams = resolveRucksackTeams(arrayOfRuckSacks)
 
-  const sumOfPointsFromAuthenticityStickers = ruckSackTeams.reduce(
-    (acc, curr) => {
-      const points =
-        acc + alphabetrpsMatchPointsMapper[curr.authenticitySticker]
-      return points
-    },
-    0
-  )
+  const sumOfPointsFromAuthenticityStickers = ruckSackTeams.reduce((acc, curr) => {
+    const points = acc + alphabetrpsMatchPointsMapper[curr.authenticitySticker]
+    return points
+  }, 0)
   return sumOfPointsFromAuthenticityStickers
 }
 
@@ -33,10 +29,7 @@ function resolveRuckSacks(array: string[]): RuckSack[] {
     const leftCompartment = string.slice(0, middle)
     const rightCompartment = string.slice(middle)
 
-    const duplicateLetter = checkDuplicateLetter(
-      leftCompartment,
-      rightCompartment
-    )
+    const duplicateLetter = checkDuplicateLetter(leftCompartment, rightCompartment)
     return {
       leftCompartment,
       rightCompartment,
@@ -45,26 +38,18 @@ function resolveRuckSacks(array: string[]): RuckSack[] {
   })
 }
 
-export function checkDuplicateLetter(
-  first: string,
-  second: string,
-  third?: string
-): string {
-  const duplicateLetterFromTwoWords = first
-    .split('')
-    .filter((letter: string) => {
-      if (second.includes(letter)) return letter
-    })
-  if (!third) return duplicateLetterFromTwoWords[0] || ''
+export function checkDuplicateLetter(first: string, second: string, third?: string): string {
+  const duplicateLetterFromTwoWords = first.split("").filter((letter: string) => {
+    if (second.includes(letter)) return letter
+  })
+  if (!third) return duplicateLetterFromTwoWords[0] || ""
 
-  const duplicateLetterFromThreeWords = third
-    .split('')
-    .filter((letter: string) => {
-      const dupedLetters = duplicateLetterFromTwoWords.join('')
-      if (dupedLetters.includes(letter)) return letter
-    })
+  const duplicateLetterFromThreeWords = third.split("").filter((letter: string) => {
+    const dupedLetters = duplicateLetterFromTwoWords.join("")
+    if (dupedLetters.includes(letter)) return letter
+  })
 
-  return duplicateLetterFromThreeWords[0] || ''
+  return duplicateLetterFromThreeWords[0] || ""
 }
 
 function resolveRucksackTeams(array: string[]): RuckSackTeams[] {

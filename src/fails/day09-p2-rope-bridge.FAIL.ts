@@ -1,13 +1,13 @@
-import { directions } from "./consts"
-import { coordsToDirMap, tailsToHeadsCoordsMap } from "./consts/maps"
-import { data } from "./data/directions"
+import { directions } from "../consts"
+import { coordsToDirMap, tailsToHeadsCoordsMap } from "../consts/maps"
+import { data } from "../data/directions"
 import {
   calculateNewTailPosition,
   calculateNextMove,
   getRelativeCoordinates,
   resolveIntoSingleSteps,
-} from "./day09-p1-rope-bridge"
-import { logObject } from "./helpers"
+} from "../day09-p1-rope-bridge"
+import { logObject } from "../helpers"
 import {
   MoveDirection,
   Position,
@@ -15,7 +15,7 @@ import {
   ResolveRopeStepObject,
   RopeStep,
   TailsToHeadsCoordsMapKey,
-} from "./types"
+} from "../types"
 
 export function dayNinePartTwo(dataSet = data) {
   const ropeLength = 6
@@ -24,13 +24,10 @@ export function dayNinePartTwo(dataSet = data) {
   const resolvedDirections = resolveIntoSingleSteps(`R 1`)
   // const resolvedDirections = resolveIntoSingleSteps(directions)
 
-  let knotPositions: number[][] = []
-  for (let index = 0; index < ropeLength; index++) knotPositions.push([0, 0])
-
   const tailMoves: number[][] = []
 
   resolvedDirections.map((direction) => {
-    const step = resolveStepObject({ moveDirection: direction, knotPositions })
+    const step = resolveStepObject({ moveDirection: direction, knotPositions: [], ropeLength: 6 })
     const tail = step.knotPositions.at(-1)
     if (!tail) throw new Error(`no tail found`)
     tailMoves.push(tail)
@@ -46,9 +43,12 @@ export function dayNinePartTwo(dataSet = data) {
 export function resolveStepObject({
   moveDirection,
   knotPositions,
+  ropeLength,
 }: ResolveRopeStepObject): RopeStep {
   const direction = coordsToDirMap[`[${moveDirection}]`] as MoveDirection
   let prevKnot = [] as Position | []
+
+  // TODO: Needs to use the explicitly stated length as a way of limiting the stack size. Until that size, the stack can be smaller and starts out from an empty array
 
   const newKnotPositions = knotPositions.map((knot, index) => {
     if (index === 0) {
@@ -59,7 +59,6 @@ export function resolveStepObject({
       prevKnot = head
       return head
     }
-    console.log({ prevKnot, knot })
 
     const currentKnot = calculateNextMove({
       relativeCoords: moveDirection,
@@ -71,7 +70,6 @@ export function resolveStepObject({
       nextPosition: currentKnot as Position,
     })
   })
-  console.log({ newKnotPositions })
   const obj = {
     headMoveDirection: direction,
     knotPositions: newKnotPositions,
