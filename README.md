@@ -210,3 +210,7 @@ I definitely wasted some time as I was right about the movement, then doubted my
 With such fiddly numbers I wrote a lot of tests so that I could keep track of them and make sure that I would have visibility over it, which was really helpful.
 
 Another thing I did was to use more objects as parameters, I found myself getting mixed up with the ordering with the parameters and getting some false positives which was annoying
+
+#### Part 2
+
+Parking this for now, had some initial attempts but would like to move on. There needs to be an extra calculation for if the rope is slack or stretched, which I didn't realise til quite late on.
