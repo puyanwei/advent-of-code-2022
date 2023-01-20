@@ -4,8 +4,8 @@ import {
   resolveTree,
   resolveTreeGrid,
   transposeMatrix,
-} from "../day08-p1 - tree-top-tree-house"
-import { multiplyAll, resolveBlockingTrees } from "../day08-p2 - tree-top-tree-house"
+} from "../day08-p1-tree-top-tree-house"
+import { multiplyAll, resolveBlockingTrees } from "../day08-p2-tree-top-tree-house"
 import { logObject } from "../helpers"
 import { Tree } from "../types"
 
