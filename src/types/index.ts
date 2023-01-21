@@ -148,3 +148,15 @@ export interface ResolveNextPosition {
   currentPosition: Position
   nextPosition: Position
 }
+
+export interface Cycle {
+  cycle: number
+  command: string
+  x: number
+}
+
+export interface InitialValue {
+  data: Cycle[]
+  x: number
+  cycle: number
+}
