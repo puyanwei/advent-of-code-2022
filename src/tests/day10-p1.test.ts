@@ -2,17 +2,6 @@ import { programTwo, programOne, programThree, duplicateCycleData } from "../con
 import { cycleResult } from "../consts/mocks"
 import { dayTenPartOne, resolveCycleData, resolveXFromCycle } from "../day10-p1-cathode-ray-tube"
 
-// describe(`resolveAddX()`, () => {
-//   it(`throws an error if there is no number`, () => {
-//     try {
-//       resolveAddX(`addx`)
-//     } catch (error) {
-//       expect(error).toBeInstanceOf(Error)
-//       expect(error).toHaveProperty("message", "No addX number found")
-//     }
-//   })
-// })
-
 describe(`resolveCycleData()`, () => {
   describe(`takes in a string of commands and returns an array of cycle objects`, () => {
     it(`initial example`, () => {
@@ -68,6 +57,21 @@ describe(`resolveCycleData()`, () => {
     })
   })
 })
+
+/*
+Test worked when the x and cycle values were in the outside scope, but due to the refactor scoping it inside the function this test is not allowed to be exported. It needed to be scoped inside because it was giving false positives to all tests not being isolated.
+
+describe(`resolveAddX()`, () => {
+  it(`throws an error if there is no number`, () => {
+    try {
+      resolveAddX(`addx`)
+    } catch (error) {
+      expect(error).toBeInstanceOf(Error)
+      expect(error).toHaveProperty("message", "No addX number found")
+    }
+  })
+})
+*/
 
 describe(`integration test`, () => {
   it(`returns the sum of the six signal strengths`, () => {
