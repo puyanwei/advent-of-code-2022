@@ -214,3 +214,29 @@ Another thing I did was to use more objects as parameters, I found myself gettin
 #### Part 2
 
 Parking this for now, had some initial attempts but would like to move on. There needs to be an extra calculation for if the rope is slack or stretched, which I didn't realise til quite late on.
+
+### Day 10 - Cathode Ray Tube
+
+![image](https://user-images.githubusercontent.com/14803518/214048858-323bde2f-c2e9-466d-bf1e-13288d1c4cbe.png)
+
+Seemed quite straight forward in terms of implementation.
+
+![image](https://user-images.githubusercontent.com/14803518/214050471-ecf5ba87-972a-48de-94da-5cfe74bc98f1.png)
+
+A lot of these puzzles seem to need a mutating variable with map to create the initial resolved object that I want, so after I used map and got my tests working I decided (with some help) to refactor the code to practice and use the reduce method.
+
+#### Before (using map)
+
+![image](https://user-images.githubusercontent.com/14803518/214051269-1cedc057-a368-4290-9ad6-40b62a1d5972.png)
+
+![image](https://user-images.githubusercontent.com/14803518/214053052-07e90edf-27cb-478f-8d76-6d10005a5214.png)
+
+Altho this one liner is very readable, due to the let, those two abstracted functions have to live within the scope of the `resolveCycleData` function itself. Another option I did try was to make them live outside all the functions in the top level, but this made all my tests not work because the outer scope affected them.
+
+This mean that the two functions `resolveNoop` and `resolveAddX` cannot be tested as they cannot be exported from within a function
+
+#### After (using reduce)
+
+![image](https://user-images.githubusercontent.com/14803518/214050695-2b57a0c1-6f58-4d6f-af5e-d0a1690bfb0a.png)
+
+With this pattern, we refactor `resolveNoop` and `resolveAddX` to return an object. The first key/value is the object we want the data to be, and the other two key/value pairs are the updated cycle and x values for the reducer to use as things are iterated.
