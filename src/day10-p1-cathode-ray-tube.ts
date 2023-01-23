@@ -1,11 +1,10 @@
 import { programThree } from "./consts"
 import { data } from "./data/cycles"
 import { sum } from "./helpers"
-import { Cycle } from "./types"
+import { Cycle, ReducerInitialValue, ResolveCommand } from "./types"
 
 export function dayTenPartOne(dataSet = data) {
   const cycles = resolveCycleData(programThree)
-  // note that the very last command has x's value but doesn't make an object in the cycle array
 
   const signalStrengths = [
     resolveXFromCycle(cycles, 20) * 20,
@@ -18,49 +17,75 @@ export function dayTenPartOne(dataSet = data) {
   return sum(signalStrengths)
 }
 
-export function resolveCycleData(data: string): Cycle[] {
-  let x = 1
-  let cycle = 0
+export function resolveCycleData(data: string) {
   const commands = data.split(`\n`)
-  const cycleData = commands
-    .map((command) => {
-      if (command.includes(`addx`)) return resolveAddX(command)
-      if (command.includes(`noop`)) return resolveNoop(command)
-      throw new Error(`Command not recognized`)
-    })
-    .flat(1)
-  return cycleData
 
-  function resolveAddX(command: string) {
-    const [addXWord, number] = command.split(` `)
-    if (!number) throw new Error(`No addX number found`)
-    const addxCycle = [
-      {
-        cycle: cycle + 1,
-        command,
-        x,
-      },
-      {
-        cycle: cycle + 2,
-        command: "[pending]",
-        x,
-      },
-    ]
-    x = x + parseInt(number)
-    cycle = cycle + 2
-    return addxCycle
-  }
+  const reducerInitialValue: ReducerInitialValue = { data: [], x: 1, cycle: 0 }
 
-  function resolveNoop(command: string) {
-    const noopCycle = [
-      {
-        cycle: cycle + 1,
-        command,
+  const { data: result } = commands.reduce((previous, command) => {
+    if (command.includes(`noop`)) {
+      const {
+        data: noopCycle,
+        cycle,
         x,
-      },
-    ]
-    cycle++
-    return noopCycle
+      } = resolveNoop({ command, cycle: previous.cycle, x: previous.x })
+      return {
+        data: [...previous.data, ...noopCycle],
+        x,
+        cycle,
+      }
+    }
+    if (command.includes(`addx`)) {
+      const {
+        data: addxCycle,
+        cycle,
+        x,
+      } = resolveAddX({ command, cycle: previous.cycle, x: previous.x })
+      return {
+        data: [...previous.data, ...addxCycle],
+        x,
+        cycle,
+      }
+    }
+    return previous
+  }, reducerInitialValue)
+
+  return result
+}
+
+export function resolveAddX({ command, cycle, x }: Cycle): ResolveCommand {
+  const [addXWord, number] = command.split(` `)
+  if (!number) throw new Error(`No addX number found`)
+  const addxCycle = [
+    {
+      cycle: cycle + 1,
+      command,
+      x,
+    },
+    {
+      cycle: cycle + 2,
+      command: "[pending]",
+      x,
+    },
+  ]
+  x = x + parseInt(number)
+  cycle = cycle + 2
+  return { data: addxCycle, cycle, x }
+}
+
+function resolveNoop({ command, cycle, x }: Cycle): ResolveCommand {
+  const noopCycle = [
+    {
+      cycle: cycle + 1,
+      command,
+      x,
+    },
+  ]
+  cycle++
+  return {
+    data: noopCycle,
+    cycle,
+    x,
   }
 }
 
@@ -70,57 +95,3 @@ export function resolveXFromCycle(array: Cycle[], cycle: number) {
   if (matchedCycle.length > 1) throw new Error(`There should not be duplicate cycle numbers`)
   return matchedCycle[0].x
 }
-
-/* 
-// Practicing reduce here but doesn't seem to 'reduce' the code that much. In removing the let data of x and cycle what I should be doing is returning the new values of the resolvers in the tuple
-
-export function resolveCycleData(data: string) {
-  const commands = data.split(`\n`)
-
-  const initialValue: InitialValue = { data: [], x: 1, cycle: 0 }
-  const { data: result } = commands.reduce((previous, command) => {
-    if (command.includes(`noop`)) {
-      const noopCycle = [
-        {
-          cycle: previous.cycle + 1,
-          command,
-          x: previous.x,
-        },
-      ]
-      const newCycle = previous.cycle + 1
-      const newX = previous.x
-      return {
-        data: [...previous.data, ...noopCycle],
-        x: newX,
-        cycle: newCycle,
-      }
-    }
-    if (command.includes(`addx`)) {
-      const [addXWord, number] = command.split(` `)
-      if (!number) throw new Error(`No addX number found`)
-      const addxCycle = [
-        {
-          cycle: previous.cycle + 1,
-          command,
-          x: previous.x,
-        },
-        {
-          cycle: previous.cycle + 2,
-          command: "[pending]",
-          x: previous.x,
-        },
-      ]
-      const newX = previous.x + parseInt(number)
-      const newCycle = previous.cycle + 2
-      return {
-        data: [...previous.data, ...addxCycle],
-        x: newX,
-        cycle: newCycle,
-      }
-    }
-    return previous
-  }, initialValue)
-
-  return result
-}
-*/

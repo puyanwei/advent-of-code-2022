@@ -155,7 +155,13 @@ export interface Cycle {
   x: number
 }
 
-export interface InitialValue {
+export interface ResolveCommand {
+  data: Cycle[]
+  cycle: number
+  x: number
+}
+
+export interface ReducerInitialValue {
   data: Cycle[]
   x: number
   cycle: number
