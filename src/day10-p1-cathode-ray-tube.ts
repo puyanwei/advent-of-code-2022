@@ -1,10 +1,10 @@
 import { programThree } from "./consts"
 import { data } from "./data/cycles"
-import { sum } from "./helpers"
+import { logObject, sum } from "./helpers"
 import { Cycle, ReducerInitialValue, ResolveCommand } from "./types"
 
 export function dayTenPartOne(dataSet = data) {
-  const cycles = resolveCycleData(programThree)
+  const cycles = resolveCycleData(dataSet)
 
   const signalStrengths = [
     resolveXFromCycle(cycles, 20) * 20,
@@ -49,7 +49,6 @@ export function resolveCycleData(data: string) {
     }
     return previous
   }, reducerInitialValue)
-
   return result
 }
 

@@ -9,6 +9,7 @@ import { dayEightPartOne } from "./day08-p1-tree-top-tree-house"
 import { dayEightPartTwo } from "./day08-p2-tree-top-tree-house"
 import { dayNinePartOne } from "./day09-p1-rope-bridge"
 import { dayTenPartOne } from "./day10-p1-cathode-ray-tube"
+import { dayTenPartTwo } from "./day10-p2-cathode-ray-tube"
 
 /*
 console.warn(`Day 1 part 1 - Highest calories is ${dayOnePartOne()}`)
@@ -34,6 +35,7 @@ console.warn(
 )
 console.warn(`Day 8 part 2 - The highest scenic score for a tree is ${dayEightPartTwo()}`)
 console.warn(`Day 9 part 1 - The tail visited ${dayNinePartOne()} positions at least once`)
+console.warn(`Day 10 part 1 - The sum of the six signal strengths is ${dayTenPartOne()}`)
 */
 
 /* FAILS!
@@ -43,4 +45,4 @@ console.warn(`Day 9 part 1 - The tail visited ${dayNinePartOne()} positions at l
   console.warn(`Day 9 part 2 - The tail visited ${dayNinePartTwo()} positions at least once`)
 */
 
-console.warn(`Day 10 part 1 - The sum of the six signal strengths is ${dayTenPartOne()}`)
+console.warn(`Day 10 part 1 - The sum of the six signal strengths is ${dayTenPartTwo()}`)

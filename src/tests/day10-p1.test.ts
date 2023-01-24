@@ -6,6 +6,7 @@ import {
   resolveCycleData,
   resolveXFromCycle,
 } from "../day10-p1-cathode-ray-tube"
+import { logObject } from "../helpers"
 
 describe(`resolveCycleData()`, () => {
   describe(`takes in a string of commands and returns an array of cycle objects`, () => {
