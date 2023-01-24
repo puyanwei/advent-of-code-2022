@@ -217,6 +217,8 @@ Parking this for now, had some initial attempts but would like to move on. There
 
 ### Day 10 - Cathode Ray Tube
 
+#### Part 1
+
 ![image](https://user-images.githubusercontent.com/14803518/214048858-323bde2f-c2e9-466d-bf1e-13288d1c4cbe.png)
 
 Seemed quite straight forward in terms of implementation.
@@ -240,3 +242,9 @@ This mean that the two functions `resolveNoop` and `resolveAddX` cannot be teste
 ![image](https://user-images.githubusercontent.com/14803518/214050695-2b57a0c1-6f58-4d6f-af5e-d0a1690bfb0a.png)
 
 With this pattern, we refactor `resolveNoop` and `resolveAddX` to return an object. The first key/value is the object we want the data to be, and the other two key/value pairs are the updated cycle and x values for the reducer to use as things are iterated.
+
+### Part 2
+
+The hardest part about this challenge was understanding the description! Basically we need to determine if a cycle (a pixel on the screen) has the sprite on it or not. If it does output a `#` otherwise output a `.`. All new lines needed to be accounted for as well, and there are 40 pixels per line, so that needed to be divided by 40 to find out what line. The most annoying parts was getting the new lines to format correctly, as Jest doesn't really give much helpful test results and node is also not great at that.
+
+Probably the most fun output result tho!
