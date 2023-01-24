@@ -1,4 +1,4 @@
-import { Command, Directory, File, SupplyStack } from "../types"
+import { SupplyStack } from "../types"
 
 export const moveDirectoryResult = [
   {
